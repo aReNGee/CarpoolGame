@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>j0qu9vchd6u</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1920</width>
+        <height>1200</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite" sid="904471930616347">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="IWantToGoTo" sid="364436070382371" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="307863472526922">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="994477087227420" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BrantfordJob\carpool person placeholder.png">
+                        <collision-poly>
+                            <point x="0.408" y="0.384" />
+                            <point x="0.496" y="0.388" />
+                            <point x="0.496" y="0.5" />
+                            <point x="0.408" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="170582610045128">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Location" sid="233827480534136" type="string" />
+                <instance-variable name="PrimaryConnection" sid="705786503650065" type="string" />
+                <instance-variable name="SecondaryConnection" sid="771842501018542" type="string" />
+                <instance-variable name="UMadmanThirdConnection" sid="249277542254592" type="string" />
+                <instance-variable name="OkayFineConnection4" sid="377680384907407" type="string" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="588268987550778" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="927459704675447" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Targets" sid="102132207837380">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="Mouse" sid="244137277473465">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Move" sid="206217328805715">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Sprite3" sid="229490214259301">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Location" sid="771005748404457" type="string" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="963769596955374" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.472" y="0.372" />
+                            <point x="0.564" y="0.4" />
+                            <point x="0.62" y="0.452" />
+                            <point x="0.564" y="0.584" />
+                            <point x="0.452" y="0.62" />
+                            <point x="0.304" y="0.58" />
+                            <point x="0.272" y="0.456" />
+                            <point x="0.38" y="0.396" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="611782501809498">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Text2" sid="513825172988848">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="OffsetX" sid="915966347652091" type="number" />
+                <instance-variable name="OffsetY" sid="171495289360808" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type global="1" name="ConnectedCells" sid="409196086107849">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="OList" sid="935370145652731">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="Sprite5" sid="420542339899303">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406202439953151" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.04" y="0.24" />
+                            <point x="0.86" y="0.24" />
+                            <point x="0.852" y="0.888" />
+                            <point x="0.02" y="0.884" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FuelConsumed" sid="509642705218198">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="DescriptiveText" sid="154494611631778">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite6" sid="241656050123549">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902747049854436" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BrantfordJob\carpool map placeholder .png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="JustForAlignment" sid="793429277644459">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="989816883145052" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="838734800018950">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509675816964056" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>TestingGround.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="5" />
+        <global-instance type="Move" uid="6" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,1447 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Zero" sid="141277759159415" static="0" type="number">0</variable>
+        <variable constant="0" name="InTransit" sid="474033810907727" static="0" type="number">0</variable>
+        <variable constant="0" name="Timer" sid="103614309642334" static="0" type="number">30</variable>
+        <variable constant="0" name="TimerDestroyed" sid="697104488070762" static="0" type="number">-1</variable>
+        <variable constant="0" name="Fuel" sid="418458657535191" static="0" type="number">0</variable>
+        <variable constant="0" name="TimeToGo" sid="177659825100050" static="0" type="number">-1</variable>
+        <variable constant="0" name="LocationTracking" sid="242529412465340" static="0" type="text"></variable>
+        <variable constant="0" name="LocationsRequested" sid="978348278761007" static="0" type="text"></variable>
+        <variable constant="0" name="MovingTowards" sid="194639613824912" static="0" type="number">1</variable>
+        <variable constant="0" name="ArrayPos" sid="278544943524145" static="0" type="number">0</variable>
+        <variable constant="0" name="URHere" sid="576126749581187" static="0" type="text">special</variable>
+        <variable constant="0" name="PathList" sid="676700574874796" static="0" type="text"></variable>
+        <variable constant="0" name="InitialFuelCost" sid="212715906314375" static="0" type="number">0</variable>
+        <event-group description="This is where all the serious work will happen. I wonder if you can have nested groups" sid="112793833793127" title="General Gameplay">
+            <sub-events>
+                <event-block sid="564331346902734">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="627303470643714" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Sprite2</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="996135293475373" type="System">
+                            <param id="0" name="First value">Targets.At(ArrayPos,0)</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">Sprite2.X</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="640534846900745" type="System">
+                            <param id="0" name="First value">Targets.At(ArrayPos,1)</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">Sprite2.Y</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="528957930380169" type="System">
+                            <param id="0" name="Variable">TimeToGo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="385847391612558" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="0" name="Call function" sid="965626159476051" type="Move">
+                            <param id="0" name="Name">&quot;Pathfind&quot;</param>
+                            <param id="1" name="Parameter {n}">Sprite2.Location</param>
+                        </action>
+                        <action disabled="1" id="0" name="Call function" sid="924015401100072" type="Move">
+                            <param id="0" name="Name">&quot;SetLoc&quot;</param>
+                            <param id="1" name="Parameter {n}">Sprite2.Location</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>IF wherever you are is connected to the place you clicked on</comment>
+                        <event-block any="1" sid="311250995394134">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="136730006432381" type="System">
+                                    <param id="0" name="Variable">URHere</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite2.PrimaryConnection</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="480677524725075" type="System">
+                                    <param id="0" name="Variable">URHere</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite2.SecondaryConnection</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="307536010922867" type="System">
+                                    <param id="0" name="Variable">URHere</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite2.UMadmanThirdConnection</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="334573265476607" type="System">
+                                    <param id="0" name="Variable">URHere</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite2.OkayFineConnection4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="636612021413504" type="System">
+                                    <param id="0" name="Variable">ArrayPos</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="425775139735624" type="Targets">
+                                    <param id="0" name="X">ArrayPos</param>
+                                    <param id="1" name="Y">0</param>
+                                    <param id="2" name="Value">Sprite2.X</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="391638628206599" type="Targets">
+                                    <param id="0" name="X">ArrayPos</param>
+                                    <param id="1" name="Y">1</param>
+                                    <param id="2" name="Value">Sprite2.Y</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="438413256488028" type="Targets">
+                                    <param id="0" name="X">ArrayPos</param>
+                                    <param id="1" name="Y">2</param>
+                                    <param id="2" name="Value">Sprite2.Location</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="823819966254679" type="System">
+                                    <param id="0" name="Variable">URHere</param>
+                                    <param id="1" name="Value">Sprite2.Location</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="537493339525871" type="Sprite2">
+                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="377129876711498" type="System">
+                                    <param id="0" name="Variable">PathList</param>
+                                    <param id="1" name="Value">Sprite2.Location</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="475546649741062">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="850125987335760" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="188960397087085" type="Text2">
+                            <param id="0" name="Object">Sprite</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="245113802546456">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="603588802089467" type="System">
+                                    <param id="0" name="Variable">ArrayPos</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="640369695657327">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="352872367649811" type="System">
+                                            <param id="0" name="Variable">ArrayPos</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">MovingTowards</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="414751393199097" type="System">
+                                            <param id="0" name="Variable">TimeToGo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="265402336157432" type="Move">
+                                            <param id="0" name="Name">&quot;move&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>Once we&apos;ve moved to the end of the route, stops the player and tosses everything back</comment>
+                                <event-block sid="516465490444912">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="342328032646919" type="System">
+                                            <param id="0" name="Variable">ArrayPos</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">MovingTowards</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="CustomMovement" id="2" name="Set speed" sid="828564508808521" type="Sprite">
+                                            <param id="0" name="Which">0</param>
+                                            <param id="1" name="Speed">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="361414110638189" type="System">
+                                            <param id="0" name="Variable">TimeToGo</param>
+                                            <param id="1" name="Value">-1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="206469482024275" type="Sprite2">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="467638968934573" type="System">
+                                            <param id="0" name="Variable">PathList</param>
+                                            <param id="1" name="Value">&quot;&quot;</param>
+                                        </action>
+                                        <action id="11" name="Set collisions enabled" sid="936707291307795" type="Sprite3">
+                                            <param id="0" name="Collisions">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-group description="" sid="635764865699891" title="Motion">
+                    <sub-events>
+                        <comment>Simulates Movement</comment>
+                        <event-block sid="297851941403726">
+                            <conditions>
+                                <condition id="0" name="On function" sid="943358415966040" type="Move">
+                                    <param id="0" name="Name">&quot;move&quot;</param>
+                                </condition>
+                                <condition id="-11" name="For Each" sid="787289273815994" type="System">
+                                    <param id="0" name="Object">Sprite</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-group description="" sid="362272547633894" title="Making Only The Sprites We Want To Move, Move">
+                                    <sub-events>
+                                        <event-block sid="647279885132292">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="103605851134716" type="System">
+                                                    <param id="0" name="Variable">Zero</param>
+                                                    <param id="1" name="Comparison">3</param>
+                                                    <param id="2" name="Value">find(PathList,Sprite.IWantToGoTo)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-22" name="Set angle toward position" sid="765616869858100" type="Sprite">
+                                                    <param id="0" name="X">Targets.At(MovingTowards,0)</param>
+                                                    <param id="1" name="Y">Targets.At(MovingTowards,1)</param>
+                                                </action>
+                                                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="113780659118177" type="Sprite">
+                                                    <param id="0" name="Angle">Sprite.Angle</param>
+                                                </action>
+                                                <action behavior="CustomMovement" id="2" name="Set speed" sid="893638107681292" type="Sprite">
+                                                    <param id="0" name="Which">0</param>
+                                                    <param id="1" name="Speed">640</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="979012202925975" type="Sprite">
+                                                    <param id="0" name="Angle">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="613637943505790">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="596301504469425" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="CustomMovement" id="2" name="Set speed" sid="880212451310338" type="Sprite">
+                                                    <param id="0" name="Which">0</param>
+                                                    <param id="1" name="Speed">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="782923078548363">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="365947732202674" type="Sprite3">
+                                    <param id="0" name="Object">Sprite</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="708840067604883" type="Sprite">
+                                    <param id="0" name="Instance variable">IWantToGoTo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Sprite3.Location</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="578770501735477" type="System">
+                                    <param id="0" name="Variable">InTransit</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="813742370756335" type="Sprite">
+                                    <param id="0" name="Instance variable">IWantToGoTo</param>
+                                    <param id="1" name="Value">&quot; &quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="835213998548459">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="277729144440586" type="Sprite3">
+                                    <param id="0" name="Object">Sprite</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="699959427598190" type="Sprite3">
+                                    <param id="0" name="Instance variable">Location</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Targets.At(MovingTowards,2)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="105948599075849" type="System">
+                                    <param id="0" name="Variable">MovingTowards</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="295787244632650" type="System">
+                                    <param id="0" name="Variable">LocationTracking</param>
+                                    <param id="1" name="Value">Sprite3.Location</param>
+                                </action>
+                                <action disabled="1" id="1" name="Append text" sid="909795613785420" type="SpriteFont">
+                                    <param id="0" name="Text">Sprite3.Location</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="286948482935287" type="System">
+                                    <param id="0" name="Variable">LocationTracking</param>
+                                    <param id="1" name="Value">&quot;hitsomething&quot;</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="711757558569312" type="System">
+                                    <param id="0" name="Variable">Fuel</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="421957642146897" type="FuelConsumed">
+                                    <param id="0" name="Text">Fuel</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="750533265397102" type="System">
+                                    <param id="0" name="Variable">PathList</param>
+                                    <param id="1" name="Value">right(PathList,len(PathList)-1)</param>
+                                </action>
+                                <action disabled="1" id="11" name="Set collisions enabled" sid="553705536927390" type="Sprite3">
+                                    <param id="0" name="Collisions">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <comment>Mostly startup stuff. Attaches the stick figures destination to the stick figure</comment>
+                                <comment>Checks that the sprite has the same location tag as the &quot;target&quot;</comment>
+                                <event-block sid="150984144726477">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="865026796190861" type="System">
+                                            <param id="0" name="Variable">InTransit</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="CustomMovement" id="2" name="Set speed" sid="792624942948646" type="Sprite">
+                                            <param id="0" name="Which">0</param>
+                                            <param id="1" name="Speed">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="190961019516927" type="System">
+                                            <param id="0" name="Variable">TimeToGo</param>
+                                            <param id="1" name="Value">-1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="608034881610436" type="Sprite2">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="143151917721219" type="System">
+                                            <param id="0" name="Variable">PathList</param>
+                                            <param id="1" name="Value">&quot;&quot;</param>
+                                        </action>
+                                        <action disabled="1" id="11" name="Set collisions enabled" sid="416296844576646" type="Sprite3">
+                                            <param id="0" name="Collisions">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="420480868778650" type="System">
+                                            <param id="0" name="Variable">MovingTowards</param>
+                                            <param id="1" name="Value">ArrayPos+1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="122477043687307" type="System">
+                                            <param id="0" name="Variable">URHere</param>
+                                            <param id="1" name="Value">&quot;special&quot;</param>
+                                        </action>
+                                        <action disabled="1" id="1" name="Append text" sid="832185530058860" type="SpriteFont">
+                                            <param id="0" name="Text">&quot;GOT HERE&quot;</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="790114398767581" type="Move">
+                                            <param id="0" name="Name">&quot;CheckForLoc&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>Starts the players route</comment>
+                        <event-block sid="753868357807719">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="895283037062133" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Sprite5</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="253378922303334" type="System">
+                                    <param id="0" name="Variable">TimeToGo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">-1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="202660593314284" type="System">
+                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="498965449177796" type="System">
+                                    <param id="0" name="Variable">TimeToGo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="810881057673725" type="System">
+                                    <param id="0" name="Variable">InTransit</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="503648869865384">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="527363229943746" type="System">
+                                            <param id="0" name="Object">Sprite</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="924458326414657" type="System">
+                                            <param id="0" name="Variable">Zero</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">find(PathList,Sprite.IWantToGoTo)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-4" name="Set position to another object" sid="761335593650845" type="Sprite">
+                                            <param id="0" name="Object">JustForAlignment</param>
+                                            <param id="1" name="Image point (optional)">0</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="113230613379035" type="System">
+                                            <param id="0" name="Variable">InTransit</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-block sid="126265217144307">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="216185992635860" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="359342351465677" type="Sprite">
+                    <param id="0" name="Instance variable">IWantToGoTo</param>
+                    <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;)</param>
+                </action>
+                <action id="-10" name="Set value" sid="537320760569844" type="Text2">
+                    <param id="0" name="Instance variable">OffsetX</param>
+                    <param id="1" name="Value">Sprite.X-Text2.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="604664409342562" type="Text2">
+                    <param id="0" name="Instance variable">OffsetY</param>
+                    <param id="1" name="Value">Sprite.Y-Text2.Y</param>
+                </action>
+                <action id="1" name="Append text" sid="467122516302967" type="Text2">
+                    <param id="0" name="Text">Sprite.IWantToGoTo</param>
+                </action>
+                <action id="0" name="Call function" sid="696390332828445" type="Move">
+                    <param id="0" name="Name">&quot;SetUpTheMatrix&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="3" name="Set at XY" sid="249816481821927" type="Targets">
+                    <param id="0" name="X">ArrayPos</param>
+                    <param id="1" name="Y">2</param>
+                    <param id="2" name="Value">&quot;F&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="149842251236257" type="Move">
+                    <param id="0" name="Name">&quot;CalcFuel&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Set text" sid="181543173608786" type="SpriteFont">
+                    <param id="0" name="Text">&quot;If each person took their own car, they would use &quot; &amp; Move.ReturnValue &amp; &quot; fuel.&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="343098123227070" type="System">
+                    <param id="0" name="Variable">InitialFuelCost</param>
+                    <param id="1" name="Value">Move.ReturnValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable constant="0" name="CurLoc" sid="977733412866179" static="0" type="number">0</variable>
+        <variable constant="0" name="TarLoc" sid="260495083937919" static="0" type="number">0</variable>
+        <variable constant="0" name="NextUp" sid="281296638855725" static="0" type="text"></variable>
+        <event-group description="Mostly Disabled for now" sid="408672786627712" title="Pathfinding">
+            <sub-events>
+                <comment>This is a mess. The first y value (0) sets up what the cell is. Y1 and Y2 are the x and y coords. y3 is the primary connection, y4 is the secondary connection. 100 is N/A</comment>
+                <event-block sid="866449586085756">
+                    <conditions>
+                        <condition id="0" name="On function" sid="131249659931534" type="Move">
+                            <param id="0" name="Name">&quot;SetUpTheMatrix&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set at XY" sid="961800970934577" type="ConnectedCells">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;A&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="292149218794396" type="ConnectedCells">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;B&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="874983502880371" type="ConnectedCells">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;C&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="507698592173265" type="ConnectedCells">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;D&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="843406733550160" type="ConnectedCells">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;E&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="949109761726033" type="ConnectedCells">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">&quot;F&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="414648640652321" type="ConnectedCells">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Sprite2(0).X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="804893908951934" type="ConnectedCells">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">Sprite2(0).Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="492533179798507" type="ConnectedCells">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Sprite2(1).X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="780754931477353" type="ConnectedCells">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">Sprite2(1).Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="951459591491369" type="ConnectedCells">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Sprite2(2).X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="565191774251822" type="ConnectedCells">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">Sprite2(2).Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="645940369843303" type="ConnectedCells">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Sprite2(3).X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="291110661251720" type="ConnectedCells">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">Sprite2(3).Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="472450868632378" type="ConnectedCells">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Sprite2(4).X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="786144971955059" type="ConnectedCells">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">Sprite2(4).Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="454019150902922" type="ConnectedCells">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">Sprite2(5).X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="947273222659942" type="ConnectedCells">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">Sprite2(5).Y</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="728205604310011" type="ConnectedCells">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">2</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="295785446516160" type="ConnectedCells">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">4</param>
+                            <param id="2" name="Value">3</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="212529025156583" type="ConnectedCells">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">4</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="317828577932742" type="ConnectedCells">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">4</param>
+                            <param id="2" name="Value">2</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="531034371335913" type="ConnectedCells">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">1</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="523840343072963" type="ConnectedCells">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">4</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="809015847220946" type="ConnectedCells">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="679424811467802" type="ConnectedCells">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">4</param>
+                            <param id="2" name="Value">5</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="194281926403536" type="ConnectedCells">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">5</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="520507539194064" type="ConnectedCells">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">4</param>
+                            <param id="2" name="Value">1</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="257788563482120" type="ConnectedCells">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">3</param>
+                            <param id="2" name="Value">3</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="813508557913623" type="ConnectedCells">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Y">4</param>
+                            <param id="2" name="Value">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="269461519515904">
+                    <conditions>
+                        <condition id="0" name="On function" sid="810675328293857" type="Move">
+                            <param id="0" name="Name">&quot;Pathfind&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="219531517479863" type="Move">
+                            <param id="0" name="Name">&quot;SetTarLoc&quot;</param>
+                            <param id="1" name="Parameter {n}">Move.Param(0)</param>
+                        </action>
+                        <action id="0" name="Call function" sid="719710332900707" type="Move">
+                            <param id="0" name="Name">&quot;SetLoc&quot;</param>
+                            <param id="1" name="Parameter {n}">Targets.At(ArrayPos,2)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="166466387240668">
+                            <conditions>
+                                <condition id="-23" name="While" sid="679608909279252" type="System" />
+                                <condition disabled="1" id="1" name="Compare at XY" sid="114643038259313" type="ConnectedCells">
+                                    <param id="0" name="X">CurLoc</param>
+                                    <param id="1" name="Y">3</param>
+                                    <param id="2" name="Comparison">1</param>
+                                    <param id="3" name="Value">TarLoc</param>
+                                </condition>
+                                <condition disabled="1" id="1" name="Compare at XY" sid="475808716641707" type="ConnectedCells">
+                                    <param id="0" name="X">CurLoc</param>
+                                    <param id="1" name="Y">4</param>
+                                    <param id="2" name="Comparison">1</param>
+                                    <param id="3" name="Value">TarLoc</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="622941117069563" type="System">
+                                    <param id="0" name="Variable">CurLoc</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">TarLoc</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="444099897083542" type="System">
+                                    <param id="0" name="Variable">CurLoc</param>
+                                    <param id="1" name="Value">ConnectedCells.At(CurLoc,3)</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="842504417280788" type="System">
+                                    <param id="0" name="Variable">ArrayPos</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="858646290885934" type="Targets">
+                                    <param id="0" name="X">ArrayPos</param>
+                                    <param id="1" name="Y">2</param>
+                                    <param id="2" name="Value">ConnectedCells.At(CurLoc,0)</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="717662672542975" type="Targets">
+                                    <param id="0" name="X">ArrayPos</param>
+                                    <param id="1" name="Y">0</param>
+                                    <param id="2" name="Value">ConnectedCells.At(CurLoc,1)</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="267885828170998" type="Targets">
+                                    <param id="0" name="X">ArrayPos</param>
+                                    <param id="1" name="Y">1</param>
+                                    <param id="2" name="Value">ConnectedCells.At(CurLoc,2)</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="645435893534556" type="System">
+                                    <param id="0" name="Variable">NextUp</param>
+                                    <param id="1" name="Value">Targets.At(ArrayPos,2)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="485291244189988">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="319071234691159" type="System">
+                                            <param id="0" name="Variable">CurLoc</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">TarLoc</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="252424237062842" type="System">
+                                            <param id="0" name="Variable">ArrayPos</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="929422895926905" type="Targets">
+                                            <param id="0" name="X">ArrayPos</param>
+                                            <param id="1" name="Y">0</param>
+                                            <param id="2" name="Value">ConnectedCells.At(TarLoc,1)</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="534820166780995" type="Targets">
+                                            <param id="0" name="X">ArrayPos</param>
+                                            <param id="1" name="Y">1</param>
+                                            <param id="2" name="Value">ConnectedCells.At(TarLoc,2)</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="545708435166232" type="Targets">
+                                            <param id="0" name="X">ArrayPos</param>
+                                            <param id="1" name="Y">2</param>
+                                            <param id="2" name="Value">ConnectedCells.At(TarLoc,0)</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="333864128286433" type="System">
+                                            <param id="0" name="Variable">NextUp</param>
+                                            <param id="1" name="Value">&quot;gotta&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block disabled="1" sid="744588448165457">
+                            <conditions>
+                                <condition id="1" name="Compare at XY" sid="283473546955208" type="ConnectedCells">
+                                    <param id="0" name="X">CurLoc</param>
+                                    <param id="1" name="Y">3</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">TarLoc</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="397676368735245" type="System">
+                                    <param id="0" name="Variable">ArrayPos</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="797657993681217" type="Targets">
+                                    <param id="0" name="X">ArrayPos</param>
+                                    <param id="1" name="Y">0</param>
+                                    <param id="2" name="Value">ConnectedCells.At(TarLoc,1)</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="502839011626241" type="Targets">
+                                    <param id="0" name="X">ArrayPos</param>
+                                    <param id="1" name="Y">1</param>
+                                    <param id="2" name="Value">ConnectedCells.At(TarLoc,2)</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="438694136473280" type="Targets">
+                                    <param id="0" name="X">ArrayPos</param>
+                                    <param id="1" name="Y">2</param>
+                                    <param id="2" name="Value">ConnectedCells.At(TarLoc,0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="913175960680126">
+                    <conditions>
+                        <condition id="0" name="On function" sid="853644460367188" type="Move">
+                            <param id="0" name="Name">&quot;SetLoc&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="957718741946708">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="145308569380062" type="Move">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;A&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="259270965900086" type="System">
+                                    <param id="0" name="Variable">CurLoc</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="300971131515835">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="482124775939945" type="Move">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;B&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="127084735167791" type="System">
+                                    <param id="0" name="Variable">CurLoc</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="729554933426884">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="385666795080485" type="Move">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;C&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="160790492458805" type="System">
+                                    <param id="0" name="Variable">CurLoc</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="622114345378550">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="428171688535054" type="Move">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;D&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="725661135398805" type="System">
+                                    <param id="0" name="Variable">CurLoc</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="253967918022423">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="634847946238589" type="Move">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;E&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="866680250550519" type="System">
+                                    <param id="0" name="Variable">CurLoc</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="361233426798178">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="491964145480698" type="Move">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;F&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="948117927991750" type="System">
+                                    <param id="0" name="Variable">CurLoc</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="464337722105931">
+                    <conditions>
+                        <condition id="0" name="On function" sid="974528417501727" type="Move">
+                            <param id="0" name="Name">&quot;SetTarLoc&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="311940848238567">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="888190480198413" type="Move">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;A&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="421024664866295" type="System">
+                                    <param id="0" name="Variable">TarLoc</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="590810388388052">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="875819525864881" type="Move">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;B&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="822979534630197" type="System">
+                                    <param id="0" name="Variable">TarLoc</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="709259186980503">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="794066906105309" type="Move">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;C&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="192656704729674" type="System">
+                                    <param id="0" name="Variable">TarLoc</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="122260719550418">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="520885521583342" type="Move">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;D&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="545487261927572" type="System">
+                                    <param id="0" name="Variable">TarLoc</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="297599447255180">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="548093162768499" type="Move">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;E&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="698717417451520" type="System">
+                                    <param id="0" name="Variable">TarLoc</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="987987701470489">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="116012548198215" type="Move">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;F&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="276618986297290" type="System">
+                                    <param id="0" name="Variable">TarLoc</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="806768978617368" title="Timer">
+            <sub-events>
+                <event-block sid="536579700372270">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="901214480442237" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-5" name="Set width" sid="891439856226236" type="Sprite4">
+                            <param id="0" name="Width">64*Timer</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="632037782352037">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="129313219844441" type="System">
+                            <param id="0" name="Interval (seconds)">0.01</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="929884086301188" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="712865722126265" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">0.01</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="116277198633622">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="838101024239736" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="269590930138838" type="System">
+                            <param id="0" name="Variable">TimerDestroyed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="450047160897386" type="System">
+                            <param id="0" name="Variable">TimerDestroyed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="157532118926343" type="Move">
+                            <param id="0" name="Name">&quot;GameEnds&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <variable constant="0" name="FuelUsed" sid="653136978863899" static="0" type="number">0</variable>
+        <event-group description="" sid="973268284278854" title="Fuel Costs">
+            <sub-events>
+                <event-block sid="174362450574682">
+                    <conditions>
+                        <condition id="0" name="On function" sid="669534879128064" type="Move">
+                            <param id="0" name="Name">&quot;CalcFuel&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="470463638787577" type="System">
+                            <param id="0" name="Variable">FuelUsed</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="468600309657980">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="147227292119261" type="System">
+                                    <param id="0" name="Object">Sprite</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="107975450803101">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="666030186319829" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;F&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="638786860520785" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;E&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="298366346651117" type="System">
+                                            <param id="0" name="Variable">FuelUsed</param>
+                                            <param id="1" name="Value">6</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="574690520185485">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="448732522009267" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;A&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="715715948206739" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;M&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="848193829828897" type="System">
+                                            <param id="0" name="Variable">FuelUsed</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="797663402970393">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="119831902445109" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;B&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="191449106290083" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;G&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="936480833867114" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;O&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="443311894485899" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;V&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="519896108962695" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;K&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="150788433825999" type="System">
+                                            <param id="0" name="Variable">FuelUsed</param>
+                                            <param id="1" name="Value">4</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="777660705875376">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="100423323660109" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;C&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="243967750716730" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;H&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="528994658849243" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;P&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="562794335553280" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;T&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="365504618909487" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;L&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="825450680455038" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;U&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="823515034844089" type="System">
+                                            <param id="0" name="Variable">FuelUsed</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="994250367041060">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="258843955591100" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;N&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="823789975365606" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;S&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="455443662660308" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;D&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="172227769151435" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;J&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="607654507075891" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;R&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="292134993162698" type="System">
+                                            <param id="0" name="Variable">FuelUsed</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="367277068991997">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="418630497296648" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;I&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="568894163224550" type="Sprite">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Q&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="635397806592443" type="System">
+                                            <param id="0" name="Variable">FuelUsed</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="683846954992883">
+                            <conditions />
+                            <actions>
+                                <action id="1" name="Set return value" sid="740081017893716" type="Move">
+                                    <param id="0" name="Value">FuelUsed</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <variable constant="0" name="Dif" sid="224395867282800" static="0" type="number">0</variable>
+        <variable constant="0" name="ShowDifAsString" sid="782937818219977" static="0" type="text"></variable>
+        <event-group description="" sid="747371027911261" title="Endgame">
+            <sub-events>
+                <event-block sid="953346450060240">
+                    <conditions>
+                        <condition id="0" name="On function" sid="992485619759755" type="Move">
+                            <param id="0" name="Name">&quot;Endgame&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="541922322018096" type="System">
+                            <param id="0" name="Variable">Dif</param>
+                            <param id="1" name="Value">(1 - (Fuel/InitialFuelCost))*100</param>
+                        </action>
+                        <action disabled="1" id="1" name="Append text" sid="479926105172020" type="SpriteFont">
+                            <param id="0" name="Text">&quot;Please work: &quot;</param>
+                        </action>
+                        <action disabled="1" id="1" name="Append text" sid="488725751274498" type="SpriteFont">
+                            <param id="0" name="Text">Fuel</param>
+                        </action>
+                        <action disabled="1" id="1" name="Append text" sid="453904488896955" type="SpriteFont">
+                            <param id="0" name="Text">&quot;/&quot;</param>
+                        </action>
+                        <action disabled="1" id="1" name="Append text" sid="214325054642233" type="SpriteFont">
+                            <param id="0" name="Text">InitialFuelCost</param>
+                        </action>
+                        <action disabled="1" id="1" name="Append text" sid="607137686375727" type="SpriteFont">
+                            <param id="0" name="Text">&quot;/&quot;</param>
+                        </action>
+                        <action disabled="1" id="1" name="Append text" sid="971711209657629" type="SpriteFont">
+                            <param id="0" name="Text">Fuel/InitialFuelCost</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="214925683063393" type="System">
+                            <param id="0" name="Variable">ShowDifAsString</param>
+                            <param id="1" name="Value">Dif</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>If the return value is 0, you delivered everyone.</comment>
+                        <event-block sid="701132563163362">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="487133705895401" type="System">
+                                    <param id="0" name="First value">Move.ReturnValue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Append text" sid="397499901742956" type="SpriteFont">
+                                    <param id="0" name="Text">left(ShowDifAsString,5) &amp; &quot; percent of the fuel the other route would use! &quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="881187120673149">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="614132855075760" type="System">
+                                            <param id="0" name="Variable">Dif</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="249640736985171" type="SpriteFont">
+                                            <param id="0" name="Text">&quot;Your route used more fuel than individual driving, so you earn no stars.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="211960925321136">
+                                    <conditions>
+                                        <condition id="-21" name="Is between values" sid="658498498327771" type="System">
+                                            <param id="0" name="Value">Dif</param>
+                                            <param id="1" name="Lower bound">0</param>
+                                            <param id="2" name="Upper bound">20</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="976241182033099" type="SpriteFont">
+                                            <param id="0" name="Text">&quot;You earned one Star.&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="371178332560704">
+                                    <conditions>
+                                        <condition id="-21" name="Is between values" sid="367383284682344" type="System">
+                                            <param id="0" name="Value">Dif</param>
+                                            <param id="1" name="Lower bound">20</param>
+                                            <param id="2" name="Upper bound">40</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="469646290718039" type="SpriteFont">
+                                            <param id="0" name="Text">&quot;Your performance earned two Stars!&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="141692694091311">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="795857200427269" type="System">
+                                            <param id="0" name="Variable">Dif</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">40</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="727891703766810" type="SpriteFont">
+                                            <param id="0" name="Text">&quot;WOW! THREE STARS!&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>You failed to deliver everyone.</comment>
+                        <event-block sid="566519727051173">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="562871290671420" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Append text" sid="517482977993463" type="SpriteFont">
+                                    <param id="0" name="Text">&quot; You didn&apos;t deliver everyone.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="357629557968464">
+                    <conditions>
+                        <condition id="0" name="On function" sid="388859724227795" type="Move">
+                            <param id="0" name="Name">&quot;GameEnds&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="971910063356723" type="Sprite4" />
+                        <action id="0" name="Call function" sid="868905618471580" type="Move">
+                            <param id="0" name="Name">&quot;CalcFuel&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-10" name="Add to" sid="108767448403965" type="System">
+                            <param id="0" name="Variable">Fuel</param>
+                            <param id="1" name="Value">Move.ReturnValue</param>
+                        </action>
+                        <action id="0" name="Set text" sid="393976114583706" type="FuelConsumed">
+                            <param id="0" name="Text">Fuel</param>
+                        </action>
+                        <action id="1" name="Append text" sid="104029698329467" type="SpriteFont">
+                            <param id="0" name="Text">&quot; Your path required &quot; &amp; Fuel &amp; &quot; fuel, which saved &quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="420751995631797" type="Move">
+                            <param id="0" name="Name">&quot;Endgame&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="737995203441353" title="Did We Run Out of Players?">
+            <sub-events>
+                <event-block sid="353571537792393">
+                    <conditions>
+                        <condition id="0" name="On function" sid="166858393364745" type="Move">
+                            <param id="0" name="Name">&quot;CheckForLoc&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="238767617096261" type="System">
+                            <param id="0" name="Variable">LocationsRequested</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="860334773754578">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="197735212006387" type="System">
+                                    <param id="0" name="Object">Sprite</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="574099838060746" type="System">
+                                    <param id="0" name="Variable">LocationsRequested</param>
+                                    <param id="1" name="Value">Sprite.IWantToGoTo</param>
+                                </action>
+                                <action disabled="1" id="1" name="Append text" sid="533344304216817" type="SpriteFont">
+                                    <param id="0" name="Text">Sprite.IWantToGoTo</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <comment>No sprites remaining</comment>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="651436333405523">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="683851264061143" type="System">
+                                    <param id="0" name="Variable">LocationsRequested</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;        &quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="631431615467031" type="System">
+                                    <param id="0" name="Variable">TimerDestroyed</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="667511390870183" type="Move">
+                                    <param id="0" name="Name">&quot;GameEnds&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
