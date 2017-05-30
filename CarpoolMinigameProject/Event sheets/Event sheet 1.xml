@@ -421,48 +421,56 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="126265217144307">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="216185992635860" type="System" />
-            </conditions>
-            <actions>
-                <action id="-10" name="Set value" sid="359342351465677" type="Sprite">
-                    <param id="0" name="Instance variable">IWantToGoTo</param>
-                    <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;)</param>
-                </action>
-                <action id="-10" name="Set value" sid="537320760569844" type="Text2">
-                    <param id="0" name="Instance variable">OffsetX</param>
-                    <param id="1" name="Value">Sprite.X-Text2.X</param>
-                </action>
-                <action id="-10" name="Set value" sid="604664409342562" type="Text2">
-                    <param id="0" name="Instance variable">OffsetY</param>
-                    <param id="1" name="Value">Sprite.Y-Text2.Y</param>
-                </action>
-                <action id="1" name="Append text" sid="467122516302967" type="Text2">
-                    <param id="0" name="Text">Sprite.IWantToGoTo</param>
-                </action>
-                <action id="0" name="Call function" sid="696390332828445" type="Move">
-                    <param id="0" name="Name">&quot;SetUpTheMatrix&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
-                <action id="3" name="Set at XY" sid="249816481821927" type="Targets">
-                    <param id="0" name="X">ArrayPos</param>
-                    <param id="1" name="Y">2</param>
-                    <param id="2" name="Value">&quot;F&quot;</param>
-                </action>
-                <action id="0" name="Call function" sid="149842251236257" type="Move">
-                    <param id="0" name="Name">&quot;CalcFuel&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
-                <action id="0" name="Set text" sid="181543173608786" type="SpriteFont">
-                    <param id="0" name="Text">&quot;If each person took their own car, they would use &quot; &amp; Move.ReturnValue &amp; &quot; fuel.&quot;</param>
-                </action>
-                <action id="-9" name="Set value" sid="343098123227070" type="System">
-                    <param id="0" name="Variable">InitialFuelCost</param>
-                    <param id="1" name="Value">Move.ReturnValue</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="755141171492842" title="CheckForDupes">
+            <sub-events>
+                <event-block sid="126265217144307">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="216185992635860" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="359342351465677" type="Sprite">
+                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                            <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;)</param>
+                        </action>
+                        <action id="0" name="Call function" sid="411211861170818" type="Move">
+                            <param id="0" name="Name">&quot;GetRidofDupes&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-10" name="Set value" sid="537320760569844" type="Text2">
+                            <param id="0" name="Instance variable">OffsetX</param>
+                            <param id="1" name="Value">Sprite.X-Text2.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="604664409342562" type="Text2">
+                            <param id="0" name="Instance variable">OffsetY</param>
+                            <param id="1" name="Value">Sprite.Y-Text2.Y</param>
+                        </action>
+                        <action id="1" name="Append text" sid="467122516302967" type="Text2">
+                            <param id="0" name="Text">Sprite.IWantToGoTo</param>
+                        </action>
+                        <action id="0" name="Call function" sid="696390332828445" type="Move">
+                            <param id="0" name="Name">&quot;SetUpTheMatrix&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="249816481821927" type="Targets">
+                            <param id="0" name="X">ArrayPos</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">&quot;F&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="149842251236257" type="Move">
+                            <param id="0" name="Name">&quot;CalcFuel&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Set text" sid="181543173608786" type="SpriteFont">
+                            <param id="0" name="Text">&quot;If each person took their own car, they would use &quot; &amp; Move.ReturnValue &amp; &quot; fuel.&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="343098123227070" type="System">
+                            <param id="0" name="Variable">InitialFuelCost</param>
+                            <param id="1" name="Value">Move.ReturnValue</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <variable constant="0" name="CurLoc" sid="977733412866179" static="0" type="number">0</variable>
         <variable constant="0" name="TarLoc" sid="260495083937919" static="0" type="number">0</variable>
         <variable constant="0" name="NextUp" sid="281296638855725" static="0" type="text"></variable>
@@ -1290,7 +1298,7 @@
                                         <condition id="-14" name="Compare variable" sid="614132855075760" type="System">
                                             <param id="0" name="Variable">Dif</param>
                                             <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">0</param>
+                                            <param id="2" name="Value">0.1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1303,7 +1311,7 @@
                                     <conditions>
                                         <condition id="-21" name="Is between values" sid="658498498327771" type="System">
                                             <param id="0" name="Value">Dif</param>
-                                            <param id="1" name="Lower bound">0</param>
+                                            <param id="1" name="Lower bound">0.1</param>
                                             <param id="2" name="Upper bound">20</param>
                                         </condition>
                                     </conditions>
@@ -1438,6 +1446,87 @@
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="371312371790360" title="ActualDupeChecking">
+            <sub-events>
+                <variable constant="0" name="DupeChecker" sid="660974137892015" static="0" type="text"></variable>
+                <event-block sid="261654694595242">
+                    <conditions>
+                        <condition id="0" name="On function" sid="625466220767195" type="Move">
+                            <param id="0" name="Name">&quot;GetRidofDupes&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="522012050725453">
+                            <conditions>
+                                <condition id="-24" name="For Each (ordered)" sid="508850693473347" type="System">
+                                    <param id="0" name="Object">Sprite</param>
+                                    <param id="1" name="Expression">0</param>
+                                    <param id="2" name="Order">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="886797211922019">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="324227071584971" type="System">
+                                            <param id="0" name="First value">find(DupeChecker,Sprite.IWantToGoTo)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">-1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="254320527059709" type="System">
+                                            <param id="0" name="Variable">DupeChecker</param>
+                                            <param id="1" name="Value">Sprite.IWantToGoTo</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="562678053261404">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="456868020091534" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="403484303441534">
+                                            <conditions>
+                                                <condition id="-23" name="While" sid="550166812112475" type="System" />
+                                                <condition id="-8" name="Compare two values" sid="327557471202515" type="System">
+                                                    <param id="0" name="First value">find(DupeChecker,Sprite.IWantToGoTo)</param>
+                                                    <param id="1" name="Comparison">1</param>
+                                                    <param id="2" name="Second value">-1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="292508974301273" type="Sprite">
+                                                    <param id="0" name="Instance variable">IWantToGoTo</param>
+                                                    <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="636651680156218">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="116782859894707" type="System">
+                                                    <param id="0" name="First value">find(DupeChecker,Sprite.IWantToGoTo)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">-1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="305204181898556" type="System">
+                                                    <param id="0" name="Variable">DupeChecker</param>
+                                                    <param id="1" name="Value">Sprite.IWantToGoTo</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
