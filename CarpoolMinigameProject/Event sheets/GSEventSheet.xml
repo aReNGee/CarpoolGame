@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 1</name>
+    <name>GSEventSheet</name>
     <events>
         <variable constant="0" name="IterateAnimations" sid="271971656135328" static="0" type="number">0</variable>
         <variable constant="0" name="Zero" sid="141277759159415" static="0" type="number">0</variable>
@@ -130,6 +130,12 @@
                                 <action id="-10" name="Add to" sid="162168316165794" type="System">
                                     <param id="0" name="Variable">IterateAnimations</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="207675707757913" type="Clickable">
+                                    <param id="0" name="Audio file">sfx_clicking_clikable_obj</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -330,6 +336,16 @@
                                 <action disabled="1" id="11" name="Set collisions enabled" sid="553705536927390" type="Sprite3">
                                     <param id="0" name="Collisions">0</param>
                                 </action>
+                                <action id="-3" name="Create object" sid="239982398624364" type="System">
+                                    <param id="0" name="Object to create">OnePlus</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="X">Sprite3.X</param>
+                                    <param id="3" name="Y">Sprite3.Y - 80</param>
+                                </action>
+                                <action disabled="1" id="0" name="Call function" sid="483835173754769" type="Move">
+                                    <param id="0" name="Name">&quot;PlusOne&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
                             </actions>
                             <sub-events>
                                 <comment>Mostly startup stuff. Attaches the stick figures destination to the stick figure</comment>
@@ -465,6 +481,25 @@
                                             <param id="0" name="Variable">TimeToGo</param>
                                             <param id="1" name="Value">-1</param>
                                         </action>
+                                        <action id="0" name="Play" sid="677009492663742" type="Clickable">
+                                            <param id="0" name="Audio file">sfx_click_unclickable_obj01</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="383982519703324">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="148184337078115" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="986528282245660" type="Clickable">
+                                            <param id="0" name="Audio file">sfx_bus_horn</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -480,6 +515,8 @@
                         <condition id="-2" name="On start of layout" sid="216185992635860" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="230857608062793" type="System" />
+                        <action id="-45" name="Reset persisted objects" sid="742905554723837" type="System" />
                         <action id="-10" name="Set value" sid="359342351465677" type="Sprite">
                             <param id="0" name="Instance variable">IWantToGoTo</param>
                             <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;)</param>
@@ -528,6 +565,12 @@
                             <param id="0" name="X">0</param>
                             <param id="1" name="Y">1</param>
                             <param id="2" name="Value">JustForAlignment.Y</param>
+                        </action>
+                        <action id="4" name="Preload" sid="109626534304822" type="Clickable">
+                            <param id="0" name="Audio file">sfx_clicking_clikable_obj</param>
+                        </action>
+                        <action id="4" name="Preload" sid="264212662696032" type="Clickable">
+                            <param id="0" name="Audio file">sfx_clicking_unclickable_obj</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1081,11 +1124,20 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="944585162847187" type="Clickable">
+                            <param id="0" name="Audio file">sfx_lose</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="-9" name="Set value" sid="450047160897386" type="System">
                             <param id="0" name="Variable">TimerDestroyed</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="0" name="Call function" sid="157532118926343" type="Move">
+                        <action id="-16" name="Wait" sid="368964022406981" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="448543899128799" type="Move">
                             <param id="0" name="Name">&quot;GameEnds&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
@@ -1301,161 +1353,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <variable constant="0" name="Dif" sid="224395867282800" static="0" type="number">0</variable>
-        <variable constant="0" name="ShowDifAsString" sid="782937818219977" static="0" type="text"></variable>
-        <event-group description="" sid="747371027911261" title="Endgame">
-            <sub-events>
-                <event-block sid="953346450060240">
-                    <conditions>
-                        <condition id="0" name="On function" sid="992485619759755" type="Move">
-                            <param id="0" name="Name">&quot;Endgame&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="541922322018096" type="System">
-                            <param id="0" name="Variable">Dif</param>
-                            <param id="1" name="Value">(1 - (Fuel/InitialFuelCost))*100</param>
-                        </action>
-                        <action disabled="1" id="1" name="Append text" sid="479926105172020" type="SpriteFont">
-                            <param id="0" name="Text">&quot;Please work: &quot;</param>
-                        </action>
-                        <action disabled="1" id="1" name="Append text" sid="488725751274498" type="SpriteFont">
-                            <param id="0" name="Text">Fuel</param>
-                        </action>
-                        <action disabled="1" id="1" name="Append text" sid="453904488896955" type="SpriteFont">
-                            <param id="0" name="Text">&quot;/&quot;</param>
-                        </action>
-                        <action disabled="1" id="1" name="Append text" sid="214325054642233" type="SpriteFont">
-                            <param id="0" name="Text">InitialFuelCost</param>
-                        </action>
-                        <action disabled="1" id="1" name="Append text" sid="607137686375727" type="SpriteFont">
-                            <param id="0" name="Text">&quot;/&quot;</param>
-                        </action>
-                        <action disabled="1" id="1" name="Append text" sid="971711209657629" type="SpriteFont">
-                            <param id="0" name="Text">Fuel/InitialFuelCost</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="214925683063393" type="System">
-                            <param id="0" name="Variable">ShowDifAsString</param>
-                            <param id="1" name="Value">Dif</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <comment>If the return value is 0, you delivered everyone.</comment>
-                        <event-block sid="701132563163362">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="487133705895401" type="System">
-                                    <param id="0" name="First value">Move.ReturnValue</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="1" name="Append text" sid="397499901742956" type="SpriteFont">
-                                    <param id="0" name="Text">left(ShowDifAsString,5) &amp; &quot; percent of the fuel the other route would use! &quot;</param>
-                                </action>
-                            </actions>
-                            <sub-events>
-                                <event-block sid="881187120673149">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="614132855075760" type="System">
-                                            <param id="0" name="Variable">Dif</param>
-                                            <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">0.1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="1" name="Append text" sid="249640736985171" type="SpriteFont">
-                                            <param id="0" name="Text">&quot;Your route used more fuel than individual driving, so you earn no stars.&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="211960925321136">
-                                    <conditions>
-                                        <condition id="-21" name="Is between values" sid="658498498327771" type="System">
-                                            <param id="0" name="Value">Dif</param>
-                                            <param id="1" name="Lower bound">0.1</param>
-                                            <param id="2" name="Upper bound">20</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="1" name="Append text" sid="976241182033099" type="SpriteFont">
-                                            <param id="0" name="Text">&quot;You earned one Star.&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="371178332560704">
-                                    <conditions>
-                                        <condition id="-21" name="Is between values" sid="367383284682344" type="System">
-                                            <param id="0" name="Value">Dif</param>
-                                            <param id="1" name="Lower bound">20</param>
-                                            <param id="2" name="Upper bound">40</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="1" name="Append text" sid="469646290718039" type="SpriteFont">
-                                            <param id="0" name="Text">&quot;Your performance earned two Stars!&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="141692694091311">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="795857200427269" type="System">
-                                            <param id="0" name="Variable">Dif</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">40</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="1" name="Append text" sid="727891703766810" type="SpriteFont">
-                                            <param id="0" name="Text">&quot;WOW! THREE STARS!&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <comment>You failed to deliver everyone.</comment>
-                        <event-block sid="566519727051173">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="562871290671420" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="1" name="Append text" sid="517482977993463" type="SpriteFont">
-                                    <param id="0" name="Text">&quot; You didn&apos;t deliver everyone.&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="357629557968464">
-                    <conditions>
-                        <condition id="0" name="On function" sid="388859724227795" type="Move">
-                            <param id="0" name="Name">&quot;GameEnds&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="971910063356723" type="Sprite4" />
-                        <action id="0" name="Call function" sid="868905618471580" type="Move">
-                            <param id="0" name="Name">&quot;CalcFuel&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action id="-10" name="Add to" sid="108767448403965" type="System">
-                            <param id="0" name="Variable">Fuel</param>
-                            <param id="1" name="Value">Move.ReturnValue</param>
-                        </action>
-                        <action id="0" name="Set text" sid="393976114583706" type="FuelConsumed">
-                            <param id="0" name="Text">Fuel</param>
-                        </action>
-                        <action id="1" name="Append text" sid="104029698329467" type="SpriteFont">
-                            <param id="0" name="Text">&quot; Your path required &quot; &amp; Fuel &amp; &quot; fuel, which saved &quot;</param>
-                        </action>
-                        <action id="0" name="Call function" sid="420751995631797" type="Move">
-                            <param id="0" name="Name">&quot;Endgame&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-group description="" sid="737995203441353" title="Did We Run Out of Players?">
             <sub-events>
                 <event-block sid="353571537792393">
@@ -1503,7 +1400,10 @@
                                     <param id="0" name="Variable">TimerDestroyed</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="0" name="Call function" sid="667511390870183" type="Move">
+                                <action id="-16" name="Wait" sid="340349712164177" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="690554597702227" type="Move">
                                     <param id="0" name="Name">&quot;GameEnds&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
@@ -1648,5 +1548,75 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="210543358397694" title="+1 display">
+            <sub-events>
+                <event-block sid="142349152298483">
+                    <conditions>
+                        <condition id="0" name="On function" sid="139367036965577" type="Move">
+                            <param id="0" name="Name">&quot;PlusOne&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="685459347195557">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="425516661633521" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="169908678275981" type="OnePlus">
+                    <param id="0" name="Opacity">OnePlus.Opacity+OnePlus.Mod</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="535087855023492">
+            <conditions>
+                <condition id="-11" name="For Each" sid="748394211434735" type="System">
+                    <param id="0" name="Object">OnePlus</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="770939449689144" type="OnePlus">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="858398092530713" type="OnePlus">
+                    <param id="0" name="Instance variable">Mod</param>
+                    <param id="1" name="Value">-5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="562093994804951">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="214363093413678" type="OnePlus">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="170351529650321" type="OnePlus" />
+            </actions>
+        </event-block>
+        <event-block sid="226486504970163">
+            <conditions>
+                <condition id="0" name="On function" sid="313666789002121" type="Move">
+                    <param id="0" name="Name">&quot;GameEnds&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="949604369457495" type="Move">
+                    <param id="0" name="Name">&quot;CalcFuel&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-10" name="Add to" sid="299103755106395" type="System">
+                    <param id="0" name="Variable">Fuel</param>
+                    <param id="1" name="Value">Move.ReturnValue</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="312741727700749" type="System">
+                    <param id="0" name="Layout">EndGame</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
