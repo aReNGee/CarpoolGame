@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="IterateAnimations" sid="271971656135328" static="0" type="number">0</variable>
         <variable constant="0" name="Zero" sid="141277759159415" static="0" type="number">0</variable>
         <variable constant="0" name="InTransit" sid="474033810907727" static="0" type="number">0</variable>
         <variable constant="0" name="Timer" sid="103614309642334" static="0" type="number">30</variable>
@@ -106,12 +107,29 @@
                                     <param id="1" name="Value">Sprite2.Location</param>
                                 </action>
                                 <action id="4" name="Set animation" sid="537493339525871" type="Sprite2">
-                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                                    <param id="0" name="Animation">&quot;Placeholder&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="377129876711498" type="System">
                                     <param id="0" name="Variable">PathList</param>
                                     <param id="1" name="Value">Sprite2.Location</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="145097439016311" type="System">
+                                    <param id="0" name="Object to create">PlayerPointer</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">Targets.At(ArrayPos-1,0)</param>
+                                    <param id="3" name="Y">Targets.At(ArrayPos-1,1)</param>
+                                </action>
+                                <action id="-22" name="Set angle toward position" sid="320177994626032" type="PlayerPointer">
+                                    <param id="0" name="X">Targets.At(ArrayPos,0)</param>
+                                    <param id="1" name="Y">Targets.At(ArrayPos,1)</param>
+                                </action>
+                                <action id="-17" name="Move forward" sid="667814844231916" type="PlayerPointer">
+                                    <param id="0" name="Distance">150</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="162168316165794" type="System">
+                                    <param id="0" name="Variable">IterateAnimations</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -359,6 +377,25 @@
                                             <param id="0" name="Name">&quot;CheckForLoc&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
+                                        <action id="-9" name="Destroy" sid="910540948411284" type="PlayerPointer" />
+                                        <action id="-10" name="Add to" sid="782844656690625" type="System">
+                                            <param id="0" name="Variable">ArrayPos</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="554086108613274" type="System">
+                                            <param id="0" name="Variable">MovingTowards</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="505052727538211" type="Targets">
+                                            <param id="0" name="X">ArrayPos</param>
+                                            <param id="1" name="Y">0</param>
+                                            <param id="2" name="Value">JustForAlignment.X</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="945908940418845" type="Targets">
+                                            <param id="0" name="X">ArrayPos</param>
+                                            <param id="1" name="Y">1</param>
+                                            <param id="2" name="Value">JustForAlignment.Y</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -415,6 +452,21 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="492893734400244">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="436398999610234" type="System">
+                                            <param id="0" name="Variable">InTransit</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="356997632465940" type="System">
+                                            <param id="0" name="Variable">TimeToGo</param>
+                                            <param id="1" name="Value">-1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
@@ -466,6 +518,16 @@
                         <action id="-9" name="Set value" sid="343098123227070" type="System">
                             <param id="0" name="Variable">InitialFuelCost</param>
                             <param id="1" name="Value">Move.ReturnValue</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="604371029757726" type="Targets">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
+                            <param id="2" name="Value">JustForAlignment.X</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="326471963539622" type="Targets">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">JustForAlignment.Y</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1527,6 +1589,60 @@
                                     </sub-events>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="964991944897312" title="Animating the Trail (sort of)">
+            <sub-events>
+                <event-block sid="843378897315360">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="208668054587244" type="System" />
+                        <condition id="-14" name="Compare variable" sid="785165413497059" type="System">
+                            <param id="0" name="Variable">IterateAnimations</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="481393652861990" type="System">
+                            <param id="0" name="Variable">IterateAnimations</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="703083589621016">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="676724351119968" type="System">
+                                    <param id="0" name="Object">Sprite2</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="721736146228972" type="Sprite2">
+                                    <param id="0" name="Animation">&quot;Selected&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="849660251981722" type="Sprite2">
+                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="833108202759625">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="217663092104540" type="System">
+                                    <param id="0" name="Object">Sprite2</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="146888866132794" type="Sprite2">
+                                    <param id="0" name="Animation">&quot;Placeholder&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="979288516671223" type="Sprite2">
+                                    <param id="0" name="Animation">&quot;Selected&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
