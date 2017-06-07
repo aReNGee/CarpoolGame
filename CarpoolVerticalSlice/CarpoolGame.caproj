@@ -2,7 +2,7 @@
 <c2project>
     <name>CarpoolGame</name>
     <description></description>
-    <version>1.0.0.1</version>
+    <version>1.0.2</version>
     <author></author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -331,10 +331,19 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="PrototypeMap" sid="216970415352860">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="923323482931152" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500462" original-source="D:\GitHub Repos\CarpoolGame\CarpoolVerticalSlice\Textures\PrototypeMap.JPG" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>GameScreen.xml</layout>
+        <layout>LEVEL2.xml</layout>
         <layout>Tutorial.xml</layout>
         <layout>EndGame.xml</layout>
     </layout-folder>
