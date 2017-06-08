@@ -339,10 +339,26 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="PrototypeMap2" sid="864517357132642">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357640057514295" speed="5">
+                    <frame duration="1" hotspotX="0.500548" hotspotY="0.500971" original-source="D:\GitHub Repos\CarpoolGame\CarpoolVerticalSlice\Textures\PrototypeEasyMap.jpg">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>GameScreen.xml</layout>
+        <layout>LEVEL3PROTOTYPE.xml</layout>
         <layout>LEVEL2.xml</layout>
         <layout>Tutorial.xml</layout>
         <layout>EndGame.xml</layout>
