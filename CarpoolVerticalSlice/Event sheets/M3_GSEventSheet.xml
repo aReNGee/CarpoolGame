@@ -21,10 +21,11 @@
             <sub-events>
                 <event-block sid="564331346902734">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="627303470643714" type="Mouse">
+                        <condition id="2" name="Mouse button is down" sid="627303470643714" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">M3_ClickableAreas</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="363530977071288" type="Mouse">
+                            <param id="0" name="Object">M3_ClickableAreas</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="996135293475373" type="System">
                             <param id="0" name="First value">M3_Targets.At(M3_ArrayPos,0)</param>
@@ -1895,5 +1896,48 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <comment>reset button</comment>
+        <event-block sid="818121024944704">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="149154874092890" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">M3_Clear</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="888701489865106" type="M3_ClickableAreas">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="278844732085599" type="System">
+                    <param id="0" name="Variable">M3_PathList</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="355233559158244" type="System">
+                    <param id="0" name="Variable">M3_MovingTowards</param>
+                    <param id="1" name="Value">M3_ArrayPos+1</param>
+                </action>
+                <action id="-9" name="Set value" sid="209226116757690" type="System">
+                    <param id="0" name="Variable">M3_URHere</param>
+                    <param id="1" name="Value">&quot;special&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="314492717173816" type="Move">
+                    <param id="0" name="Name">&quot;CheckForLoc&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Destroy" sid="477395494263223" type="M3_PlayerPointer" />
+                <action id="3" name="Set at XY" sid="283012612122409" type="M3_Targets">
+                    <param id="0" name="X">M3_ArrayPos</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Value">M3_JustForAlignment.X</param>
+                </action>
+                <action id="3" name="Set at XY" sid="671213201089125" type="M3_Targets">
+                    <param id="0" name="X">M3_ArrayPos</param>
+                    <param id="1" name="Y">1</param>
+                    <param id="2" name="Value">M3_JustForAlignment.Y</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

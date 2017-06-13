@@ -56,5 +56,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/M3_Pointy/" />
         <folder expanded="1" path="animation-folder/M3_PrototypeMap/" />
         <folder expanded="1" path="animation-folder/M3_PrototypeMap2/" />
+        <folder expanded="1" path="animation-folder/M3_Clear/" />
     </folders-expanded>
 </c2uistate>
