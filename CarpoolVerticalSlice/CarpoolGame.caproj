@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>CarpoolGame</name>
-    <description></description>
-    <version>1.0.2</version>
+    <description>Verticle Slice</description>
+    <version>1.0.3</version>
     <author></author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -48,7 +48,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Sprite" sid="904471930616347">
+        <object-type name="M3_Passenger" sid="904471930616347">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="IWantToGoTo" sid="364436070382371" type="string" />
@@ -71,7 +71,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="170582610045128">
+        <object-type name="M3_ClickableAreas" sid="170582610045128">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Location" sid="233827480534136" type="string" />
@@ -95,7 +95,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type global="1" name="Targets" sid="102132207837380">
+        <object-type global="1" name="M3_Targets" sid="102132207837380">
             <plugin id="Arr" />
         </object-type>
         <object-type name="Mouse" sid="244137277473465">
@@ -104,7 +104,7 @@
         <object-type name="Move" sid="206217328805715">
             <plugin id="Function" />
         </object-type>
-        <object-type name="Sprite3" sid="229490214259301">
+        <object-type name="M3_Locations" sid="229490214259301">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Location" sid="771005748404457" type="string" />
@@ -126,24 +126,24 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="SpriteFont" sid="611782501809498">
+        <object-type name="M3_SpriteFont" sid="611782501809498">
             <plugin id="Spritefont2" />
             <texture />
         </object-type>
-        <object-type name="Text2" sid="513825172988848">
+        <object-type name="M3_Text2" sid="513825172988848">
             <plugin id="Text" />
             <instance-variables>
                 <instance-variable name="OffsetX" sid="915966347652091" type="number" />
                 <instance-variable name="OffsetY" sid="171495289360808" type="number" />
             </instance-variables>
         </object-type>
-        <object-type global="1" name="ConnectedCells" sid="409196086107849">
+        <object-type global="1" name="M3_ConnectedCells" sid="409196086107849">
             <plugin id="Arr" />
         </object-type>
-        <object-type global="1" name="OList" sid="935370145652731">
+        <object-type global="1" name="M3_OList" sid="935370145652731">
             <plugin id="Arr" />
         </object-type>
-        <object-type name="Sprite5" sid="420542339899303">
+        <object-type name="M3_GoButton" sid="420542339899303">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406202439953151" speed="5">
@@ -158,22 +158,22 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="FuelConsumed" sid="509642705218198">
+        <object-type name="M3_FuelConsumed" sid="509642705218198">
             <plugin id="Spritefont2" />
             <texture />
         </object-type>
-        <object-type name="DescriptiveText" sid="154494611631778">
+        <object-type name="M3_DescriptiveText" sid="154494611631778">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite6" sid="241656050123549">
+        <object-type name="M3_MapLevelUnknown" sid="241656050123549">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902747049854436" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\BrantfordJob\carpool map placeholder .png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\CarpoolVerticalSlice\Textures\Carpool Map1.png" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="JustForAlignment" sid="793429277644459">
+        <object-type name="M3_JustForAlignment" sid="793429277644459">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="989816883145052" speed="5">
@@ -181,7 +181,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="838734800018950">
+        <object-type name="M3_Timer" sid="838734800018950">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509675816964056" speed="5">
@@ -189,7 +189,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="PlayerPointer" sid="563542968679729">
+        <object-type name="M3_PlayerPointer" sid="563542968679729">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="128632445603849" speed="5">
@@ -197,7 +197,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="OnePlus" sid="882515768581216">
+        <object-type name="M3_OnePlus" sid="882515768581216">
             <plugin id="Text" />
             <instance-variables>
                 <instance-variable name="Mod" sid="486847791833227" type="number" />
@@ -206,7 +206,7 @@
         <object-type name="Clickable" sid="965503802505476">
             <plugin id="Audio" />
         </object-type>
-        <object-type name="Star" sid="523522644685769">
+        <object-type name="M3_Star" sid="523522644685769">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Empty" pingpong="0" repeatcount="1" repeatto="0" sid="973838320356668" speed="5">
@@ -237,10 +237,10 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="EndgameText" sid="906415651513657">
+        <object-type name="M3_EndgameText" sid="906415651513657">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite7" sid="172398556202307">
+        <object-type name="M3_NotTheBackButton" sid="172398556202307">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="193120606764780" speed="5">
@@ -248,21 +248,21 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="EndgameText2" sid="379069060384221">
+        <object-type name="M3_EndgameText2" sid="379069060384221">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Instructions" sid="555908792552558">
+        <object-type name="M3_Instructions" sid="555908792552558">
             <plugin id="Text" />
             <container>
-                <type>Instructions</type>
-                <type>Background</type>
+                <type>M3_Instructions</type>
+                <type>M3_Background</type>
             </container>
         </object-type>
-        <object-type name="Background" sid="495574497026953">
+        <object-type name="M3_Background" sid="495574497026953">
             <plugin id="Sprite" />
             <container>
-                <type>Instructions</type>
-                <type>Background</type>
+                <type>M3_Instructions</type>
+                <type>M3_Background</type>
             </container>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="244987744120539" speed="5">
@@ -270,7 +270,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="BlinkingBox" sid="945074235053509">
+        <object-type name="M3_BlinkingBox" sid="945074235053509">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Blinks" sid="867706336947938" type="number" />
@@ -283,7 +283,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Mousey" sid="500315285504920">
+        <object-type name="M3_Mousey" sid="500315285504920">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable comment="0 is disabled, 1 is enabled, 2 is clicking" name="Status" sid="554802554107943" type="number" />
@@ -309,13 +309,13 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type global="1" name="TutorialTargets" sid="708088100819676">
+        <object-type global="1" name="M3_TutorialTargets" sid="708088100819676">
             <plugin id="Arr" />
         </object-type>
-        <object-type name="Text" sid="268520560105888">
+        <object-type name="M3_Text" sid="268520560105888">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite8" sid="602009260993411">
+        <object-type name="M3_Box" sid="602009260993411">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="154532255147170" speed="5">
@@ -323,7 +323,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite9" sid="587755661497256">
+        <object-type name="M3_Pointy" sid="587755661497256">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="316418343118636" speed="5">
@@ -331,7 +331,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="PrototypeMap" sid="216970415352860">
+        <object-type name="M3_PrototypeMap" sid="216970415352860">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="923323482931152" speed="5">
@@ -339,7 +339,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="PrototypeMap2" sid="864517357132642">
+        <object-type name="M3_PrototypeMap2" sid="864517357132642">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357640057514295" speed="5">
@@ -357,17 +357,17 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>GameScreen.xml</layout>
-        <layout>LEVEL3PROTOTYPE.xml</layout>
-        <layout>LEVEL2.xml</layout>
-        <layout>Tutorial.xml</layout>
-        <layout>EndGame.xml</layout>
+        <layout>M3_GameScreen.xml</layout>
+        <layout>M3_LEVEL3PROTOTYPE.xml</layout>
+        <layout>M3_LEVEL2.xml</layout>
+        <layout>M3_Tutorial.xml</layout>
+        <layout>M3_EndGame.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>GSEventSheet.xml</event-sheet>
-        <event-sheet>TestingGround.xml</event-sheet>
-        <event-sheet>EGEventSheet.xml</event-sheet>
-        <event-sheet>Tutorial.xml</event-sheet>
+        <event-sheet>M3_GSEventSheet.xml</event-sheet>
+        <event-sheet>M3_TestingGround.xml</event-sheet>
+        <event-sheet>M3_EGEventSheet.xml</event-sheet>
+        <event-sheet>M3_Tutorial.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="5" />

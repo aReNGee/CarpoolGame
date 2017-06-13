@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>M3_EGEventSheet</name>
+    <events>
+        <variable constant="0" name="Dif" sid="224395867282800" static="0" type="number">0</variable>
+        <variable constant="0" name="ShowDifAsString" sid="782937818219977" static="0" type="text"></variable>
+        <event-group description="" sid="344361088091669" title="Endgame">
+            <sub-events>
+                <variable constant="0" name="starcount" sid="927742850455797" static="0" type="number">0</variable>
+                <event-block sid="232659287355932">
+                    <conditions>
+                        <condition id="0" name="On function" sid="125219381527894" type="Move">
+                            <param id="0" name="Name">&quot;Endgame&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="739282429864200" type="System">
+                            <param id="0" name="Variable">Dif</param>
+                            <param id="1" name="Value">(1 - (Fuel/InitialFuelCost))*100</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="155765687522355" type="System">
+                            <param id="0" name="Variable">ShowDifAsString</param>
+                            <param id="1" name="Value">Dif</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>If the return value is 0, you delivered everyone.</comment>
+                        <event-block sid="983407234657100">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="480455338622601" type="System">
+                                    <param id="0" name="First value">Move.ReturnValue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Append text" sid="529830138396733" type="M3_EndgameText">
+                                    <param id="0" name="Text">&quot;If each person took their own car, they would use &quot; &amp; InitialFuelCost &amp; &quot; fuel. &quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="898338814535166" type="M3_EndgameText2">
+                                    <param id="0" name="Text">&quot;You used &quot; &amp; Fuel &amp; &quot; fuel and saved &quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="229667176579886" type="M3_EndgameText2">
+                                    <param id="0" name="Text">left(ShowDifAsString,5) &amp; &quot; percent of the fuel the other route would use! &quot;</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="880420759975526">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="126457661912604" type="System">
+                                            <param id="0" name="Variable">Dif</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">0.1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="292993825870796" type="M3_EndgameText2">
+                                            <param id="0" name="Text">&quot;Your route used more fuel than individual driving, so you earn no stars.&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="635149085677507" type="System">
+                                            <param id="0" name="Variable">starcount</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="239036557940173">
+                                    <conditions>
+                                        <condition id="-21" name="Is between values" sid="825107762291279" type="System">
+                                            <param id="0" name="Value">Dif</param>
+                                            <param id="1" name="Lower bound">0.1</param>
+                                            <param id="2" name="Upper bound">20</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="743522612951476" type="M3_EndgameText2">
+                                            <param id="0" name="Text">&quot;You earned one Star.&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="981848293703884" type="System">
+                                            <param id="0" name="Variable">starcount</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="535574992636843">
+                                    <conditions>
+                                        <condition id="-21" name="Is between values" sid="104593739663928" type="System">
+                                            <param id="0" name="Value">Dif</param>
+                                            <param id="1" name="Lower bound">20</param>
+                                            <param id="2" name="Upper bound">40</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="113171539659924" type="M3_EndgameText2">
+                                            <param id="0" name="Text">&quot;Your performance earned two Stars!&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="631983120504757" type="System">
+                                            <param id="0" name="Variable">starcount</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="177252109035061">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="648670792104842" type="System">
+                                            <param id="0" name="Variable">Dif</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">40</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="694015699938330" type="M3_EndgameText2">
+                                            <param id="0" name="Text">&quot;WOW! THREE STARS!&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="842210699920022" type="System">
+                                            <param id="0" name="Variable">starcount</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="800597175031251">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="744684051461627" type="System">
+                                            <param id="0" name="Object">M3_Star</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="602049887985121" type="System">
+                                            <param id="0" name="Variable">starcount</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="212107191224960" type="System">
+                                            <param id="0" name="Variable">starcount</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="833870426451268" type="M3_Star">
+                                            <param id="0" name="Animation">&quot;Full&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>You failed to deliver everyone.</comment>
+                        <event-block sid="731042468671295">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="244439275222032" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Append text" sid="356749578615211" type="M3_EndgameText2">
+                                    <param id="0" name="Text">&quot; You didn&apos;t deliver everyone, so you earn no stars.&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="355031910882784" type="System">
+                                    <param id="0" name="Variable">starcount</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="276110447637171">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="646015537025015" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="325563445878907" type="Move">
+                    <param id="0" name="Name">&quot;Endgame&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="817852832789580">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="696140356530861" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">M3_NotTheBackButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="196316819019342" type="System">
+                    <param id="0" name="Layout">M3_GameScreen</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

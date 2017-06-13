@@ -10,14 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">GameScreen</layout>
-        <layout order="2">EndGame</layout>
-        <layout order="4">Tutorial</layout>
-        <layout order="6">LEVEL2</layout>
-        <layout active="1" order="7">LEVEL3PROTOTYPE</layout>
-        <event-sheet order="1">GSEventSheet</event-sheet>
-        <event-sheet order="3">EGEventSheet</event-sheet>
-        <event-sheet order="5">Tutorial</event-sheet>
+        <layout order="0">M3_GameScreen</layout>
+        <layout order="2">M3_EndGame</layout>
+        <layout order="4">M3_Tutorial</layout>
+        <layout order="6">M3_LEVEL2</layout>
+        <layout active="1" order="7">M3_LEVEL3PROTOTYPE</layout>
+        <event-sheet order="1">M3_GSEventSheet</event-sheet>
+        <event-sheet order="3">M3_EGEventSheet</event-sheet>
+        <event-sheet order="5">M3_Tutorial</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -34,22 +34,22 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
-        <folder expanded="1" path="animation-folder/Sprite5/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
-        <folder expanded="1" path="animation-folder/JustForAlignment/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
-        <folder expanded="1" path="animation-folder/PlayerPointer/" />
-        <folder expanded="1" path="animation-folder/Star/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
-        <folder expanded="1" path="animation-folder/Background/" />
-        <folder expanded="1" path="animation-folder/BlinkingBox/" />
-        <folder expanded="1" path="animation-folder/Mousey/" />
-        <folder expanded="1" path="animation-folder/Sprite8/" />
-        <folder expanded="1" path="animation-folder/Sprite9/" />
-        <folder expanded="1" path="animation-folder/PrototypeMap/" />
-        <folder expanded="1" path="animation-folder/PrototypeMap2/" />
+        <folder expanded="1" path="animation-folder/M3_Passenger/" />
+        <folder expanded="1" path="animation-folder/M3_ClickableAreas/" />
+        <folder expanded="1" path="animation-folder/M3_Locations/" />
+        <folder expanded="1" path="animation-folder/M3_GoButton/" />
+        <folder expanded="1" path="animation-folder/M3_MapLevelUnknown/" />
+        <folder expanded="1" path="animation-folder/M3_JustForAlignment/" />
+        <folder expanded="1" path="animation-folder/M3_Timer/" />
+        <folder expanded="1" path="animation-folder/M3_PlayerPointer/" />
+        <folder expanded="1" path="animation-folder/M3_Star/" />
+        <folder expanded="1" path="animation-folder/M3_NotTheBackButton/" />
+        <folder expanded="1" path="animation-folder/M3_Background/" />
+        <folder expanded="1" path="animation-folder/M3_BlinkingBox/" />
+        <folder expanded="1" path="animation-folder/M3_Mousey/" />
+        <folder expanded="1" path="animation-folder/M3_Box/" />
+        <folder expanded="1" path="animation-folder/M3_Pointy/" />
+        <folder expanded="1" path="animation-folder/M3_PrototypeMap/" />
+        <folder expanded="1" path="animation-folder/M3_PrototypeMap2/" />
     </folders-expanded>
 </c2uistate>
