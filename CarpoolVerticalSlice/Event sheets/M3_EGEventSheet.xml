@@ -17,7 +17,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="739282429864200" type="System">
                             <param id="0" name="Variable">Dif</param>
-                            <param id="1" name="Value">(1 - (Fuel/InitialFuelCost))*100</param>
+                            <param id="1" name="Value">(1 - (M3_Fuel/M3_InitialFuelCost))*100</param>
                         </action>
                         <action id="-9" name="Set value" sid="155765687522355" type="System">
                             <param id="0" name="Variable">ShowDifAsString</param>
@@ -36,10 +36,10 @@
                             </conditions>
                             <actions>
                                 <action id="1" name="Append text" sid="529830138396733" type="M3_EndgameText">
-                                    <param id="0" name="Text">&quot;If each person took their own car, they would use &quot; &amp; InitialFuelCost &amp; &quot; fuel. &quot;</param>
+                                    <param id="0" name="Text">&quot;If each person took their own car, they would use &quot; &amp; M3_InitialFuelCost &amp; &quot; fuel. &quot;</param>
                                 </action>
                                 <action id="1" name="Append text" sid="898338814535166" type="M3_EndgameText2">
-                                    <param id="0" name="Text">&quot;You used &quot; &amp; Fuel &amp; &quot; fuel and saved &quot;</param>
+                                    <param id="0" name="Text">&quot;You used &quot; &amp; M3_Fuel &amp; &quot; fuel and saved &quot;</param>
                                 </action>
                                 <action id="1" name="Append text" sid="229667176579886" type="M3_EndgameText2">
                                     <param id="0" name="Text">left(ShowDifAsString,5) &amp; &quot; percent of the fuel the other route would use! &quot;</param>
