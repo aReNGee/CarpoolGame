@@ -25,17 +25,17 @@
                             <param id="0" name="Mouse button">0</param>
                         </condition>
                         <condition id="7" name="Cursor is over object" sid="363530977071288" type="Mouse">
-                            <param id="0" name="Object">M3_ClickableAreas</param>
+                            <param id="0" name="Object">M3_ClickableAreasSprite2</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="996135293475373" type="System">
                             <param id="0" name="First value">M3_Targets.At(M3_ArrayPos,0)</param>
                             <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Second value">M3_ClickableAreas.X</param>
+                            <param id="2" name="Second value">M3_ClickableAreasSprite2.X</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="640534846900745" type="System">
                             <param id="0" name="First value">M3_Targets.At(M3_ArrayPos,1)</param>
                             <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Second value">M3_ClickableAreas.Y</param>
+                            <param id="2" name="Second value">M3_ClickableAreasSprite2.Y</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="528957930380169" type="System">
                             <param id="0" name="Variable">M3_TimeToGo</param>
@@ -51,11 +51,11 @@
                     <actions>
                         <action disabled="1" id="0" name="Call function" sid="965626159476051" type="Move">
                             <param id="0" name="Name">&quot;Pathfind&quot;</param>
-                            <param id="1" name="Parameter {n}">M3_ClickableAreas.Location</param>
+                            <param id="1" name="Parameter {n}">M3_ClickableAreasSprite2.Location</param>
                         </action>
                         <action disabled="1" id="0" name="Call function" sid="924015401100072" type="Move">
                             <param id="0" name="Name">&quot;SetLoc&quot;</param>
-                            <param id="1" name="Parameter {n}">M3_ClickableAreas.Location</param>
+                            <param id="1" name="Parameter {n}">M3_ClickableAreasSprite2.Location</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -65,22 +65,22 @@
                                 <condition id="-14" name="Compare variable" sid="136730006432381" type="System">
                                     <param id="0" name="Variable">M3_URHere</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">M3_ClickableAreas.PrimaryConnection</param>
+                                    <param id="2" name="Value">M3_ClickableAreasSprite2.PrimaryConnection</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="480677524725075" type="System">
                                     <param id="0" name="Variable">M3_URHere</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">M3_ClickableAreas.SecondaryConnection</param>
+                                    <param id="2" name="Value">M3_ClickableAreasSprite2.SecondaryConnection</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="307536010922867" type="System">
                                     <param id="0" name="Variable">M3_URHere</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">M3_ClickableAreas.UMadmanThirdConnection</param>
+                                    <param id="2" name="Value">M3_ClickableAreasSprite2.UMadmanThirdConnection</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="334573265476607" type="System">
                                     <param id="0" name="Variable">M3_URHere</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">M3_ClickableAreas.OkayFineConnection4</param>
+                                    <param id="2" name="Value">M3_ClickableAreasSprite2.OkayFineConnection4</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -91,29 +91,29 @@
                                 <action id="3" name="Set at XY" sid="425775139735624" type="M3_Targets">
                                     <param id="0" name="X">M3_ArrayPos</param>
                                     <param id="1" name="Y">0</param>
-                                    <param id="2" name="Value">M3_ClickableAreas.X</param>
+                                    <param id="2" name="Value">M3_ClickableAreasSprite2.X</param>
                                 </action>
                                 <action id="3" name="Set at XY" sid="391638628206599" type="M3_Targets">
                                     <param id="0" name="X">M3_ArrayPos</param>
                                     <param id="1" name="Y">1</param>
-                                    <param id="2" name="Value">M3_ClickableAreas.Y</param>
+                                    <param id="2" name="Value">M3_ClickableAreasSprite2.Y</param>
                                 </action>
                                 <action id="3" name="Set at XY" sid="438413256488028" type="M3_Targets">
                                     <param id="0" name="X">M3_ArrayPos</param>
                                     <param id="1" name="Y">2</param>
-                                    <param id="2" name="Value">M3_ClickableAreas.Location</param>
+                                    <param id="2" name="Value">M3_ClickableAreasSprite2.Location</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="823819966254679" type="System">
                                     <param id="0" name="Variable">M3_URHere</param>
-                                    <param id="1" name="Value">M3_ClickableAreas.Location</param>
+                                    <param id="1" name="Value">M3_ClickableAreasSprite2.Location</param>
                                 </action>
-                                <action id="4" name="Set animation" sid="537493339525871" type="M3_ClickableAreas">
+                                <action id="4" name="Set animation" sid="537493339525871" type="M3_ClickableAreasSprite2">
                                     <param id="0" name="Animation">&quot;Placeholder&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="377129876711498" type="System">
                                     <param id="0" name="Variable">M3_PathList</param>
-                                    <param id="1" name="Value">M3_ClickableAreas.Location</param>
+                                    <param id="1" name="Value">M3_ClickableAreasSprite2.Location</param>
                                 </action>
                                 <action id="-3" name="Create object" sid="145097439016311" type="System">
                                     <param id="0" name="Object to create">M3_PlayerPointer</param>
@@ -201,7 +201,7 @@
                                             <param id="0" name="Variable">M3_TimeToGo</param>
                                             <param id="1" name="Value">-1</param>
                                         </action>
-                                        <action id="4" name="Set animation" sid="206469482024275" type="M3_ClickableAreas">
+                                        <action id="4" name="Set animation" sid="206469482024275" type="M3_ClickableAreasSprite2">
                                             <param id="0" name="Animation">&quot;Default&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
@@ -209,7 +209,7 @@
                                             <param id="0" name="Variable">M3_PathList</param>
                                             <param id="1" name="Value">&quot;&quot;</param>
                                         </action>
-                                        <action id="11" name="Set collisions enabled" sid="936707291307795" type="M3_Locations">
+                                        <action id="11" name="Set collisions enabled" sid="936707291307795" type="M3_LocationsSprite3">
                                             <param id="0" name="Collisions">1</param>
                                         </action>
                                     </actions>
@@ -276,13 +276,13 @@
                         </event-block>
                         <event-block sid="782923078548363">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="365947732202674" type="M3_Locations">
+                                <condition id="0" name="On collision with another object" sid="365947732202674" type="M3_LocationsSprite3">
                                     <param id="0" name="Object">M3_Passenger</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="708840067604883" type="M3_Passenger">
                                     <param id="0" name="Instance variable">IWantToGoTo</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">M3_Locations.Location</param>
+                                    <param id="2" name="Value">M3_LocationsSprite3.Location</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -298,10 +298,10 @@
                         </event-block>
                         <event-block sid="835213998548459">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="277729144440586" type="M3_Locations">
+                                <condition id="0" name="On collision with another object" sid="277729144440586" type="M3_LocationsSprite3">
                                     <param id="0" name="Object">M3_Passenger</param>
                                 </condition>
-                                <condition id="-7" name="Compare instance variable" sid="699959427598190" type="M3_Locations">
+                                <condition id="-7" name="Compare instance variable" sid="699959427598190" type="M3_LocationsSprite3">
                                     <param id="0" name="Instance variable">Location</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">M3_Targets.At(M3_MovingTowards,2)</param>
@@ -314,10 +314,10 @@
                                 </action>
                                 <action id="-10" name="Add to" sid="295787244632650" type="System">
                                     <param id="0" name="Variable">M3_LocationTracking</param>
-                                    <param id="1" name="Value">M3_Locations.Location</param>
+                                    <param id="1" name="Value">M3_LocationsSprite3.Location</param>
                                 </action>
                                 <action disabled="1" id="1" name="Append text" sid="909795613785420" type="M3_SpriteFont">
-                                    <param id="0" name="Text">M3_Locations.Location</param>
+                                    <param id="0" name="Text">M3_LocationsSprite3.Location</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="286948482935287" type="System">
                                     <param id="0" name="Variable">M3_LocationTracking</param>
@@ -334,14 +334,14 @@
                                     <param id="0" name="Variable">M3_PathList</param>
                                     <param id="1" name="Value">right(M3_PathList,len(M3_PathList)-1)</param>
                                 </action>
-                                <action disabled="1" id="11" name="Set collisions enabled" sid="553705536927390" type="M3_Locations">
+                                <action disabled="1" id="11" name="Set collisions enabled" sid="553705536927390" type="M3_LocationsSprite3">
                                     <param id="0" name="Collisions">0</param>
                                 </action>
                                 <action id="-3" name="Create object" sid="239982398624364" type="System">
                                     <param id="0" name="Object to create">M3_OnePlus</param>
                                     <param id="1" name="Layer">3</param>
-                                    <param id="2" name="X">M3_Locations.X</param>
-                                    <param id="3" name="Y">M3_Locations.Y - 80</param>
+                                    <param id="2" name="X">M3_LocationsSprite3.X</param>
+                                    <param id="3" name="Y">M3_LocationsSprite3.Y - 80</param>
                                 </action>
                                 <action disabled="1" id="0" name="Call function" sid="483835173754769" type="Move">
                                     <param id="0" name="Name">&quot;PlusOne&quot;</param>
@@ -368,7 +368,7 @@
                                             <param id="0" name="Variable">M3_TimeToGo</param>
                                             <param id="1" name="Value">-1</param>
                                         </action>
-                                        <action id="4" name="Set animation" sid="608034881610436" type="M3_ClickableAreas">
+                                        <action id="4" name="Set animation" sid="608034881610436" type="M3_ClickableAreasSprite2">
                                             <param id="0" name="Animation">&quot;Default&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
@@ -376,7 +376,7 @@
                                             <param id="0" name="Variable">M3_PathList</param>
                                             <param id="1" name="Value">&quot;&quot;</param>
                                         </action>
-                                        <action disabled="1" id="11" name="Set collisions enabled" sid="416296844576646" type="M3_Locations">
+                                        <action disabled="1" id="11" name="Set collisions enabled" sid="416296844576646" type="M3_LocationsSprite3">
                                             <param id="0" name="Collisions">1</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="420480868778650" type="System">
@@ -631,62 +631,62 @@
                         <action id="3" name="Set at XY" sid="414648640652321" type="M3_ConnectedCells">
                             <param id="0" name="X">0</param>
                             <param id="1" name="Y">1</param>
-                            <param id="2" name="Value">M3_ClickableAreas(0).X</param>
+                            <param id="2" name="Value">M3_ClickableAreasSprite2(0).X</param>
                         </action>
                         <action id="3" name="Set at XY" sid="804893908951934" type="M3_ConnectedCells">
                             <param id="0" name="X">0</param>
                             <param id="1" name="Y">2</param>
-                            <param id="2" name="Value">M3_ClickableAreas(0).Y</param>
+                            <param id="2" name="Value">M3_ClickableAreasSprite2(0).Y</param>
                         </action>
                         <action id="3" name="Set at XY" sid="492533179798507" type="M3_ConnectedCells">
                             <param id="0" name="X">1</param>
                             <param id="1" name="Y">1</param>
-                            <param id="2" name="Value">M3_ClickableAreas(1).X</param>
+                            <param id="2" name="Value">M3_ClickableAreasSprite2(1).X</param>
                         </action>
                         <action id="3" name="Set at XY" sid="780754931477353" type="M3_ConnectedCells">
                             <param id="0" name="X">1</param>
                             <param id="1" name="Y">2</param>
-                            <param id="2" name="Value">M3_ClickableAreas(1).Y</param>
+                            <param id="2" name="Value">M3_ClickableAreasSprite2(1).Y</param>
                         </action>
                         <action id="3" name="Set at XY" sid="951459591491369" type="M3_ConnectedCells">
                             <param id="0" name="X">2</param>
                             <param id="1" name="Y">1</param>
-                            <param id="2" name="Value">M3_ClickableAreas(2).X</param>
+                            <param id="2" name="Value">M3_ClickableAreasSprite2(2).X</param>
                         </action>
                         <action id="3" name="Set at XY" sid="565191774251822" type="M3_ConnectedCells">
                             <param id="0" name="X">2</param>
                             <param id="1" name="Y">2</param>
-                            <param id="2" name="Value">M3_ClickableAreas(2).Y</param>
+                            <param id="2" name="Value">M3_ClickableAreasSprite2(2).Y</param>
                         </action>
                         <action id="3" name="Set at XY" sid="645940369843303" type="M3_ConnectedCells">
                             <param id="0" name="X">3</param>
                             <param id="1" name="Y">1</param>
-                            <param id="2" name="Value">M3_ClickableAreas(3).X</param>
+                            <param id="2" name="Value">M3_ClickableAreasSprite2(3).X</param>
                         </action>
                         <action id="3" name="Set at XY" sid="291110661251720" type="M3_ConnectedCells">
                             <param id="0" name="X">3</param>
                             <param id="1" name="Y">2</param>
-                            <param id="2" name="Value">M3_ClickableAreas(3).Y</param>
+                            <param id="2" name="Value">M3_ClickableAreasSprite2(3).Y</param>
                         </action>
                         <action id="3" name="Set at XY" sid="472450868632378" type="M3_ConnectedCells">
                             <param id="0" name="X">4</param>
                             <param id="1" name="Y">1</param>
-                            <param id="2" name="Value">M3_ClickableAreas(4).X</param>
+                            <param id="2" name="Value">M3_ClickableAreasSprite2(4).X</param>
                         </action>
                         <action id="3" name="Set at XY" sid="786144971955059" type="M3_ConnectedCells">
                             <param id="0" name="X">4</param>
                             <param id="1" name="Y">2</param>
-                            <param id="2" name="Value">M3_ClickableAreas(4).Y</param>
+                            <param id="2" name="Value">M3_ClickableAreasSprite2(4).Y</param>
                         </action>
                         <action id="3" name="Set at XY" sid="454019150902922" type="M3_ConnectedCells">
                             <param id="0" name="X">5</param>
                             <param id="1" name="Y">1</param>
-                            <param id="2" name="Value">M3_ClickableAreas(5).X</param>
+                            <param id="2" name="Value">M3_ClickableAreasSprite2(5).X</param>
                         </action>
                         <action id="3" name="Set at XY" sid="947273222659942" type="M3_ConnectedCells">
                             <param id="0" name="X">5</param>
                             <param id="1" name="Y">2</param>
-                            <param id="2" name="Value">M3_ClickableAreas(5).Y</param>
+                            <param id="2" name="Value">M3_ClickableAreasSprite2(5).Y</param>
                         </action>
                         <action id="3" name="Set at XY" sid="728205604310011" type="M3_ConnectedCells">
                             <param id="0" name="X">0</param>
@@ -1539,14 +1539,14 @@
                         <event-block sid="703083589621016">
                             <conditions>
                                 <condition id="-11" name="For Each" sid="676724351119968" type="System">
-                                    <param id="0" name="Object">M3_ClickableAreas</param>
+                                    <param id="0" name="Object">M3_ClickableAreasSprite2</param>
                                 </condition>
-                                <condition id="2" name="Is playing" sid="721736146228972" type="M3_ClickableAreas">
+                                <condition id="2" name="Is playing" sid="721736146228972" type="M3_ClickableAreasSprite2">
                                     <param id="0" name="Animation">&quot;Selected&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="849660251981722" type="M3_ClickableAreas">
+                                <action id="4" name="Set animation" sid="849660251981722" type="M3_ClickableAreasSprite2">
                                     <param id="0" name="Animation">&quot;Animation2&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -1555,14 +1555,14 @@
                         <event-block sid="833108202759625">
                             <conditions>
                                 <condition id="-11" name="For Each" sid="217663092104540" type="System">
-                                    <param id="0" name="Object">M3_ClickableAreas</param>
+                                    <param id="0" name="Object">M3_ClickableAreasSprite2</param>
                                 </condition>
-                                <condition id="2" name="Is playing" sid="146888866132794" type="M3_ClickableAreas">
+                                <condition id="2" name="Is playing" sid="146888866132794" type="M3_ClickableAreasSprite2">
                                     <param id="0" name="Animation">&quot;Placeholder&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="979288516671223" type="M3_ClickableAreas">
+                                <action id="4" name="Set animation" sid="979288516671223" type="M3_ClickableAreasSprite2">
                                     <param id="0" name="Animation">&quot;Selected&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
@@ -1906,7 +1906,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="888701489865106" type="M3_ClickableAreas">
+                <action id="4" name="Set animation" sid="888701489865106" type="M3_ClickableAreasSprite2">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>

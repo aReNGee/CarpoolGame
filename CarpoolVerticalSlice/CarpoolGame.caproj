@@ -299,7 +299,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="M3_ClickableAreas" sid="170582610045128">
+        <object-type name="M3_ClickableAreasSprite2" sid="170582610045128">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Location" sid="233827480534136" type="string" />
@@ -332,7 +332,7 @@
         <object-type name="Move" sid="206217328805715">
             <plugin id="Function" />
         </object-type>
-        <object-type name="M3_Locations" sid="229490214259301">
+        <object-type name="M3_LocationsSprite3" sid="229490214259301">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Location" sid="771005748404457" type="string" />

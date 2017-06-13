@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="82">
+                <instance type="M3_ClickableAreasSprite2" uid="82">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -80,7 +80,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="83">
+                <instance type="M3_LocationsSprite3" uid="83">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -105,7 +105,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="84">
+                <instance type="M3_ClickableAreasSprite2" uid="84">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -134,7 +134,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="85">
+                <instance type="M3_LocationsSprite3" uid="85">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -159,7 +159,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="86">
+                <instance type="M3_ClickableAreasSprite2" uid="86">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -188,7 +188,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="87">
+                <instance type="M3_LocationsSprite3" uid="87">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -213,7 +213,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="88">
+                <instance type="M3_ClickableAreasSprite2" uid="88">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -242,7 +242,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="89">
+                <instance type="M3_LocationsSprite3" uid="89">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -267,7 +267,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="90">
+                <instance type="M3_ClickableAreasSprite2" uid="90">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -296,7 +296,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="91">
+                <instance type="M3_LocationsSprite3" uid="91">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -321,7 +321,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="92">
+                <instance type="M3_ClickableAreasSprite2" uid="92">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -350,7 +350,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="93">
+                <instance type="M3_LocationsSprite3" uid="93">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -375,7 +375,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="94">
+                <instance type="M3_ClickableAreasSprite2" uid="94">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -404,7 +404,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="95">
+                <instance type="M3_LocationsSprite3" uid="95">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -429,7 +429,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="96">
+                <instance type="M3_ClickableAreasSprite2" uid="96">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -458,7 +458,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="97">
+                <instance type="M3_LocationsSprite3" uid="97">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -483,7 +483,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="98">
+                <instance type="M3_ClickableAreasSprite2" uid="98">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -512,7 +512,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="99">
+                <instance type="M3_LocationsSprite3" uid="99">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -537,7 +537,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="100">
+                <instance type="M3_ClickableAreasSprite2" uid="100">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -566,7 +566,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="101">
+                <instance type="M3_LocationsSprite3" uid="101">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -591,7 +591,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="102">
+                <instance type="M3_ClickableAreasSprite2" uid="102">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -620,7 +620,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="103">
+                <instance type="M3_LocationsSprite3" uid="103">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -645,7 +645,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="104">
+                <instance type="M3_ClickableAreasSprite2" uid="104">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -674,7 +674,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="105">
+                <instance type="M3_LocationsSprite3" uid="105">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -699,7 +699,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="106">
+                <instance type="M3_ClickableAreasSprite2" uid="106">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -728,7 +728,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="107">
+                <instance type="M3_LocationsSprite3" uid="107">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -753,7 +753,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="108">
+                <instance type="M3_ClickableAreasSprite2" uid="108">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -782,7 +782,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="109">
+                <instance type="M3_LocationsSprite3" uid="109">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -807,7 +807,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="110">
+                <instance type="M3_ClickableAreasSprite2" uid="110">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -836,7 +836,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="111">
+                <instance type="M3_LocationsSprite3" uid="111">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -861,7 +861,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="112">
+                <instance type="M3_ClickableAreasSprite2" uid="112">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -890,7 +890,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="113">
+                <instance type="M3_LocationsSprite3" uid="113">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1139,7 +1139,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="122">
+                <instance type="M3_ClickableAreasSprite2" uid="122">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1168,7 +1168,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="123">
+                <instance type="M3_ClickableAreasSprite2" uid="123">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1197,7 +1197,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="124">
+                <instance type="M3_ClickableAreasSprite2" uid="124">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1226,7 +1226,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="125">
+                <instance type="M3_ClickableAreasSprite2" uid="125">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1255,7 +1255,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="126">
+                <instance type="M3_ClickableAreasSprite2" uid="126">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1284,7 +1284,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_ClickableAreas" uid="127">
+                <instance type="M3_ClickableAreasSprite2" uid="127">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1313,7 +1313,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="128">
+                <instance type="M3_LocationsSprite3" uid="128">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1338,7 +1338,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="129">
+                <instance type="M3_LocationsSprite3" uid="129">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1363,7 +1363,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="130">
+                <instance type="M3_LocationsSprite3" uid="130">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1388,7 +1388,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="131">
+                <instance type="M3_LocationsSprite3" uid="131">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1413,7 +1413,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="132">
+                <instance type="M3_LocationsSprite3" uid="132">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1438,7 +1438,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="M3_Locations" uid="133">
+                <instance type="M3_LocationsSprite3" uid="133">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

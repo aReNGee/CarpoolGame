@@ -10,12 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">M3_GameScreen</layout>
+        <layout active="1" order="0">M3_GameScreen</layout>
         <layout order="2">M3_EndGame</layout>
         <layout order="4">M3_Tutorial</layout>
         <layout order="6">M3_LEVEL2</layout>
         <layout order="7">M3_LEVEL3PROTOTYPE</layout>
-        <event-sheet active="1" order="1">M3_GSEventSheet</event-sheet>
+        <event-sheet order="1">M3_GSEventSheet</event-sheet>
         <event-sheet order="3">M3_EGEventSheet</event-sheet>
         <event-sheet order="5">M3_Tutorial</event-sheet>
     </open-tabs>
@@ -41,8 +41,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/WinBackground2/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/M3_Passenger/" />
-        <folder expanded="1" path="animation-folder/M3_ClickableAreas/" />
-        <folder expanded="1" path="animation-folder/M3_Locations/" />
+        <folder expanded="1" path="animation-folder/M3_ClickableAreasSprite2/" />
+        <folder expanded="1" path="animation-folder/M3_LocationsSprite3/" />
         <folder expanded="1" path="animation-folder/M3_GoButton/" />
         <folder expanded="1" path="animation-folder/M3_MapLevelUnknown/" />
         <folder expanded="1" path="animation-folder/M3_JustForAlignment/" />
