@@ -19,125 +19,133 @@
         <variable constant="0" name="InitialFuelCost" sid="212715906314375" static="0" type="number">0</variable>
         <event-group description="This is where all the serious work will happen. I wonder if you can have nested groups" sid="112793833793127" title="General Gameplay">
             <sub-events>
-                <event-block sid="564331346902734">
+                <event-block sid="265050805123074">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="627303470643714" type="Mouse">
+                        <condition id="2" name="Mouse button is down" sid="627303470643714" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">M3_Sprite2</param>
                         </condition>
-                        <condition id="-8" name="Compare two values" sid="996135293475373" type="System">
-                            <param id="0" name="First value">Targets.At(ArrayPos,0)</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Second value">M3_Sprite2.X</param>
-                        </condition>
-                        <condition id="-8" name="Compare two values" sid="640534846900745" type="System">
-                            <param id="0" name="First value">Targets.At(ArrayPos,1)</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Second value">M3_Sprite2.Y</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="528957930380169" type="System">
-                            <param id="0" name="Variable">TimeToGo</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">-1</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="385847391612558" type="System">
-                            <param id="0" name="Variable">Timer</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
+                        <condition id="7" name="Cursor is over object" sid="356119613143105" type="Mouse">
+                            <param id="0" name="Object">M3_Sprite2</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action disabled="1" id="0" name="Call function" sid="965626159476051" type="Move">
-                            <param id="0" name="Name">&quot;Pathfind&quot;</param>
-                            <param id="1" name="Parameter {n}">M3_Sprite2.Location</param>
-                        </action>
-                        <action disabled="1" id="0" name="Call function" sid="924015401100072" type="Move">
-                            <param id="0" name="Name">&quot;SetLoc&quot;</param>
-                            <param id="1" name="Parameter {n}">M3_Sprite2.Location</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
-                        <comment>IF wherever you are is connected to the place you clicked on</comment>
-                        <event-block any="1" sid="311250995394134">
+                        <event-block sid="564331346902734">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="136730006432381" type="System">
-                                    <param id="0" name="Variable">URHere</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">M3_Sprite2.PrimaryConnection</param>
+                                <condition id="-8" name="Compare two values" sid="996135293475373" type="System">
+                                    <param id="0" name="First value">Targets.At(ArrayPos,0)</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">M3_Sprite2.X</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="480677524725075" type="System">
-                                    <param id="0" name="Variable">URHere</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">M3_Sprite2.SecondaryConnection</param>
+                                <condition id="-8" name="Compare two values" sid="640534846900745" type="System">
+                                    <param id="0" name="First value">Targets.At(ArrayPos,1)</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">M3_Sprite2.Y</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="307536010922867" type="System">
-                                    <param id="0" name="Variable">URHere</param>
+                                <condition id="-14" name="Compare variable" sid="528957930380169" type="System">
+                                    <param id="0" name="Variable">TimeToGo</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">M3_Sprite2.UMadmanThirdConnection</param>
+                                    <param id="2" name="Value">-1</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="334573265476607" type="System">
-                                    <param id="0" name="Variable">URHere</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">M3_Sprite2.OkayFineConnection4</param>
+                                <condition id="-14" name="Compare variable" sid="385847391612558" type="System">
+                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Add to" sid="636612021413504" type="System">
-                                    <param id="0" name="Variable">ArrayPos</param>
-                                    <param id="1" name="Value">1</param>
+                                <action disabled="1" id="0" name="Call function" sid="965626159476051" type="Move">
+                                    <param id="0" name="Name">&quot;Pathfind&quot;</param>
+                                    <param id="1" name="Parameter {n}">M3_Sprite2.Location</param>
                                 </action>
-                                <action id="3" name="Set at XY" sid="425775139735624" type="Targets">
-                                    <param id="0" name="X">ArrayPos</param>
-                                    <param id="1" name="Y">0</param>
-                                    <param id="2" name="Value">M3_Sprite2.X</param>
-                                </action>
-                                <action id="3" name="Set at XY" sid="391638628206599" type="Targets">
-                                    <param id="0" name="X">ArrayPos</param>
-                                    <param id="1" name="Y">1</param>
-                                    <param id="2" name="Value">M3_Sprite2.Y</param>
-                                </action>
-                                <action id="3" name="Set at XY" sid="438413256488028" type="Targets">
-                                    <param id="0" name="X">ArrayPos</param>
-                                    <param id="1" name="Y">2</param>
-                                    <param id="2" name="Value">M3_Sprite2.Location</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="823819966254679" type="System">
-                                    <param id="0" name="Variable">URHere</param>
-                                    <param id="1" name="Value">M3_Sprite2.Location</param>
-                                </action>
-                                <action id="4" name="Set animation" sid="537493339525871" type="M3_Sprite2">
-                                    <param id="0" name="Animation">&quot;Placeholder&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="377129876711498" type="System">
-                                    <param id="0" name="Variable">PathList</param>
-                                    <param id="1" name="Value">M3_Sprite2.Location</param>
-                                </action>
-                                <action id="-3" name="Create object" sid="145097439016311" type="System">
-                                    <param id="0" name="Object to create">M3_PlayerPointer</param>
-                                    <param id="1" name="Layer">0</param>
-                                    <param id="2" name="X">Targets.At(ArrayPos-1,0)</param>
-                                    <param id="3" name="Y">Targets.At(ArrayPos-1,1)</param>
-                                </action>
-                                <action id="-22" name="Set angle toward position" sid="320177994626032" type="M3_PlayerPointer">
-                                    <param id="0" name="X">Targets.At(ArrayPos,0)</param>
-                                    <param id="1" name="Y">Targets.At(ArrayPos,1)</param>
-                                </action>
-                                <action id="-17" name="Move forward" sid="667814844231916" type="M3_PlayerPointer">
-                                    <param id="0" name="Distance">135</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="162168316165794" type="System">
-                                    <param id="0" name="Variable">IterateAnimations</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="0" name="Play" sid="207675707757913" type="Clickable">
-                                    <param id="0" name="Audio file">sfx_clicking_clikable_obj</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                <action disabled="1" id="0" name="Call function" sid="924015401100072" type="Move">
+                                    <param id="0" name="Name">&quot;SetLoc&quot;</param>
+                                    <param id="1" name="Parameter {n}">M3_Sprite2.Location</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <comment>IF wherever you are is connected to the place you clicked on</comment>
+                                <event-block any="1" sid="311250995394134">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="136730006432381" type="System">
+                                            <param id="0" name="Variable">URHere</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">M3_Sprite2.PrimaryConnection</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="480677524725075" type="System">
+                                            <param id="0" name="Variable">URHere</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">M3_Sprite2.SecondaryConnection</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="307536010922867" type="System">
+                                            <param id="0" name="Variable">URHere</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">M3_Sprite2.UMadmanThirdConnection</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="334573265476607" type="System">
+                                            <param id="0" name="Variable">URHere</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">M3_Sprite2.OkayFineConnection4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="636612021413504" type="System">
+                                            <param id="0" name="Variable">ArrayPos</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="425775139735624" type="Targets">
+                                            <param id="0" name="X">ArrayPos</param>
+                                            <param id="1" name="Y">0</param>
+                                            <param id="2" name="Value">M3_Sprite2.X</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="391638628206599" type="Targets">
+                                            <param id="0" name="X">ArrayPos</param>
+                                            <param id="1" name="Y">1</param>
+                                            <param id="2" name="Value">M3_Sprite2.Y</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="438413256488028" type="Targets">
+                                            <param id="0" name="X">ArrayPos</param>
+                                            <param id="1" name="Y">2</param>
+                                            <param id="2" name="Value">M3_Sprite2.Location</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="823819966254679" type="System">
+                                            <param id="0" name="Variable">URHere</param>
+                                            <param id="1" name="Value">M3_Sprite2.Location</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="537493339525871" type="M3_Sprite2">
+                                            <param id="0" name="Animation">&quot;Placeholder&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="377129876711498" type="System">
+                                            <param id="0" name="Variable">PathList</param>
+                                            <param id="1" name="Value">M3_Sprite2.Location</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="145097439016311" type="System">
+                                            <param id="0" name="Object to create">M3_PlayerPointer</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">Targets.At(ArrayPos-1,0)</param>
+                                            <param id="3" name="Y">Targets.At(ArrayPos-1,1)</param>
+                                        </action>
+                                        <action id="-22" name="Set angle toward position" sid="320177994626032" type="M3_PlayerPointer">
+                                            <param id="0" name="X">Targets.At(ArrayPos,0)</param>
+                                            <param id="1" name="Y">Targets.At(ArrayPos,1)</param>
+                                        </action>
+                                        <action id="-17" name="Move forward" sid="667814844231916" type="M3_PlayerPointer">
+                                            <param id="0" name="Distance">135</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="162168316165794" type="System">
+                                            <param id="0" name="Variable">IterateAnimations</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="207675707757913" type="Clickable">
+                                            <param id="0" name="Audio file">sfx_clicking_clikable_obj</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -424,7 +432,17 @@
                                             <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">JustForAlignment.Y</param>
                                         </action>
-                                        <action behavior="CustomMovement" id="0" name="Stop" sid="812652552380453" type="M3_Car" />
+                                        <action id="-22" name="Set angle toward position" sid="909075809499899" type="M3_Car">
+                                            <param id="0" name="X">JustForAlignment.X</param>
+                                            <param id="1" name="Y">JustForAlignment.Y</param>
+                                        </action>
+                                        <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="436714155243775" type="M3_Car">
+                                            <param id="0" name="Angle">M3_Car.Angle</param>
+                                        </action>
+                                        <action behavior="CustomMovement" id="2" name="Set speed" sid="169632501902581" type="M3_Car">
+                                            <param id="0" name="Which">0</param>
+                                            <param id="1" name="Speed">640</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -520,6 +538,29 @@
                                     </actions>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                        <comment>Stopping the car once it gets back to the centre</comment>
+                        <event-block sid="634434621034357">
+                            <conditions>
+                                <condition id="-21" name="Is between values" sid="163846653708869" type="System">
+                                    <param id="0" name="Value">M3_Car.X</param>
+                                    <param id="1" name="Lower bound">JustForAlignment.X - 10</param>
+                                    <param id="2" name="Upper bound">JustForAlignment.X + 10</param>
+                                </condition>
+                                <condition id="-21" name="Is between values" sid="198883041113131" type="System">
+                                    <param id="0" name="Value">M3_Car.Y</param>
+                                    <param id="1" name="Lower bound">JustForAlignment.Y - 10</param>
+                                    <param id="2" name="Upper bound">JustForAlignment.Y + 10</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="658637994575867" type="System">
+                                    <param id="0" name="Variable">InTransit</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="CustomMovement" id="0" name="Stop" sid="309123573691529" type="M3_Car" />
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
