@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite6" uid="81">
+                <instance type="MapMed" uid="81">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="82">
+                <instance type="M3_Sprite2" uid="82">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -71,8 +71,8 @@
                         <x>364</x>
                         <y>514</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -105,7 +105,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="84">
+                <instance type="M3_Sprite2" uid="84">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -125,8 +125,8 @@
                         <x>629</x>
                         <y>500</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -159,7 +159,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="86">
+                <instance type="M3_Sprite2" uid="86">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -179,8 +179,8 @@
                         <x>957</x>
                         <y>358</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -213,7 +213,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="88">
+                <instance type="M3_Sprite2" uid="88">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -233,8 +233,8 @@
                         <x>1207</x>
                         <y>418</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -267,7 +267,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="90">
+                <instance type="M3_Sprite2" uid="90">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -287,8 +287,8 @@
                         <x>1453</x>
                         <y>504</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -321,7 +321,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="92">
+                <instance type="M3_Sprite2" uid="92">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -341,8 +341,8 @@
                         <x>1616</x>
                         <y>307</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -375,7 +375,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="94">
+                <instance type="M3_Sprite2" uid="94">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -395,8 +395,8 @@
                         <x>1828</x>
                         <y>442</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -429,7 +429,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="96">
+                <instance type="M3_Sprite2" uid="96">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -449,8 +449,8 @@
                         <x>1665</x>
                         <y>637</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -483,7 +483,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="98">
+                <instance type="M3_Sprite2" uid="98">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -503,8 +503,8 @@
                         <x>1600</x>
                         <y>888</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -537,7 +537,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="100">
+                <instance type="M3_Sprite2" uid="100">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -557,8 +557,8 @@
                         <x>1358</x>
                         <y>964</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -591,7 +591,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="102">
+                <instance type="M3_Sprite2" uid="102">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -611,8 +611,8 @@
                         <x>1115</x>
                         <y>879</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -645,7 +645,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="104">
+                <instance type="M3_Sprite2" uid="104">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -665,8 +665,8 @@
                         <x>951</x>
                         <y>1059</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -699,7 +699,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="106">
+                <instance type="M3_Sprite2" uid="106">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -719,8 +719,8 @@
                         <x>701</x>
                         <y>1049</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -753,7 +753,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="108">
+                <instance type="M3_Sprite2" uid="108">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -773,8 +773,8 @@
                         <x>866</x>
                         <y>859</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -807,7 +807,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="110">
+                <instance type="M3_Sprite2" uid="110">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -827,8 +827,8 @@
                         <x>632</x>
                         <y>753</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -861,7 +861,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="112">
+                <instance type="M3_Sprite2" uid="112">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -881,8 +881,8 @@
                         <x>478</x>
                         <y>942</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -972,10 +972,10 @@
                         <x>2128</x>
                         <y>198</y>
                         <z>0</z>
-                        <width>200</width>
-                        <height>100</height>
+                        <width>178.399993896</width>
+                        <height>58.400001526</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.502242148</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -1060,7 +1060,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite5" uid="119">
+                <instance type="M3_GoButton" uid="119">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1073,7 +1073,7 @@
                         <x>215.427886963</x>
                         <y>908.072265625</y>
                         <z>0</z>
-                        <width>376</width>
+                        <width>526.400024414</width>
                         <height>341</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -1139,7 +1139,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="122">
+                <instance type="M3_Sprite2" uid="122">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1159,8 +1159,8 @@
                         <x>836</x>
                         <y>138</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1168,7 +1168,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="123">
+                <instance type="M3_Sprite2" uid="123">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1188,8 +1188,8 @@
                         <x>153</x>
                         <y>395</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1197,7 +1197,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="124">
+                <instance type="M3_Sprite2" uid="124">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1217,8 +1217,8 @@
                         <x>1778</x>
                         <y>111</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1226,7 +1226,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="125">
+                <instance type="M3_Sprite2" uid="125">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1246,8 +1246,8 @@
                         <x>92</x>
                         <y>644</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1255,7 +1255,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="126">
+                <instance type="M3_Sprite2" uid="126">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1275,8 +1275,8 @@
                         <x>361</x>
                         <y>264</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1284,7 +1284,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="127">
+                <instance type="M3_Sprite2" uid="127">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1304,8 +1304,8 @@
                         <x>619</x>
                         <y>247</y>
                         <z>0</z>
-                        <width>88.949424744</width>
-                        <height>88.949424744</height>
+                        <width>35.579769135</width>
+                        <height>35.579769135</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1748,7 +1748,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite" uid="158">
+                <instance type="M3_Passenger" uid="158">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1773,16 +1773,16 @@
                         <x>1201</x>
                         <y>644</y>
                         <z>0</z>
-                        <width>67.861228943</width>
-                        <height>68.699020386</height>
+                        <width>42.413269043</width>
+                        <height>92.314308167</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.569767416</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="159">
+                <instance type="M3_Passenger" uid="159">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1807,16 +1807,16 @@
                         <x>1270</x>
                         <y>644</y>
                         <z>0</z>
-                        <width>67.861228943</width>
-                        <height>68.699020386</height>
+                        <width>42.413269043</width>
+                        <height>92.314308167</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.569767416</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="160">
+                <instance type="M3_Passenger" uid="160">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1841,16 +1841,16 @@
                         <x>1208</x>
                         <y>730</y>
                         <z>0</z>
-                        <width>67.861228943</width>
-                        <height>68.699020386</height>
+                        <width>42.413269043</width>
+                        <height>92.314308167</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.569767416</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="161">
+                <instance type="M3_Passenger" uid="161">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1875,16 +1875,16 @@
                         <x>1277</x>
                         <y>730</y>
                         <z>0</z>
-                        <width>67.861228943</width>
-                        <height>68.699020386</height>
+                        <width>42.413269043</width>
+                        <height>92.314308167</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.569767416</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="162">
+                <instance type="M3_Passenger" uid="162">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1909,16 +1909,16 @@
                         <x>1082</x>
                         <y>727</y>
                         <z>0</z>
-                        <width>70.052940369</width>
-                        <height>70.917793274</height>
+                        <width>43.783088684</width>
+                        <height>95.295783997</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.569767416</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="163">
+                <instance type="M3_Passenger" uid="163">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1943,16 +1943,16 @@
                         <x>1144</x>
                         <y>729</y>
                         <z>0</z>
-                        <width>67.861228943</width>
-                        <height>68.699020386</height>
+                        <width>42.413269043</width>
+                        <height>92.314308167</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.569767416</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="164">
+                <instance type="M3_Passenger" uid="164">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1977,16 +1977,16 @@
                         <x>1075</x>
                         <y>641</y>
                         <z>0</z>
-                        <width>70.052940369</width>
-                        <height>70.917793274</height>
+                        <width>43.783088684</width>
+                        <height>95.295783997</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.569767416</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="165">
+                <instance type="M3_Passenger" uid="165">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2011,11 +2011,11 @@
                         <x>1137</x>
                         <y>643</y>
                         <z>0</z>
-                        <width>67.861228943</width>
-                        <height>68.699020386</height>
+                        <width>42.413269043</width>
+                        <height>92.314308167</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.569767416</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
