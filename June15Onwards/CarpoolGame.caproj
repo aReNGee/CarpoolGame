@@ -270,7 +270,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="PlayerPointer" sid="563542968679729">
+        <object-type name="M3_PlayerPointer" sid="563542968679729">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="128632445603849" speed="5">
@@ -441,6 +441,30 @@
                             <point x="0" y="0" />
                             <point x="1" y="0" />
                             <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="M3_Car" sid="548397735895161">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="438161668402432">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="782751841468293" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511364" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\Car.png">
+                        <collision-poly>
+                            <point x="0.0454545" y="0" />
+                            <point x="0.487715" y="0" />
+                            <point x="0.979115" y="0" />
+                            <point x="0.979115" y="0.505682" />
+                            <point x="1" y="1" />
+                            <point x="0.487715" y="1" />
+                            <point x="0.0208845" y="1" />
+                            <point x="0.0577396" y="0.505682" />
                         </collision-poly>
                     </frame>
                 </animation>

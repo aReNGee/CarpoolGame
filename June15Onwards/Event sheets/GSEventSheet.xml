@@ -115,17 +115,17 @@
                                     <param id="1" name="Value">M3_Sprite2.Location</param>
                                 </action>
                                 <action id="-3" name="Create object" sid="145097439016311" type="System">
-                                    <param id="0" name="Object to create">PlayerPointer</param>
+                                    <param id="0" name="Object to create">M3_PlayerPointer</param>
                                     <param id="1" name="Layer">0</param>
                                     <param id="2" name="X">Targets.At(ArrayPos-1,0)</param>
                                     <param id="3" name="Y">Targets.At(ArrayPos-1,1)</param>
                                 </action>
-                                <action id="-22" name="Set angle toward position" sid="320177994626032" type="PlayerPointer">
+                                <action id="-22" name="Set angle toward position" sid="320177994626032" type="M3_PlayerPointer">
                                     <param id="0" name="X">Targets.At(ArrayPos,0)</param>
                                     <param id="1" name="Y">Targets.At(ArrayPos,1)</param>
                                 </action>
-                                <action id="-17" name="Move forward" sid="667814844231916" type="PlayerPointer">
-                                    <param id="0" name="Distance">150</param>
+                                <action id="-17" name="Move forward" sid="667814844231916" type="M3_PlayerPointer">
+                                    <param id="0" name="Distance">135</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="162168316165794" type="System">
                                     <param id="0" name="Variable">IterateAnimations</param>
@@ -229,7 +229,19 @@
                                     <param id="0" name="Object">M3_Passenger</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-22" name="Set angle toward position" sid="646496275946762" type="M3_Car">
+                                    <param id="0" name="X">Targets.At(MovingTowards,0)</param>
+                                    <param id="1" name="Y">Targets.At(MovingTowards,1)</param>
+                                </action>
+                                <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="643258095160350" type="M3_Car">
+                                    <param id="0" name="Angle">M3_Car.Angle</param>
+                                </action>
+                                <action behavior="CustomMovement" id="2" name="Set speed" sid="826878781958193" type="M3_Car">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="Speed">640</param>
+                                </action>
+                            </actions>
                             <sub-events>
                                 <event-group description="" sid="362272547633894" title="Making Only The Sprites We Want To Move, Move">
                                     <sub-events>
@@ -393,7 +405,7 @@
                                             <param id="0" name="Name">&quot;CheckForLoc&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
-                                        <action id="-9" name="Destroy" sid="910540948411284" type="PlayerPointer" />
+                                        <action id="-9" name="Destroy" sid="910540948411284" type="M3_PlayerPointer" />
                                         <action id="-10" name="Add to" sid="782844656690625" type="System">
                                             <param id="0" name="Variable">ArrayPos</param>
                                             <param id="1" name="Value">1</param>
@@ -412,6 +424,7 @@
                                             <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">JustForAlignment.Y</param>
                                         </action>
+                                        <action behavior="CustomMovement" id="0" name="Stop" sid="812652552380453" type="M3_Car" />
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -443,6 +456,10 @@
                                 <action id="-9" name="Set value" sid="810881057673725" type="System">
                                     <param id="0" name="Variable">InTransit</param>
                                     <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="500058158942769" type="M3_Car">
+                                    <param id="0" name="Object">JustForAlignment</param>
+                                    <param id="1" name="Image point (optional)">0</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -569,6 +586,10 @@
                         <action id="0" name="Call function" sid="706759742454354" type="Move">
                             <param id="0" name="Name">&quot;RandomizePassengers&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-3" name="Set position" sid="162413732469634" type="M3_Car">
+                            <param id="0" name="X">JustForAlignment.X</param>
+                            <param id="1" name="Y">JustForAlignment.Y</param>
                         </action>
                     </actions>
                 </event-block>
