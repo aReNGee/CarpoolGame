@@ -151,8 +151,8 @@
                 <instance-variable name="OkayFineConnection4" sid="377680384907407" type="string" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="588268987550778" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="0" name="Default2" pingpong="0" repeatcount="1" repeatto="0" sid="588268987550778" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\Selection Circle.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="927459704675447" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -171,8 +171,36 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="Placeholder" pingpong="0" repeatcount="1" repeatto="0" sid="860219853983284" speed="5">
+                <animation framecount="1" loop="0" name="Placeholder2" pingpong="0" repeatcount="1" repeatto="0" sid="860219853983284" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277838369450056" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.159292" y="0.159292" />
+                            <point x="0.495575" y="0.0176991" />
+                            <point x="0.840708" y="0.159292" />
+                            <point x="0.982301" y="0.495575" />
+                            <point x="0.840708" y="0.840708" />
+                            <point x="0.495575" y="0.982301" />
+                            <point x="0.159292" y="0.840708" />
+                            <point x="0.0176991" y="0.495575" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Placeholder" pingpong="0" repeatcount="1" repeatto="0" sid="367149266000373" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.159292" y="0.159292" />
+                            <point x="0.495575" y="0.0176991" />
+                            <point x="0.840708" y="0.159292" />
+                            <point x="0.982301" y="0.495575" />
+                            <point x="0.840708" y="0.840708" />
+                            <point x="0.495575" y="0.982301" />
+                            <point x="0.159292" y="0.840708" />
+                            <point x="0.0176991" y="0.495575" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -411,7 +439,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="154532255147170" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\Passenger Holder.png" />
                 </animation>
             </animation-folder>
         </object-type>
