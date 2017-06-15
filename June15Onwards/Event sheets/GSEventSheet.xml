@@ -432,16 +432,24 @@
                                             <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">JustForAlignment.Y</param>
                                         </action>
-                                        <action id="-22" name="Set angle toward position" sid="909075809499899" type="M3_Car">
+                                        <action disabled="1" id="-22" name="Set angle toward position" sid="909075809499899" type="M3_Car">
                                             <param id="0" name="X">JustForAlignment.X</param>
                                             <param id="1" name="Y">JustForAlignment.Y</param>
                                         </action>
-                                        <action behavior="CustomMovement" id="6" name="Set angle of motion" sid="436714155243775" type="M3_Car">
+                                        <action behavior="CustomMovement" disabled="1" id="6" name="Set angle of motion" sid="436714155243775" type="M3_Car">
                                             <param id="0" name="Angle">M3_Car.Angle</param>
                                         </action>
-                                        <action behavior="CustomMovement" id="2" name="Set speed" sid="169632501902581" type="M3_Car">
+                                        <action behavior="CustomMovement" disabled="1" id="2" name="Set speed" sid="169632501902581" type="M3_Car">
                                             <param id="0" name="Which">0</param>
                                             <param id="1" name="Speed">640</param>
+                                        </action>
+                                        <action behavior="CustomMovement" id="0" name="Stop" sid="908974078903225" type="M3_Car" />
+                                        <action id="-16" name="Wait" sid="993204504805194" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="312761756380836" type="M3_Car">
+                                            <param id="0" name="X">JustForAlignment.X</param>
+                                            <param id="1" name="Y">JustForAlignment.Y</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -639,10 +647,10 @@
         <variable constant="0" name="CurLoc" sid="977733412866179" static="0" type="number">0</variable>
         <variable constant="0" name="TarLoc" sid="260495083937919" static="0" type="number">0</variable>
         <variable constant="0" name="NextUp" sid="281296638855725" static="0" type="text"></variable>
-        <event-group description="Mostly Disabled for now" sid="408672786627712" title="Pathfinding">
+        <event-group description="Mostly Disabled for now" disabled="1" sid="408672786627712" title="Pathfinding">
             <sub-events>
                 <comment>This is a mess. The first y value (0) sets up what the cell is. Y1 and Y2 are the x and y coords. y3 is the primary connection, y4 is the secondary connection. 100 is N/A</comment>
-                <event-block sid="866449586085756">
+                <event-block disabled="1" sid="866449586085756">
                     <conditions>
                         <condition id="0" name="On function" sid="131249659931534" type="Move">
                             <param id="0" name="Name">&quot;SetUpTheMatrix&quot;</param>
@@ -801,7 +809,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="269461519515904">
+                <event-block disabled="1" sid="269461519515904">
                     <conditions>
                         <condition id="0" name="On function" sid="810675328293857" type="Move">
                             <param id="0" name="Name">&quot;Pathfind&quot;</param>
@@ -818,7 +826,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="166466387240668">
+                        <event-block disabled="1" sid="166466387240668">
                             <conditions>
                                 <condition id="-23" name="While" sid="679608909279252" type="System" />
                                 <condition disabled="1" id="1" name="Compare at XY" sid="114643038259313" type="ConnectedCells">
@@ -869,7 +877,7 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-block sid="485291244189988">
+                                <event-block disabled="1" sid="485291244189988">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="319071234691159" type="System">
                                             <param id="0" name="Variable">CurLoc</param>
@@ -938,7 +946,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="913175960680126">
+                <event-block disabled="1" sid="913175960680126">
                     <conditions>
                         <condition id="0" name="On function" sid="853644460367188" type="Move">
                             <param id="0" name="Name">&quot;SetLoc&quot;</param>
@@ -946,7 +954,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="957718741946708">
+                        <event-block disabled="1" sid="957718741946708">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="145308569380062" type="Move">
                                     <param id="0" name="Index">0</param>
@@ -961,7 +969,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="300971131515835">
+                        <event-block disabled="1" sid="300971131515835">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="482124775939945" type="Move">
                                     <param id="0" name="Index">0</param>
@@ -976,7 +984,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="729554933426884">
+                        <event-block disabled="1" sid="729554933426884">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="385666795080485" type="Move">
                                     <param id="0" name="Index">0</param>
@@ -991,7 +999,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="622114345378550">
+                        <event-block disabled="1" sid="622114345378550">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="428171688535054" type="Move">
                                     <param id="0" name="Index">0</param>
@@ -1006,7 +1014,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="253967918022423">
+                        <event-block disabled="1" sid="253967918022423">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="634847946238589" type="Move">
                                     <param id="0" name="Index">0</param>
@@ -1021,7 +1029,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="361233426798178">
+                        <event-block disabled="1" sid="361233426798178">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="491964145480698" type="Move">
                                     <param id="0" name="Index">0</param>
@@ -1038,7 +1046,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="464337722105931">
+                <event-block disabled="1" sid="464337722105931">
                     <conditions>
                         <condition id="0" name="On function" sid="974528417501727" type="Move">
                             <param id="0" name="Name">&quot;SetTarLoc&quot;</param>
@@ -1046,7 +1054,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="311940848238567">
+                        <event-block disabled="1" sid="311940848238567">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="888190480198413" type="Move">
                                     <param id="0" name="Index">0</param>
@@ -1061,7 +1069,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="590810388388052">
+                        <event-block disabled="1" sid="590810388388052">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="875819525864881" type="Move">
                                     <param id="0" name="Index">0</param>
@@ -1076,7 +1084,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="709259186980503">
+                        <event-block disabled="1" sid="709259186980503">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="794066906105309" type="Move">
                                     <param id="0" name="Index">0</param>
@@ -1091,7 +1099,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="122260719550418">
+                        <event-block disabled="1" sid="122260719550418">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="520885521583342" type="Move">
                                     <param id="0" name="Index">0</param>
@@ -1106,7 +1114,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="297599447255180">
+                        <event-block disabled="1" sid="297599447255180">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="548093162768499" type="Move">
                                     <param id="0" name="Index">0</param>
@@ -1121,7 +1129,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="987987701470489">
+                        <event-block disabled="1" sid="987987701470489">
                             <conditions>
                                 <condition id="1" name="Compare parameter" sid="116012548198215" type="Move">
                                     <param id="0" name="Index">0</param>
@@ -1706,6 +1714,122 @@
                                     <param id="1" name="From">1</param>
                                 </action>
                             </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="882231222584981" title="ClearGroup">
+            <sub-events>
+                <comment>Clears the existing paths</comment>
+                <event-block sid="775906751531588">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="671849318364119" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">M3_ClearButton</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="419138301188123">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="100739903301672" type="System">
+                                    <param id="0" name="Variable">PathList</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="139166606809422" type="Clickable">
+                                    <param id="0" name="Audio file">sfx_click_unclickable_obj01</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="878166365143103">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="790284813500494" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="543810313364988">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="759774568290494" type="System">
+                                            <param id="0" name="Variable">TimeToGo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="509669692100754" type="System">
+                                            <param id="0" name="Variable">Timer</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="632077531792267" type="System">
+                                            <param id="0" name="Variable">PathList</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">&quot;&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="265211571168268" type="System">
+                                            <param id="0" name="Variable">PathList</param>
+                                            <param id="1" name="Value">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="381095707839819" type="System">
+                                            <param id="0" name="Variable">MovingTowards</param>
+                                            <param id="1" name="Value">ArrayPos+1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="237309126187040" type="System">
+                                            <param id="0" name="Variable">URHere</param>
+                                            <param id="1" name="Value">&quot;special&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="243578649281043" type="M3_PlayerPointer" />
+                                        <action id="-10" name="Add to" sid="346137860803664" type="System">
+                                            <param id="0" name="Variable">ArrayPos</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="372353746063719" type="System">
+                                            <param id="0" name="Variable">MovingTowards</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="408362790299890" type="Targets">
+                                            <param id="0" name="X">ArrayPos</param>
+                                            <param id="1" name="Y">0</param>
+                                            <param id="2" name="Value">JustForAlignment.X</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="806672668279010" type="Targets">
+                                            <param id="0" name="X">ArrayPos</param>
+                                            <param id="1" name="Y">1</param>
+                                            <param id="2" name="Value">JustForAlignment.Y</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="618483814840583" type="M3_Sprite2">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="513662667678409">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="264454651497006" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="345876731694013" type="System">
+                                            <param id="0" name="Variable">TimeToGo</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="325269793641576" type="Clickable">
+                                            <param id="0" name="Audio file">sfx_click_unclickable_obj01</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
