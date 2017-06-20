@@ -2,7 +2,7 @@
 <c2layout>
     <name>LEVEL3PROTOTYPE</name>
     <sid>145244828104842</sid>
-    <event-sheet>GSEventSheet</event-sheet>
+    <event-sheet>M3_GameEventSheet</event-sheet>
     <size>
         <width>1920</width>
         <height>1200</height>

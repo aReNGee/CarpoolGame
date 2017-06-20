@@ -2,7 +2,7 @@
 <c2layout>
     <name>LEVEL2</name>
     <sid>573076771993513</sid>
-    <event-sheet>GSEventSheet</event-sheet>
+    <event-sheet>M3_GameEventSheet</event-sheet>
     <size>
         <width>1920</width>
         <height>1200</height>

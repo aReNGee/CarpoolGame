@@ -10,14 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">GameScreen</layout>
         <layout order="2">EndGame</layout>
-        <layout order="4">Tutorial</layout>
-        <layout order="6">LEVEL2</layout>
-        <layout order="7">LEVEL3PROTOTYPE</layout>
-        <event-sheet active="1" order="1">GSEventSheet</event-sheet>
-        <event-sheet order="3">EGEventSheet</event-sheet>
-        <event-sheet order="5">Tutorial</event-sheet>
+        <layout order="3">Tutorial</layout>
+        <layout order="5">LEVEL2</layout>
+        <layout order="6">LEVEL3PROTOTYPE</layout>
+        <layout order="0">M3_Medium</layout>
+        <event-sheet active="1" order="1">M3_GameEventSheet</event-sheet>
+        <event-sheet order="4">Tutorial</event-sheet>
+        <event-sheet order="7">EGEventSheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,30 +28,42 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/Buttons/" />
+        <folder expanded="1" path="object-folder/MapPieces/" />
+        <folder expanded="1" path="object-folder/MovingParts/" />
+        <folder expanded="1" path="object-folder/Text/" />
+        <folder expanded="1" path="object-folder/Global/" />
+        <folder expanded="1" path="object-folder/Endgame/" />
+        <folder expanded="1" path="object-folder/Timer/" />
+        <folder expanded="1" path="object-folder/Tutorial/" />
+        <folder expanded="1" path="object-folder/Arrays/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/M3_Passenger/" />
-        <folder expanded="1" path="animation-folder/M3_Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/M3_ClearButton/" />
         <folder expanded="1" path="animation-folder/M3_GoButton/" />
-        <folder expanded="1" path="animation-folder/MapMed/" />
         <folder expanded="1" path="animation-folder/JustForAlignment/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
         <folder expanded="1" path="animation-folder/M3_PlayerPointer/" />
-        <folder expanded="1" path="animation-folder/Star/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
-        <folder expanded="1" path="animation-folder/Background/" />
-        <folder expanded="1" path="animation-folder/BlinkingBox/" />
-        <folder expanded="1" path="animation-folder/Mousey/" />
+        <folder expanded="1" path="animation-folder/M3_Sprite2/" />
+        <folder expanded="1" path="animation-folder/MapMed/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/Sprite8/" />
         <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/M3_Car/" />
+        <folder expanded="1" path="animation-folder/M3_Passenger/" />
+        <folder expanded="1" path="animation-folder/M3_EndgameBackground/" />
+        <folder expanded="1" path="animation-folder/M3_Star/" />
+        <folder expanded="1" path="animation-folder/M3_EndgameMenu/" />
+        <folder expanded="1" path="animation-folder/M3_Retry/" />
+        <folder expanded="1" path="animation-folder/M3_Exit/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/BlinkingBox/" />
+        <folder expanded="1" path="animation-folder/Mousey/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
         <folder expanded="1" path="animation-folder/PrototypeMap/" />
         <folder expanded="1" path="animation-folder/PrototypeMap2/" />
-        <folder expanded="1" path="animation-folder/M3_Car/" />
-        <folder expanded="1" path="animation-folder/M3_ClearButton/" />
     </folders-expanded>
 </c2uistate>
