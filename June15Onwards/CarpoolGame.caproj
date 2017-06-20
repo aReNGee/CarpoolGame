@@ -527,14 +527,6 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Sprite" sid="317311544710688">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="626400342677108" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\WilLauBikeGame\Textures\timer bar.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
         </object-folder>
         <object-folder name="Tutorial">
             <object-type name="BlinkingBox" sid="945074235053509">
@@ -673,6 +665,8 @@
         <file name="sfx_lose.ogg" />
         <file name="sfx_win.m4a" />
         <file name="sfx_win.ogg" />
+        <file name="bgm_carpool_game.m4a" />
+        <file name="bgm_carpool_game.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

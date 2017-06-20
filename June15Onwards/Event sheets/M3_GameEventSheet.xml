@@ -21,10 +21,13 @@
             <sub-events>
                 <event-block sid="265050805123074">
                     <conditions>
-                        <condition id="2" name="Mouse button is down" sid="627303470643714" type="Mouse">
+                        <condition disabled="1" id="2" name="Mouse button is down" sid="627303470643714" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                         </condition>
-                        <condition id="7" name="Cursor is over object" sid="356119613143105" type="Mouse">
+                        <condition disabled="1" id="7" name="Cursor is over object" sid="356119613143105" type="Mouse">
+                            <param id="0" name="Object">M3_Sprite2</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="180839341737302" type="Touch">
                             <param id="0" name="Object">M3_Sprite2</param>
                         </condition>
                     </conditions>
@@ -458,10 +461,13 @@
                         <comment>Starts the players route</comment>
                         <event-block sid="753868357807719">
                             <conditions>
-                                <condition id="6" name="On object clicked" sid="895283037062133" type="Mouse">
+                                <condition disabled="1" id="6" name="On object clicked" sid="895283037062133" type="Mouse">
                                     <param id="0" name="Mouse button">0</param>
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">M3_GoButton</param>
+                                </condition>
+                                <condition id="4" name="Is touching object" sid="551466874833132" type="Touch">
+                                    <param id="0" name="Object">M3_GoButton</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="253378922303334" type="System">
                                     <param id="0" name="Variable">TimeToGo</param>
@@ -643,6 +649,12 @@
                         <action id="-4" name="Set layer visible" sid="480780533400796" type="System">
                             <param id="0" name="Layer">&quot;Endgame&quot;</param>
                             <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="362171293137369" type="Clickable">
+                            <param id="0" name="Audio file">bgm_carpool_game</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1733,10 +1745,13 @@
                 <comment>Clears the existing paths</comment>
                 <event-block sid="775906751531588">
                     <conditions>
-                        <condition id="6" name="On object clicked" sid="671849318364119" type="Mouse">
+                        <condition disabled="1" id="6" name="On object clicked" sid="671849318364119" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">M3_ClearButton</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="638514528666948" type="Touch">
+                            <param id="0" name="Object">M3_ClearButton</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -2014,8 +2029,8 @@
                                     <param id="0" name="Animation">&quot;Clicked&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action disabled="1" id="-21" name="Reset global variables" sid="943362836151117" type="System" />
-                                <action disabled="1" id="-26" name="Restart layout" sid="541260254147126" type="System" />
+                                <action id="-21" name="Reset global variables" sid="943362836151117" type="System" />
+                                <action id="-26" name="Restart layout" sid="541260254147126" type="System" />
                             </actions>
                         </event-block>
                         <event-block sid="710829370825550">
