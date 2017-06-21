@@ -2258,33 +2258,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Text" uid="234">
-                    <properties>
-                        <text>Start Here!</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-64,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>918</x>
-                        <y>782</y>
-                        <z>0</z>
-                        <width>326</width>
-                        <height>94</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="M3_Car" uid="235">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -2304,15 +2277,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>939.747314453</x>
-                        <y>1347.710693359</y>
+                        <x>929</x>
+                        <y>570</y>
                         <z>0</z>
                         <width>148</width>
                         <height>88</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.511363626</hotspotY>
-                        <angle>-1.3632617</angle>
+                        <angle>-2.319548607</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
