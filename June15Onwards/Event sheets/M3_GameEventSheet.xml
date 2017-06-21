@@ -589,6 +589,20 @@
                         <action id="-45" name="Reset persisted objects" sid="742905554723837" type="System" />
                     </actions>
                     <sub-events>
+                        <event-block sid="151473304868480">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="716973526945248" type="M3_Hard" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="145669517204243" type="M3_Passenger">
+                                    <param id="0" name="Instance variable">IWantToGoTo</param>
+                                    <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;,&quot;W&quot;,&quot;X&quot;,&quot;Y&quot;,&quot;Z&quot;)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <include>M3_HardES</include>
+                            </sub-events>
+                        </event-block>
                         <event-block sid="906862134432831">
                             <conditions>
                                 <condition id="-3" name="Is on-screen" sid="205657564163133" type="MapMed" />
@@ -604,7 +618,7 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <include>M3_Medium</include>
+                                <include>M3_MediumES</include>
                             </sub-events>
                         </event-block>
                         <event-block sid="911059415563664">
@@ -622,7 +636,7 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <include>M3_Easy</include>
+                                <include>M3_EasyES</include>
                             </sub-events>
                         </event-block>
                         <event-block sid="145419157156082">
@@ -1379,6 +1393,17 @@
                                                 </action>
                                             </actions>
                                             <sub-events>
+                                                <event-block sid="197394953108389">
+                                                    <conditions>
+                                                        <condition id="-3" name="Is on-screen" sid="479557610653411" type="M3_Hard" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-10" name="Set value" sid="910918905944562" type="M3_Passenger">
+                                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                                            <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;,&quot;W&quot;,&quot;X&quot;,&quot;Y&quot;,&quot;Z&quot;)</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
                                                 <event-block sid="215459887703923">
                                                     <conditions>
                                                         <condition id="-3" name="Is on-screen" sid="712377822108031" type="MapMed" />

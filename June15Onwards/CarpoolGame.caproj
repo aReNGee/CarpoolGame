@@ -627,8 +627,9 @@
     </layout-folder>
     <event-folder>
         <event-sheet>M3_GameEventSheet.xml</event-sheet>
-        <event-sheet>M3_Medium.xml</event-sheet>
-        <event-sheet>M3_Easy.xml</event-sheet>
+        <event-sheet>M3_MediumES.xml</event-sheet>
+        <event-sheet>M3_EasyES.xml</event-sheet>
+        <event-sheet>M3_HardES.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="5" />
