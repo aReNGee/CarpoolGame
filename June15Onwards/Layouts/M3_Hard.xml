@@ -60,16 +60,16 @@
                     </properties>
                     <instance-variables>
                         <Location>G</Location>
-                        <PrimaryConnection>A</PrimaryConnection>
-                        <SecondaryConnection>B</SecondaryConnection>
-                        <UMadmanThirdConnection>H</UMadmanThirdConnection>
+                        <PrimaryConnection>Q</PrimaryConnection>
+                        <SecondaryConnection>R</SecondaryConnection>
+                        <UMadmanThirdConnection></UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>375</x>
-                        <y>502</y>
+                        <x>401</x>
+                        <y>936</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -93,8 +93,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>371</x>
-                        <y>500</y>
+                        <x>397</x>
+                        <y>934</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -114,16 +114,16 @@
                     </properties>
                     <instance-variables>
                         <Location>H</Location>
-                        <PrimaryConnection>N</PrimaryConnection>
-                        <SecondaryConnection>G</SecondaryConnection>
-                        <UMadmanThirdConnection>C</UMadmanThirdConnection>
-                        <OkayFineConnection4></OkayFineConnection4>
+                        <PrimaryConnection>C</PrimaryConnection>
+                        <SecondaryConnection>W</SecondaryConnection>
+                        <UMadmanThirdConnection>T</UMadmanThirdConnection>
+                        <OkayFineConnection4>Y</OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>629</x>
-                        <y>495</y>
+                        <x>1217</x>
+                        <y>294</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -147,8 +147,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>625</x>
-                        <y>493</y>
+                        <x>1213</x>
+                        <y>292</y>
                         <z>0</z>
                         <width>57</width>
                         <height>57</height>
@@ -168,16 +168,16 @@
                     </properties>
                     <instance-variables>
                         <Location>I</Location>
-                        <PrimaryConnection>D</PrimaryConnection>
-                        <SecondaryConnection>J</SecondaryConnection>
-                        <UMadmanThirdConnection>special</UMadmanThirdConnection>
+                        <PrimaryConnection>Y</PrimaryConnection>
+                        <SecondaryConnection>D</SecondaryConnection>
+                        <UMadmanThirdConnection></UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>949.500488281</x>
-                        <y>347.166595459</y>
+                        <x>1481</x>
+                        <y>619</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -201,8 +201,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>945.500488281</x>
-                        <y>345.166595459</y>
+                        <x>1477</x>
+                        <y>617</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -222,16 +222,16 @@
                     </properties>
                     <instance-variables>
                         <Location>J</Location>
-                        <PrimaryConnection>I</PrimaryConnection>
-                        <SecondaryConnection>L</SecondaryConnection>
+                        <PrimaryConnection>O</PrimaryConnection>
+                        <SecondaryConnection>W</SecondaryConnection>
                         <UMadmanThirdConnection></UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1203</x>
-                        <y>406</y>
+                        <x>860</x>
+                        <y>153</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -255,8 +255,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1199</x>
-                        <y>404</y>
+                        <x>856</x>
+                        <y>151</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -276,16 +276,16 @@
                     </properties>
                     <instance-variables>
                         <Location>L</Location>
-                        <PrimaryConnection>J</PrimaryConnection>
-                        <SecondaryConnection>K</SecondaryConnection>
-                        <UMadmanThirdConnection>O</UMadmanThirdConnection>
+                        <PrimaryConnection>M</PrimaryConnection>
+                        <SecondaryConnection>special</SecondaryConnection>
+                        <UMadmanThirdConnection></UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1441</x>
-                        <y>499</y>
+                        <x>1229</x>
+                        <y>704</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -309,8 +309,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1437</x>
-                        <y>497</y>
+                        <x>1225</x>
+                        <y>702</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -330,16 +330,16 @@
                     </properties>
                     <instance-variables>
                         <Location>K</Location>
-                        <PrimaryConnection>L</PrimaryConnection>
-                        <SecondaryConnection>M</SecondaryConnection>
+                        <PrimaryConnection>Q</PrimaryConnection>
+                        <SecondaryConnection>B</SecondaryConnection>
                         <UMadmanThirdConnection>E</UMadmanThirdConnection>
-                        <OkayFineConnection4></OkayFineConnection4>
+                        <OkayFineConnection4>special</OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1609.000244141</x>
-                        <y>291.832733154</y>
+                        <x>760</x>
+                        <y>724</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -363,8 +363,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1609.99987793</x>
-                        <y>291.500152588</y>
+                        <x>761</x>
+                        <y>723</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -384,16 +384,16 @@
                     </properties>
                     <instance-variables>
                         <Location>M</Location>
-                        <PrimaryConnection>K</PrimaryConnection>
-                        <SecondaryConnection>O</SecondaryConnection>
-                        <UMadmanThirdConnection></UMadmanThirdConnection>
+                        <PrimaryConnection>L</PrimaryConnection>
+                        <SecondaryConnection>S</SecondaryConnection>
+                        <UMadmanThirdConnection>D</UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1825.835327148</x>
-                        <y>435.499847412</y>
+                        <x>1292</x>
+                        <y>902</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -417,8 +417,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1826.834960938</x>
-                        <y>433.499847412</y>
+                        <x>1293</x>
+                        <y>900</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -438,16 +438,16 @@
                     </properties>
                     <instance-variables>
                         <Location>O</Location>
-                        <PrimaryConnection>L</PrimaryConnection>
-                        <SecondaryConnection>V</SecondaryConnection>
-                        <UMadmanThirdConnection>M</UMadmanThirdConnection>
+                        <PrimaryConnection>N</PrimaryConnection>
+                        <SecondaryConnection>C</SecondaryConnection>
+                        <UMadmanThirdConnection>J</UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1664.334838867</x>
-                        <y>621.834960938</y>
+                        <x>729</x>
+                        <y>326</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -471,8 +471,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1660.334838867</x>
-                        <y>619.834960938</y>
+                        <x>725</x>
+                        <y>324</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -492,16 +492,16 @@
                     </properties>
                     <instance-variables>
                         <Location>V</Location>
-                        <PrimaryConnection>U</PrimaryConnection>
-                        <SecondaryConnection>O</SecondaryConnection>
+                        <PrimaryConnection>R</PrimaryConnection>
+                        <SecondaryConnection>F</SecondaryConnection>
                         <UMadmanThirdConnection></UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1603.665161133</x>
-                        <y>865.499816895</y>
+                        <x>696</x>
+                        <y>1151</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -525,8 +525,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1599.665161133</x>
-                        <y>863.499816895</y>
+                        <x>692</x>
+                        <y>1149</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -546,16 +546,16 @@
                     </properties>
                     <instance-variables>
                         <Location>U</Location>
-                        <PrimaryConnection>R</PrimaryConnection>
-                        <SecondaryConnection>V</SecondaryConnection>
+                        <PrimaryConnection>P</PrimaryConnection>
+                        <SecondaryConnection>Q</SecondaryConnection>
                         <UMadmanThirdConnection></UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1353.829956055</x>
-                        <y>952.50012207</y>
+                        <x>261</x>
+                        <y>721</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -579,62 +579,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1353.159667969</x>
-                        <y>953.002563477</y>
-                        <z>0</z>
-                        <width>56.859474182</width>
-                        <height>56.859474182</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="M3_Sprite2" uid="185">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Disabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Location>R</Location>
-                        <PrimaryConnection>Q</PrimaryConnection>
-                        <SecondaryConnection>T</SecondaryConnection>
-                        <UMadmanThirdConnection>U</UMadmanThirdConnection>
-                        <OkayFineConnection4></OkayFineConnection4>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1107.165405273</x>
-                        <y>866.667419434</y>
-                        <z>0</z>
-                        <width>100</width>
-                        <height>100</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite3" uid="186">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Location>R</Location>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1103.165405273</x>
-                        <y>864.667419434</y>
+                        <x>260</x>
+                        <y>722</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -654,16 +600,16 @@
                     </properties>
                     <instance-variables>
                         <Location>T</Location>
-                        <PrimaryConnection>S</PrimaryConnection>
-                        <SecondaryConnection>R</SecondaryConnection>
-                        <UMadmanThirdConnection></UMadmanThirdConnection>
+                        <PrimaryConnection>A</PrimaryConnection>
+                        <SecondaryConnection>H</SecondaryConnection>
+                        <UMadmanThirdConnection>Y</UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>958</x>
-                        <y>1057</y>
+                        <x>1463</x>
+                        <y>351</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -687,8 +633,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>954</x>
-                        <y>1055</y>
+                        <x>1459</x>
+                        <y>349</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -708,16 +654,16 @@
                     </properties>
                     <instance-variables>
                         <Location>S</Location>
-                        <PrimaryConnection>Q</PrimaryConnection>
-                        <SecondaryConnection>P</SecondaryConnection>
-                        <UMadmanThirdConnection>T</UMadmanThirdConnection>
+                        <PrimaryConnection>E</PrimaryConnection>
+                        <SecondaryConnection>F</SecondaryConnection>
+                        <UMadmanThirdConnection>M</UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>701</x>
-                        <y>1045</y>
+                        <x>1088</x>
+                        <y>989</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -741,8 +687,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>697</x>
-                        <y>1043</y>
+                        <x>1084</x>
+                        <y>987</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -762,16 +708,16 @@
                     </properties>
                     <instance-variables>
                         <Location>Q</Location>
-                        <PrimaryConnection>S</PrimaryConnection>
-                        <SecondaryConnection>R</SecondaryConnection>
-                        <UMadmanThirdConnection>N</UMadmanThirdConnection>
-                        <OkayFineConnection4>special</OkayFineConnection4>
+                        <PrimaryConnection>U</PrimaryConnection>
+                        <SecondaryConnection>K</SecondaryConnection>
+                        <UMadmanThirdConnection>G</UMadmanThirdConnection>
+                        <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>857</x>
-                        <y>850</y>
+                        <x>516</x>
+                        <y>733</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -795,8 +741,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>853</x>
-                        <y>848</y>
+                        <x>512</x>
+                        <y>731</y>
                         <z>0</z>
                         <width>57</width>
                         <height>57</height>
@@ -816,16 +762,16 @@
                     </properties>
                     <instance-variables>
                         <Location>N</Location>
-                        <PrimaryConnection>H</PrimaryConnection>
-                        <SecondaryConnection>Q</SecondaryConnection>
-                        <UMadmanThirdConnection>P</UMadmanThirdConnection>
-                        <OkayFineConnection4></OkayFineConnection4>
+                        <PrimaryConnection>B</PrimaryConnection>
+                        <SecondaryConnection>X</SecondaryConnection>
+                        <UMadmanThirdConnection>O</UMadmanThirdConnection>
+                        <OkayFineConnection4>special</OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>626.166625977</x>
-                        <y>756.334838867</y>
+                        <x>849</x>
+                        <y>486</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -849,8 +795,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>622.166625977</x>
-                        <y>754.334838867</y>
+                        <x>845</x>
+                        <y>484</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -870,16 +816,16 @@
                     </properties>
                     <instance-variables>
                         <Location>P</Location>
-                        <PrimaryConnection>N</PrimaryConnection>
-                        <SecondaryConnection>S</SecondaryConnection>
+                        <PrimaryConnection>U</PrimaryConnection>
+                        <SecondaryConnection>B</SecondaryConnection>
                         <UMadmanThirdConnection></UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>465.166564941</x>
-                        <y>932.832763672</y>
+                        <x>394</x>
+                        <y>542</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -903,8 +849,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>461.166564941</x>
-                        <y>930.832763672</y>
+                        <x>390</x>
+                        <y>540</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -925,8 +871,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>863</x>
-                        <y>599</y>
+                        <x>1004</x>
+                        <y>658</y>
                         <z>0</z>
                         <width>250</width>
                         <height>250</height>
@@ -998,16 +944,16 @@
                     </properties>
                     <instance-variables>
                         <Location>D</Location>
-                        <PrimaryConnection>C</PrimaryConnection>
-                        <SecondaryConnection>I</SecondaryConnection>
+                        <PrimaryConnection>I</PrimaryConnection>
+                        <SecondaryConnection>M</SecondaryConnection>
                         <UMadmanThirdConnection></UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>836</x>
-                        <y>126</y>
+                        <x>1508</x>
+                        <y>832</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -1027,16 +973,16 @@
                     </properties>
                     <instance-variables>
                         <Location>A</Location>
-                        <PrimaryConnection>B</PrimaryConnection>
-                        <SecondaryConnection>G</SecondaryConnection>
-                        <UMadmanThirdConnection>F</UMadmanThirdConnection>
+                        <PrimaryConnection>W</PrimaryConnection>
+                        <SecondaryConnection>T</SecondaryConnection>
+                        <UMadmanThirdConnection></UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>151</x>
-                        <y>386</y>
+                        <x>1350</x>
+                        <y>146</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -1057,15 +1003,15 @@
                     <instance-variables>
                         <Location>E</Location>
                         <PrimaryConnection>K</PrimaryConnection>
-                        <SecondaryConnection></SecondaryConnection>
-                        <UMadmanThirdConnection></UMadmanThirdConnection>
+                        <SecondaryConnection>R</SecondaryConnection>
+                        <UMadmanThirdConnection>S</UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1753</x>
-                        <y>125</y>
+                        <x>867</x>
+                        <y>920</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -1085,16 +1031,16 @@
                     </properties>
                     <instance-variables>
                         <Location>F</Location>
-                        <PrimaryConnection>A</PrimaryConnection>
-                        <SecondaryConnection></SecondaryConnection>
-                        <UMadmanThirdConnection></UMadmanThirdConnection>
+                        <PrimaryConnection>V</PrimaryConnection>
+                        <SecondaryConnection>S</SecondaryConnection>
+                        <UMadmanThirdConnection>Z</UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>94</x>
-                        <y>644</y>
+                        <x>939</x>
+                        <y>1149</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -1114,16 +1060,16 @@
                     </properties>
                     <instance-variables>
                         <Location>B</Location>
-                        <PrimaryConnection>A</PrimaryConnection>
-                        <SecondaryConnection>G</SecondaryConnection>
-                        <UMadmanThirdConnection>C</UMadmanThirdConnection>
+                        <PrimaryConnection>P</PrimaryConnection>
+                        <SecondaryConnection>N</SecondaryConnection>
+                        <UMadmanThirdConnection>K</UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>363.499847412</x>
-                        <y>254.83303833</y>
+                        <x>612</x>
+                        <y>538</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -1151,8 +1097,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>610</x>
-                        <y>238</y>
+                        <x>982</x>
+                        <y>281</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -1173,11 +1119,281 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1187</x>
-                        <y>678</y>
+                        <x>1045</x>
+                        <y>813</y>
                         <z>0</z>
-                        <width>520</width>
-                        <height>180</height>
+                        <width>250</width>
+                        <height>208</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="M3_Sprite2" uid="185">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Disabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>R</Location>
+                        <PrimaryConnection>G</PrimaryConnection>
+                        <SecondaryConnection>E</SecondaryConnection>
+                        <UMadmanThirdConnection>V</UMadmanThirdConnection>
+                        <OkayFineConnection4></OkayFineConnection4>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>625</x>
+                        <y>957</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite3" uid="186">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>R</Location>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>621</x>
+                        <y>955</y>
+                        <z>0</z>
+                        <width>56.859474182</width>
+                        <height>56.859474182</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="M3_Sprite2" uid="93">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Disabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>Z</Location>
+                        <PrimaryConnection>F</PrimaryConnection>
+                        <SecondaryConnection></SecondaryConnection>
+                        <UMadmanThirdConnection></UMadmanThirdConnection>
+                        <OkayFineConnection4></OkayFineConnection4>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1177</x>
+                        <y>1135</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite3" uid="94">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>Z</Location>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1176</x>
+                        <y>1134</y>
+                        <z>0</z>
+                        <width>56.859474182</width>
+                        <height>56.859474182</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="M3_Sprite2" uid="95">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Disabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>X</Location>
+                        <PrimaryConnection>N</PrimaryConnection>
+                        <SecondaryConnection>C</SecondaryConnection>
+                        <UMadmanThirdConnection>Y</UMadmanThirdConnection>
+                        <OkayFineConnection4></OkayFineConnection4>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1067</x>
+                        <y>466</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite3" uid="96">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>X</Location>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1066</x>
+                        <y>465</y>
+                        <z>0</z>
+                        <width>56.859474182</width>
+                        <height>56.859474182</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="M3_Sprite2" uid="97">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Disabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>Y</Location>
+                        <PrimaryConnection>X</PrimaryConnection>
+                        <SecondaryConnection>H</SecondaryConnection>
+                        <UMadmanThirdConnection>T</UMadmanThirdConnection>
+                        <OkayFineConnection4>I</OkayFineConnection4>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1274</x>
+                        <y>521</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite3" uid="98">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>Y</Location>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1273</x>
+                        <y>520</y>
+                        <z>0</z>
+                        <width>56.859474182</width>
+                        <height>56.859474182</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="M3_Sprite2" uid="99">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Disabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>W</Location>
+                        <PrimaryConnection>J</PrimaryConnection>
+                        <SecondaryConnection>H</SecondaryConnection>
+                        <UMadmanThirdConnection>A</UMadmanThirdConnection>
+                        <OkayFineConnection4></OkayFineConnection4>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1104</x>
+                        <y>120</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite3" uid="100">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>W</Location>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1103</x>
+                        <y>119</y>
+                        <z>0</z>
+                        <width>56.859474182</width>
+                        <height>56.859474182</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1326,8 +1542,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>147</x>
-                        <y>384</y>
+                        <x>1346</x>
+                        <y>144</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -1351,8 +1567,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1752</x>
-                        <y>124</y>
+                        <x>866</x>
+                        <y>919</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -1376,8 +1592,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>832</x>
-                        <y>120</y>
+                        <x>1504</x>
+                        <y>826</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -1401,8 +1617,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>90</x>
-                        <y>642</y>
+                        <x>935</x>
+                        <y>1147</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -1426,8 +1642,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>359.499847412</x>
-                        <y>252.83303833</y>
+                        <x>608</x>
+                        <y>536</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -1451,8 +1667,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>606</x>
-                        <y>236</y>
+                        <x>978</x>
+                        <y>279</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
@@ -1485,8 +1701,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1101</x>
-                        <y>650</y>
+                        <x>1077</x>
+                        <y>764</y>
                         <z>0</z>
                         <width>42.413269043</width>
                         <height>92.314308167</height>
@@ -1519,8 +1735,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1163</x>
-                        <y>650</y>
+                        <x>1139</x>
+                        <y>764</y>
                         <z>0</z>
                         <width>42.413269043</width>
                         <height>92.314308167</height>
@@ -1553,8 +1769,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1344</x>
-                        <y>650</y>
+                        <x>1078</x>
+                        <y>870</y>
                         <z>0</z>
                         <width>42.413269043</width>
                         <height>92.314308167</height>
@@ -1587,11 +1803,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1404</x>
-                        <y>650</y>
+                        <x>1138</x>
+                        <y>870</y>
                         <z>0</z>
-                        <width>42.413269043</width>
-                        <height>92.314308167</height>
+                        <width>42</width>
+                        <height>92</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.569767416</hotspotY>
@@ -1621,8 +1837,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1223</x>
-                        <y>650</y>
+                        <x>957</x>
+                        <y>870</y>
                         <z>0</z>
                         <width>43.783088684</width>
                         <height>95.295783997</height>
@@ -1655,8 +1871,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1283</x>
-                        <y>650</y>
+                        <x>1017</x>
+                        <y>870</y>
                         <z>0</z>
                         <width>42.413269043</width>
                         <height>92.314308167</height>
@@ -1689,8 +1905,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>973</x>
-                        <y>650</y>
+                        <x>949</x>
+                        <y>764</y>
                         <z>0</z>
                         <width>43.783088684</width>
                         <height>95.295783997</height>
@@ -1723,8 +1939,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1040</x>
-                        <y>650</y>
+                        <x>1016</x>
+                        <y>764</y>
                         <z>0</z>
                         <width>42.413269043</width>
                         <height>92.314308167</height>
@@ -1754,8 +1970,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>500.5</x>
-                        <y>448.5</y>
+                        <x>2000</x>
+                        <y>0</y>
                         <z>0</z>
                         <width>229</width>
                         <height>57</height>
@@ -1785,8 +2001,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>621</x>
-                        <y>436</y>
+                        <x>2000</x>
+                        <y>0</y>
                         <z>0</z>
                         <width>229</width>
                         <height>57</height>
@@ -1816,8 +2032,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>670.75</x>
-                        <y>529.25</y>
+                        <x>2000</x>
+                        <y>0</y>
                         <z>0</z>
                         <width>229</width>
                         <height>57</height>
@@ -1847,8 +2063,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>791.25</x>
-                        <y>516.75</y>
+                        <x>2000</x>
+                        <y>0</y>
                         <z>0</z>
                         <width>229</width>
                         <height>57</height>
@@ -1878,8 +2094,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1256.875</x>
-                        <y>656.625</y>
+                        <x>2000</x>
+                        <y>0</y>
                         <z>0</z>
                         <width>229</width>
                         <height>57</height>
@@ -1909,8 +2125,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1377.375</x>
-                        <y>644.125</y>
+                        <x>2000</x>
+                        <y>0</y>
                         <z>0</z>
                         <width>229</width>
                         <height>57</height>
@@ -1940,8 +2156,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1086.625</x>
-                        <y>575.875</y>
+                        <x>2000</x>
+                        <y>0</y>
                         <z>0</z>
                         <width>229</width>
                         <height>57</height>
@@ -1971,8 +2187,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1211</x>
-                        <y>555</y>
+                        <x>2000</x>
+                        <y>0</y>
                         <z>0</z>
                         <width>229</width>
                         <height>57</height>
@@ -2057,8 +2273,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1050</x>
-                        <y>693</y>
+                        <x>918</x>
+                        <y>782</y>
                         <z>0</z>
                         <width>326</width>
                         <height>94</height>

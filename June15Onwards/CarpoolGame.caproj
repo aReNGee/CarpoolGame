@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>CarpoolGame</name>
-    <description>FirstTabletBuild</description>
-    <version>1.2.0</version>
+    <description>Updating Difficulties</description>
+    <version>1.2.1</version>
     <author></author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -229,7 +229,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595757210928807" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\HardMap.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\fixcarpool.png" />
                     </animation>
                 </animation-folder>
             </object-type>

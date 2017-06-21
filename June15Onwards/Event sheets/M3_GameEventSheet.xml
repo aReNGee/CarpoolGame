@@ -249,7 +249,7 @@
                                 </action>
                                 <action behavior="CustomMovement" id="2" name="Set speed" sid="826878781958193" type="M3_Car">
                                     <param id="0" name="Which">0</param>
-                                    <param id="1" name="Speed">640</param>
+                                    <param id="1" name="Speed">640*1.75</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -273,7 +273,7 @@
                                                 </action>
                                                 <action behavior="CustomMovement" id="2" name="Set speed" sid="893638107681292" type="M3_Passenger">
                                                     <param id="0" name="Which">0</param>
-                                                    <param id="1" name="Speed">640</param>
+                                                    <param id="1" name="Speed">640*1.75</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="979012202925975" type="M3_Passenger">
                                                     <param id="0" name="Angle">0</param>
