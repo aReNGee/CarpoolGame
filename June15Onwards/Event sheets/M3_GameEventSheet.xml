@@ -50,10 +50,9 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">-1</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="385847391612558" type="System">
-                                    <param id="0" name="Variable">Timer</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">0</param>
+                                <condition id="-5" name="Compare width" sid="879160102857719" type="Sprite4">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Width">0</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -474,10 +473,9 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">-1</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="202660593314284" type="System">
-                                    <param id="0" name="Variable">Timer</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">0</param>
+                                <condition id="-5" name="Compare width" sid="670976339197328" type="Sprite4">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Width">0</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -589,74 +587,91 @@
                     <actions>
                         <action id="-21" name="Reset global variables" sid="230857608062793" type="System" />
                         <action id="-45" name="Reset persisted objects" sid="742905554723837" type="System" />
-                        <action id="-10" name="Set value" sid="359342351465677" type="M3_Passenger">
-                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                            <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;)</param>
-                        </action>
-                        <action id="0" name="Call function" sid="411211861170818" type="Move">
-                            <param id="0" name="Name">&quot;GetRidofDupes&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action id="-10" name="Set value" sid="537320760569844" type="Text2">
-                            <param id="0" name="Instance variable">OffsetX</param>
-                            <param id="1" name="Value">M3_Passenger.X-Text2.X</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="604664409342562" type="Text2">
-                            <param id="0" name="Instance variable">OffsetY</param>
-                            <param id="1" name="Value">M3_Passenger.Y-Text2.Y</param>
-                        </action>
-                        <action id="1" name="Append text" sid="467122516302967" type="Text2">
-                            <param id="0" name="Text">M3_Passenger.IWantToGoTo</param>
-                        </action>
-                        <action id="0" name="Call function" sid="696390332828445" type="Move">
-                            <param id="0" name="Name">&quot;SetUpTheMatrix&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action id="3" name="Set at XY" sid="249816481821927" type="Targets">
-                            <param id="0" name="X">ArrayPos</param>
-                            <param id="1" name="Y">2</param>
-                            <param id="2" name="Value">&quot;F&quot;</param>
-                        </action>
-                        <action id="0" name="Call function" sid="149842251236257" type="Move">
-                            <param id="0" name="Name">&quot;CalcFuel&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action id="0" name="Set text" sid="181543173608786" type="SpriteFont">
-                            <param id="0" name="Text">&quot;If each person took their own car, they would use &quot; &amp; Move.ReturnValue &amp; &quot; fuel.&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="343098123227070" type="System">
-                            <param id="0" name="Variable">InitialFuelCost</param>
-                            <param id="1" name="Value">Move.ReturnValue</param>
-                        </action>
-                        <action id="3" name="Set at XY" sid="604371029757726" type="Targets">
-                            <param id="0" name="X">0</param>
-                            <param id="1" name="Y">0</param>
-                            <param id="2" name="Value">JustForAlignment.X</param>
-                        </action>
-                        <action id="3" name="Set at XY" sid="326471963539622" type="Targets">
-                            <param id="0" name="X">0</param>
-                            <param id="1" name="Y">1</param>
-                            <param id="2" name="Value">JustForAlignment.Y</param>
-                        </action>
-                        <action id="0" name="Call function" sid="706759742454354" type="Move">
-                            <param id="0" name="Name">&quot;RandomizePassengers&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action id="-3" name="Set position" sid="162413732469634" type="M3_Car">
-                            <param id="0" name="X">JustForAlignment.X</param>
-                            <param id="1" name="Y">JustForAlignment.Y</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="480780533400796" type="System">
-                            <param id="0" name="Layer">&quot;Endgame&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="0" name="Play" sid="362171293137369" type="Clickable">
-                            <param id="0" name="Audio file">bgm_carpool_game</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="906862134432831">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="205657564163133" type="MapMed" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="359342351465677" type="M3_Passenger">
+                                    <param id="0" name="Instance variable">IWantToGoTo</param>
+                                    <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <include>M3_Medium</include>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="145419157156082">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Call function" sid="411211861170818" type="Move">
+                                    <param id="0" name="Name">&quot;GetRidofDupes&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-10" name="Set value" sid="537320760569844" type="Text2">
+                                    <param id="0" name="Instance variable">OffsetX</param>
+                                    <param id="1" name="Value">M3_Passenger.X-Text2.X</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="604664409342562" type="Text2">
+                                    <param id="0" name="Instance variable">OffsetY</param>
+                                    <param id="1" name="Value">M3_Passenger.Y-Text2.Y</param>
+                                </action>
+                                <action id="1" name="Append text" sid="467122516302967" type="Text2">
+                                    <param id="0" name="Text">M3_Passenger.IWantToGoTo</param>
+                                </action>
+                                <action id="0" name="Call function" sid="696390332828445" type="Move">
+                                    <param id="0" name="Name">&quot;SetUpTheMatrix&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="249816481821927" type="Targets">
+                                    <param id="0" name="X">ArrayPos</param>
+                                    <param id="1" name="Y">2</param>
+                                    <param id="2" name="Value">&quot;F&quot;</param>
+                                </action>
+                                <action id="0" name="Call function" sid="149842251236257" type="Move">
+                                    <param id="0" name="Name">&quot;CalcFuel&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Set text" sid="181543173608786" type="SpriteFont">
+                                    <param id="0" name="Text">&quot;If each person took their own car, they would use &quot; &amp; Move.ReturnValue &amp; &quot; fuel.&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="343098123227070" type="System">
+                                    <param id="0" name="Variable">InitialFuelCost</param>
+                                    <param id="1" name="Value">Move.ReturnValue</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="604371029757726" type="Targets">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Y">0</param>
+                                    <param id="2" name="Value">JustForAlignment.X</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="326471963539622" type="Targets">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Y">1</param>
+                                    <param id="2" name="Value">JustForAlignment.Y</param>
+                                </action>
+                                <action id="0" name="Call function" sid="706759742454354" type="Move">
+                                    <param id="0" name="Name">&quot;RandomizePassengers&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-3" name="Set position" sid="162413732469634" type="M3_Car">
+                                    <param id="0" name="X">JustForAlignment.X</param>
+                                    <param id="1" name="Y">JustForAlignment.Y</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="480780533400796" type="System">
+                                    <param id="0" name="Layer">&quot;Endgame&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="362171293137369" type="Clickable">
+                                    <param id="0" name="Audio file">bgm_carpool_game</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -1168,38 +1183,25 @@
             <sub-events>
                 <event-block sid="536579700372270">
                     <conditions>
-                        <condition id="-1" name="Every tick" sid="901214480442237" type="System" />
+                        <condition id="-6" name="Every X seconds" sid="973524319542687" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-5" name="Compare width" sid="584980239923178" type="Sprite4">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Width">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-5" name="Set width" sid="891439856226236" type="Sprite4">
-                            <param id="0" name="Width">64*Timer</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="632037782352037">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="129313219844441" type="System">
-                            <param id="0" name="Interval (seconds)">0.01</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="929884086301188" type="System">
-                            <param id="0" name="Variable">Timer</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="712865722126265" type="System">
-                            <param id="0" name="Variable">Timer</param>
-                            <param id="1" name="Value">0.01</param>
+                            <param id="0" name="Width">Sprite4.Width-3.2</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="116277198633622">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="838101024239736" type="System">
-                            <param id="0" name="Variable">Timer</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">0</param>
+                        <condition id="-5" name="Compare width" sid="428971905613141" type="Sprite4">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="Width">0</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="269590930138838" type="System">
                             <param id="0" name="Variable">TimerDestroyed</param>
@@ -1230,213 +1232,6 @@
             </sub-events>
         </event-group>
         <variable constant="0" name="FuelUsed" sid="653136978863899" static="0" type="number">0</variable>
-        <event-group description="" sid="973268284278854" title="Fuel Costs">
-            <sub-events>
-                <event-block sid="174362450574682">
-                    <conditions>
-                        <condition id="0" name="On function" sid="669534879128064" type="Move">
-                            <param id="0" name="Name">&quot;CalcFuel&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="470463638787577" type="System">
-                            <param id="0" name="Variable">FuelUsed</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block sid="468600309657980">
-                            <conditions>
-                                <condition id="-11" name="For Each" sid="147227292119261" type="System">
-                                    <param id="0" name="Object">M3_Passenger</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block any="1" sid="107975450803101">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="666030186319829" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;F&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="638786860520785" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;E&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="298366346651117" type="System">
-                                            <param id="0" name="Variable">FuelUsed</param>
-                                            <param id="1" name="Value">6</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block any="1" sid="574690520185485">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="448732522009267" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;A&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="715715948206739" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;M&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="848193829828897" type="System">
-                                            <param id="0" name="Variable">FuelUsed</param>
-                                            <param id="1" name="Value">5</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block any="1" sid="797663402970393">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="119831902445109" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;B&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="191449106290083" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;G&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="936480833867114" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;O&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="443311894485899" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;V&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="519896108962695" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;K&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="150788433825999" type="System">
-                                            <param id="0" name="Variable">FuelUsed</param>
-                                            <param id="1" name="Value">4</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block any="1" sid="777660705875376">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="100423323660109" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;C&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="243967750716730" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;H&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="528994658849243" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;P&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="562794335553280" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;T&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="365504618909487" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;L&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="825450680455038" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;U&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="823515034844089" type="System">
-                                            <param id="0" name="Variable">FuelUsed</param>
-                                            <param id="1" name="Value">3</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block any="1" sid="994250367041060">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="258843955591100" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;N&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="823789975365606" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;S&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="455443662660308" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;D&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="172227769151435" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;J&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="607654507075891" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;R&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="292134993162698" type="System">
-                                            <param id="0" name="Variable">FuelUsed</param>
-                                            <param id="1" name="Value">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block any="1" sid="367277068991997">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="418630497296648" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;I&quot;</param>
-                                        </condition>
-                                        <condition id="-7" name="Compare instance variable" sid="568894163224550" type="M3_Passenger">
-                                            <param id="0" name="Instance variable">IWantToGoTo</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">&quot;Q&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="635397806592443" type="System">
-                                            <param id="0" name="Variable">FuelUsed</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="683846954992883">
-                            <conditions />
-                            <actions>
-                                <action id="1" name="Set return value" sid="740081017893716" type="Move">
-                                    <param id="0" name="Value">FuelUsed</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-group description="" sid="737995203441353" title="Did We Run Out of Players?">
             <sub-events>
                 <event-block sid="353571537792393">
@@ -1691,27 +1486,33 @@
                     <param id="0" name="Name">&quot;GameEnds&quot;</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="0" name="Call function" sid="949604369457495" type="Move">
-                    <param id="0" name="Name">&quot;CalcFuel&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
-                <action id="-10" name="Add to" sid="299103755106395" type="System">
-                    <param id="0" name="Variable">Fuel</param>
-                    <param id="1" name="Value">Move.ReturnValue</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="391982471047871" type="System">
-                    <param id="0" name="Layer">&quot;Endgame&quot;</param>
-                    <param id="1" name="Visibility">1</param>
-                </action>
-                <action disabled="1" id="-2" name="Go to layout" sid="312741727700749" type="System">
-                    <param id="0" name="Layout">EndGame</param>
-                </action>
-                <action id="0" name="Call function" sid="602548774030076" type="Move">
-                    <param id="0" name="Name">&quot;Endgame&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="575723044412797">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Call function" sid="949604369457495" type="Move">
+                            <param id="0" name="Name">&quot;CalcFuel&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-10" name="Add to" sid="299103755106395" type="System">
+                            <param id="0" name="Variable">Fuel</param>
+                            <param id="1" name="Value">Move.ReturnValue</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="391982471047871" type="System">
+                            <param id="0" name="Layer">&quot;Endgame&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action disabled="1" id="-2" name="Go to layout" sid="312741727700749" type="System">
+                            <param id="0" name="Layout">EndGame</param>
+                        </action>
+                        <action id="0" name="Call function" sid="602548774030076" type="Move">
+                            <param id="0" name="Name">&quot;Endgame&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-group description="" sid="712133946204851" title="Randomizing The Passanger Images">
             <sub-events>
@@ -1786,15 +1587,14 @@
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">-1</param>
                                         </condition>
-                                        <condition id="-14" name="Compare variable" sid="509669692100754" type="System">
-                                            <param id="0" name="Variable">Timer</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
                                         <condition id="-14" name="Compare variable" sid="632077531792267" type="System">
                                             <param id="0" name="Variable">PathList</param>
                                             <param id="1" name="Comparison">1</param>
                                             <param id="2" name="Value">&quot;&quot;</param>
+                                        </condition>
+                                        <condition id="-5" name="Compare width" sid="726573849352818" type="Sprite4">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Width">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>
