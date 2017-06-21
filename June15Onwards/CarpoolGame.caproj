@@ -32,7 +32,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>M3_Medium</first-layout>
+    <first-layout>TEMPORARY_LEVEL_SELECT</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -240,7 +240,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595757210928807" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\fixcarpool.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\HardLevel.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -614,6 +614,25 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="M3_BlackBox" sid="999531559859142">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="715468437245766" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="M3_TextboxHolder" sid="774201244459339">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="255484199858926" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="M3_Tutorial_Text" sid="967360562252875">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder name="Arrays">
             <object-type global="1" name="ConnectedCells" sid="409196086107849">
@@ -629,18 +648,62 @@
                 <plugin id="Arr" />
             </object-type>
         </object-folder>
+        <object-folder name="TEMPORAY_LEVEL_SELECT">
+            <object-type name="Text3" sid="785591800016967">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="TEMP1" sid="327244431772089">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="440494068628909" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TEMP2" sid="337913729208090">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="244891923020682" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TEMP3" sid="603770350836007">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="535331946662001" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TEMP4" sid="519308132891167">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432854971885530" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
     </object-folder>
     <families />
     <layout-folder>
         <layout>M3_Medium.xml</layout>
         <layout>M3_Easy.xml</layout>
+        <layout>M3_Tutorial_1.xml</layout>
+        <layout>M3_Tutorial_2.xml</layout>
+        <layout>M3_Tutorial_3.xml</layout>
+        <layout>M3_Tutorial_4.xml</layout>
         <layout>M3_Hard.xml</layout>
+        <layout>TEMPORARY_LEVEL_SELECT.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>M3_GameEventSheet.xml</event-sheet>
         <event-sheet>M3_MediumES.xml</event-sheet>
         <event-sheet>M3_EasyES.xml</event-sheet>
         <event-sheet>M3_HardES.xml</event-sheet>
+        <event-sheet>M3_TutorialES.xml</event-sheet>
+        <event-sheet>TEMPORAY_LS_ES.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="5" />

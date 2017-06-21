@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>M3_TutorialES</name>
+    <events>
+        <event-block sid="540114683382461">
+            <conditions>
+                <condition id="14" name="On tap" sid="560288037874394" type="Touch" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="629396279812461">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="316434962919716" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;M3_Tutorial_1&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="188040478465841" type="System">
+                            <param id="0" name="Layout">M3_Tutorial_2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="163756575693157">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="184595393692099" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;M3_Tutorial_2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="334442595421244" type="System">
+                            <param id="0" name="Layout">M3_Tutorial_3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="320367292010394">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="516743183690728" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;M3_Tutorial_3&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="672035848932086" type="System">
+                            <param id="0" name="Layout">M3_Tutorial_4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="232794988214322">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="159319699912793" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;M3_Tutorial_4&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="748594773412601" type="System">
+                            <param id="0" name="Layout">M3_Easy</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="769245736851015">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="208083614593730" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="714609788009858" type="M3_TextboxHolder">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="142538490413085" type="M3_Tutorial_Text">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="170852769021593">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="508208260192922" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="659262605829630" type="M3_TextboxHolder">
+                    <param id="0" name="Opacity">M3_TextboxHolder.Opacity + 1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="697759192713694" type="M3_Tutorial_Text">
+                    <param id="0" name="Opacity">M3_Tutorial_Text.Opacity + 1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="400589356712939" type="System">
+                    <param id="0" name="Layer">&quot;Endgame&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
