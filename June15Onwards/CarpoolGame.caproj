@@ -217,6 +217,22 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="M3_Easy" sid="109572530742587">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="885463165521674" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\EasyMap.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="M3_Hard" sid="741688754638024">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595757210928807" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\HardMap.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="MovingParts">
             <object-type name="M3_Car" sid="548397735895161">
@@ -602,45 +618,17 @@
                 <plugin id="Arr" />
             </object-type>
         </object-folder>
-        <object-type name="Sprite7" sid="172398556202307">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="193120606764780" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="PrototypeMap" sid="216970415352860">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="923323482931152" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500462" original-source="D:\GitHub Repos\CarpoolGame\CarpoolVerticalSlice\Textures\PrototypeMap.JPG" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="PrototypeMap2" sid="864517357132642">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357640057514295" speed="5">
-                    <frame duration="1" hotspotX="0.500548" hotspotY="0.500971" original-source="D:\GitHub Repos\CarpoolGame\CarpoolVerticalSlice\Textures\PrototypeEasyMap.jpg">
-                        <collision-poly>
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>M3_Medium.xml</layout>
+        <layout>M3_Easy.xml</layout>
+        <layout>M3_Hard.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>M3_GameEventSheet.xml</event-sheet>
         <event-sheet>M3_Medium.xml</event-sheet>
+        <event-sheet>M3_Easy.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="5" />

@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>M3_Medium</name>
     <events>
-        <event-group description="" sid="634046748198910" title="Fuel Costs">
+        <event-group description="" sid="634046748198910" title="Fuel Costs Med">
             <sub-events>
                 <event-block sid="889239960172198">
                     <conditions>

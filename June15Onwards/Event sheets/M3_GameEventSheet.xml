@@ -594,13 +594,35 @@
                                 <condition id="-3" name="Is on-screen" sid="205657564163133" type="MapMed" />
                             </conditions>
                             <actions>
-                                <action id="-10" name="Set value" sid="359342351465677" type="M3_Passenger">
+                                <action disabled="1" id="-10" name="Set value" sid="359342351465677" type="M3_Passenger">
                                     <param id="0" name="Instance variable">IWantToGoTo</param>
                                     <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;)</param>
+                                </action>
+                                <action id="0" name="Call function" sid="581422403580299" type="Move">
+                                    <param id="0" name="Name">&quot;CreateDestination&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                             <sub-events>
                                 <include>M3_Medium</include>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="911059415563664">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="733317694147321" type="M3_Easy" />
+                            </conditions>
+                            <actions>
+                                <action disabled="1" id="-10" name="Set value" sid="244737911717979" type="M3_Passenger">
+                                    <param id="0" name="Instance variable">IWantToGoTo</param>
+                                    <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;)</param>
+                                </action>
+                                <action id="0" name="Call function" sid="899301116658528" type="Move">
+                                    <param id="0" name="Name">&quot;CreateDestination&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <include>M3_Easy</include>
                             </sub-events>
                         </event-block>
                         <event-block sid="145419157156082">
@@ -1347,11 +1369,39 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="-10" name="Set value" sid="292508974301273" type="M3_Passenger">
+                                                <action disabled="1" id="-10" name="Set value" sid="292508974301273" type="M3_Passenger">
                                                     <param id="0" name="Instance variable">IWantToGoTo</param>
                                                     <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;)</param>
                                                 </action>
+                                                <action disabled="1" id="0" name="Call function" sid="254820691553772" type="Move">
+                                                    <param id="0" name="Name">&quot;CreateDestination&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="215459887703923">
+                                                    <conditions>
+                                                        <condition id="-3" name="Is on-screen" sid="712377822108031" type="MapMed" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-10" name="Set value" sid="123488695716280" type="M3_Passenger">
+                                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                                            <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;)</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="606397003620770">
+                                                    <conditions>
+                                                        <condition id="-3" name="Is on-screen" sid="315420202778372" type="M3_Easy" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-10" name="Set value" sid="911563644776475" type="M3_Passenger">
+                                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                                            <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;)</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                         <event-block sid="636651680156218">
                                             <conditions>
@@ -1371,6 +1421,38 @@
                                     </sub-events>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="936683075460882">
+                    <conditions>
+                        <condition id="0" name="On function" sid="798389598138161" type="Move">
+                            <param id="0" name="Name">&quot;CreateDestination&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="405102085702695">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="779461111569635" type="MapMed" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="688921596828088" type="M3_Passenger">
+                                    <param id="0" name="Instance variable">IWantToGoTo</param>
+                                    <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="635076573141581">
+                            <conditions>
+                                <condition id="-3" name="Is on-screen" sid="190830034228701" type="M3_Easy" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="176768060489885" type="M3_Passenger">
+                                    <param id="0" name="Instance variable">IWantToGoTo</param>
+                                    <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;)</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>

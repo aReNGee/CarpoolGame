@@ -10,9 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">M3_Medium</layout>
-        <event-sheet order="1">M3_GameEventSheet</event-sheet>
-        <event-sheet order="2">M3_Medium</event-sheet>
+        <layout order="0">M3_Medium</layout>
+        <layout order="2">M3_Easy</layout>
+        <layout order="3">M3_Hard</layout>
+        <event-sheet active="1" order="4">M3_GameEventSheet</event-sheet>
+        <event-sheet order="1">M3_Medium</event-sheet>
+        <event-sheet order="5">M3_Easy</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,15 +26,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/Buttons/" />
+        <folder expanded="0" path="object-folder/Buttons/" />
         <folder expanded="1" path="object-folder/MapPieces/" />
-        <folder expanded="1" path="object-folder/MovingParts/" />
-        <folder expanded="1" path="object-folder/Text/" />
-        <folder expanded="1" path="object-folder/Global/" />
-        <folder expanded="1" path="object-folder/Endgame/" />
-        <folder expanded="1" path="object-folder/Timer/" />
-        <folder expanded="1" path="object-folder/Tutorial/" />
-        <folder expanded="1" path="object-folder/Arrays/" />
+        <folder expanded="0" path="object-folder/MovingParts/" />
+        <folder expanded="0" path="object-folder/Text/" />
+        <folder expanded="0" path="object-folder/Global/" />
+        <folder expanded="0" path="object-folder/Endgame/" />
+        <folder expanded="0" path="object-folder/Timer/" />
+        <folder expanded="0" path="object-folder/Tutorial/" />
+        <folder expanded="0" path="object-folder/Arrays/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -47,6 +50,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/Sprite8/" />
         <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/M3_Easy/" />
+        <folder expanded="1" path="animation-folder/M3_Hard/" />
         <folder expanded="1" path="animation-folder/M3_Car/" />
         <folder expanded="1" path="animation-folder/M3_Passenger/" />
         <folder expanded="1" path="animation-folder/M3_EndgameBackground/" />
@@ -58,8 +63,5 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/BlinkingBox/" />
         <folder expanded="1" path="animation-folder/Mousey/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
-        <folder expanded="1" path="animation-folder/PrototypeMap/" />
-        <folder expanded="1" path="animation-folder/PrototypeMap2/" />
     </folders-expanded>
 </c2uistate>

@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>M3_Easy</name>
+    <events>
+        <event-group description="" sid="725601881329165" title="Fuel CostsEZ">
+            <sub-events>
+                <event-block sid="495174165749819">
+                    <conditions>
+                        <condition id="0" name="On function" sid="360769918706122" type="Move">
+                            <param id="0" name="Name">&quot;CalcFuel&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="735443107982995" type="System">
+                            <param id="0" name="Variable">FuelUsed</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="885535275422685">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="407432649674925" type="System">
+                                    <param id="0" name="Object">M3_Passenger</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="743001999564720">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="574714003749860" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;F&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="786411451215040" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;E&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="284922141477146" type="System">
+                                            <param id="0" name="Variable">FuelUsed</param>
+                                            <param id="1" name="Value">6</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="951718201489352">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="131743246806477" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;A&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="251146008972292" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;M&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="540140976960176" type="System">
+                                            <param id="0" name="Variable">FuelUsed</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="607468087153911">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="141646733143722" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;B&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="569974702439769" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;G&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="892565941817320" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;O&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="478761202154406" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;V&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="251222858894278" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;K&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="800923870094056" type="System">
+                                            <param id="0" name="Variable">FuelUsed</param>
+                                            <param id="1" name="Value">4</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="988711650917992">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="268977173272470" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;C&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="150389726640631" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;H&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="564986283537310" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;P&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="481989838042767" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;T&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="365986004564270" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;L&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="492228350238045" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;U&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="621255089379171" type="System">
+                                            <param id="0" name="Variable">FuelUsed</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="437923780159483">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="678114349719051" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;N&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="776157479678616" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;S&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="846202403003140" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;D&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="159638157292511" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;J&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="212070674546566" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;R&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="748985257975872" type="System">
+                                            <param id="0" name="Variable">FuelUsed</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="984980062888709">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="449801300517417" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;I&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="760562840377313" type="M3_Passenger">
+                                            <param id="0" name="Instance variable">IWantToGoTo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Q&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="727587544061925" type="System">
+                                            <param id="0" name="Variable">FuelUsed</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="481670005893570">
+                            <conditions />
+                            <actions>
+                                <action id="1" name="Set return value" sid="971890431612628" type="Move">
+                                    <param id="0" name="Value">FuelUsed</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
