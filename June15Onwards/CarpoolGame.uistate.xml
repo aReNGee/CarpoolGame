@@ -10,15 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">M3_Medium</layout>
-        <layout order="2">EndGame</layout>
-        <layout order="3">Tutorial</layout>
-        <layout order="5">LEVEL2</layout>
-        <layout order="6">LEVEL3PROTOTYPE</layout>
-        <event-sheet active="1" order="1">M3_GameEventSheet</event-sheet>
-        <event-sheet order="4">Tutorial</event-sheet>
-        <event-sheet order="7">EGEventSheet</event-sheet>
-        <event-sheet order="8">M3_Medium</event-sheet>
+        <layout active="1" order="0">M3_Medium</layout>
+        <event-sheet order="1">M3_GameEventSheet</event-sheet>
+        <event-sheet order="2">M3_Medium</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

@@ -637,16 +637,9 @@
     <families />
     <layout-folder>
         <layout>M3_Medium.xml</layout>
-        <layout>LEVEL3PROTOTYPE.xml</layout>
-        <layout>LEVEL2.xml</layout>
-        <layout>Tutorial.xml</layout>
-        <layout>EndGame.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>M3_GameEventSheet.xml</event-sheet>
-        <event-sheet>TestingGround.xml</event-sheet>
-        <event-sheet>EGEventSheet.xml</event-sheet>
-        <event-sheet>Tutorial.xml</event-sheet>
         <event-sheet>M3_Medium.xml</event-sheet>
     </event-folder>
     <global-instances>

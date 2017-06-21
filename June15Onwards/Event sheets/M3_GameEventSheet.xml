@@ -1503,9 +1503,6 @@
                             <param id="0" name="Layer">&quot;Endgame&quot;</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
-                        <action disabled="1" id="-2" name="Go to layout" sid="312741727700749" type="System">
-                            <param id="0" name="Layout">EndGame</param>
-                        </action>
                         <action id="0" name="Call function" sid="602548774030076" type="Move">
                             <param id="0" name="Name">&quot;Endgame&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
