@@ -438,8 +438,8 @@
                     </properties>
                     <instance-variables>
                         <Location>O</Location>
-                        <PrimaryConnection>N</PrimaryConnection>
-                        <SecondaryConnection>C</SecondaryConnection>
+                        <PrimaryConnection>C</PrimaryConnection>
+                        <SecondaryConnection>N</SecondaryConnection>
                         <UMadmanThirdConnection>J</UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
@@ -1089,16 +1089,16 @@
                     </properties>
                     <instance-variables>
                         <Location>C</Location>
-                        <PrimaryConnection>B</PrimaryConnection>
+                        <PrimaryConnection>O</PrimaryConnection>
                         <SecondaryConnection>H</SecondaryConnection>
-                        <UMadmanThirdConnection>D</UMadmanThirdConnection>
+                        <UMadmanThirdConnection>X</UMadmanThirdConnection>
                         <OkayFineConnection4></OkayFineConnection4>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>982</x>
-                        <y>281</y>
+                        <x>986</x>
+                        <y>279</y>
                         <z>0</z>
                         <width>100</width>
                         <height>100</height>
@@ -1461,7 +1461,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>185</x>
-                        <y>1065</y>
+                        <y>313</y>
                         <z>0</z>
                         <width>350</width>
                         <height>250</height>
@@ -1490,10 +1490,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>692</x>
+                        <x>546</x>
                         <y>147</y>
                         <z>0</z>
-                        <width>415</width>
+                        <width>123</width>
                         <height>106</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -1667,8 +1667,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>978</x>
-                        <y>279</y>
+                        <x>982</x>
+                        <y>277</y>
                         <z>0</z>
                         <width>56.859474182</width>
                         <height>56.859474182</height>
