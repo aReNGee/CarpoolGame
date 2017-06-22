@@ -600,10 +600,20 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="556727814774159" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\selected.png">
+                            <collision-poly>
+                                <point x="0.285" y="0.285" />
+                                <point x="0.5" y="0.02" />
+                                <point x="0.925" y="0.5" />
+                                <point x="0.8575" y="0.8575" />
+                                <point x="0.5" y="1" />
+                                <point x="0.3025" y="0.6975" />
+                                <point x="0.0725" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Clicking" pingpong="0" repeatcount="1" repeatto="0" sid="265373587601800" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\standard.png">
                             <collision-poly>
                                 <point x="0" y="1" />
                                 <point x="0" y="0" />
@@ -730,6 +740,8 @@
         <layout>M3_Easy.xml</layout>
         <layout>M3_Tutorial_1.xml</layout>
         <layout>M3_Tutorial_2.xml</layout>
+        <layout>M3_Tutorial_1a.xml</layout>
+        <layout>M3_Tutorial_2b.xml</layout>
         <layout>M3_Tutorial_3.xml</layout>
         <layout>M3_Tutorial_4.xml</layout>
         <layout>M3_Hard.xml</layout>
