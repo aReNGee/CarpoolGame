@@ -578,19 +578,18 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" sid="755141171492842" title="Startup">
+        <event-group description="" disabled="1" sid="755141171492842" title="Startup">
             <sub-events>
-                <event-block sid="126265217144307">
+                <event-block disabled="1" sid="126265217144307">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="216185992635860" type="System" />
                     </conditions>
                     <actions>
                         <action id="33" name="Stop all" sid="438889215156794" type="Clickable" />
-                        <action id="-21" name="Reset global variables" sid="230857608062793" type="System" />
-                        <action id="-45" name="Reset persisted objects" sid="742905554723837" type="System" />
+                        <action disabled="1" id="-21" name="Reset global variables" sid="230857608062793" type="System" />
                     </actions>
                     <sub-events>
-                        <event-block sid="151473304868480">
+                        <event-block disabled="1" sid="151473304868480">
                             <conditions>
                                 <condition id="-3" name="Is on-screen" sid="716973526945248" type="M3_Hard" />
                             </conditions>
@@ -604,7 +603,7 @@
                                 <include>M3_HardES</include>
                             </sub-events>
                         </event-block>
-                        <event-block sid="906862134432831">
+                        <event-block disabled="1" sid="906862134432831">
                             <conditions>
                                 <condition id="-3" name="Is on-screen" sid="205657564163133" type="MapMed" />
                             </conditions>
@@ -622,7 +621,7 @@
                                 <include>M3_MediumES</include>
                             </sub-events>
                         </event-block>
-                        <event-block sid="911059415563664">
+                        <event-block disabled="1" sid="911059415563664">
                             <conditions>
                                 <condition id="-3" name="Is on-screen" sid="733317694147321" type="M3_Easy" />
                             </conditions>
@@ -640,7 +639,7 @@
                                 <include>M3_EasyES</include>
                             </sub-events>
                         </event-block>
-                        <event-block sid="145419157156082">
+                        <event-block disabled="1" sid="145419157156082">
                             <conditions />
                             <actions>
                                 <action id="0" name="Call function" sid="411211861170818" type="Move">
@@ -658,7 +657,7 @@
                                 <action id="1" name="Append text" sid="467122516302967" type="Text2">
                                     <param id="0" name="Text">M3_Passenger.IWantToGoTo</param>
                                 </action>
-                                <action id="0" name="Call function" sid="696390332828445" type="Move">
+                                <action disabled="1" id="0" name="Call function" sid="696390332828445" type="Move">
                                     <param id="0" name="Name">&quot;SetUpTheMatrix&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
@@ -1976,6 +1975,26 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="636433806666580" title="TEMP_DEBUGGING_RESETS">
+            <sub-events>
+                <event-block sid="523722965675383">
+                    <conditions>
+                        <condition id="0" name="On click" sid="632458595604633" type="Mouse">
+                            <param id="0" name="Mouse button">2</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="100860078618071" type="Clickable" />
+                        <action id="-21" name="Reset global variables" sid="767010657507055" type="System" />
+                        <action disabled="1" id="-26" name="Restart layout" sid="867357172007646" type="System" />
+                        <action id="-25" name="Go to layout (by name)" sid="572272317552931" type="System">
+                            <param id="0" name="Layout">LayoutName</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

@@ -704,6 +704,7 @@
         <event-sheet>M3_HardES.xml</event-sheet>
         <event-sheet>M3_TutorialES.xml</event-sheet>
         <event-sheet>TEMPORAY_LS_ES.xml</event-sheet>
+        <event-sheet>TEMP_DEBUG.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="5" />

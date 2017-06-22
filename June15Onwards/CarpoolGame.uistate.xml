@@ -21,6 +21,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="1">M3_EasyES</event-sheet>
         <event-sheet order="6">M3_TutorialES</event-sheet>
         <event-sheet order="10">TEMPORAY_LS_ES</event-sheet>
+        <event-sheet order="11">TEMP_DEBUG</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
