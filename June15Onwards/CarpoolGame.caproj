@@ -685,6 +685,44 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="FuelDisplay">
+            <object-type name="M3_FuelCan" sid="320123180550061">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="938792424716747" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\FuelCan.png">
+                            <collision-poly>
+                                <point x="0.15" y="0.15" />
+                                <point x="0.5" y="0.015" />
+                                <point x="0.885" y="0.115" />
+                                <point x="0.85" y="0.5" />
+                                <point x="0.85" y="0.85" />
+                                <point x="0.5" y="0.985" />
+                                <point x="0.15" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="M3_FuelLevel" sid="141160512389320">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="281364534024349" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\FuelCan.png">
+                            <collision-poly>
+                                <point x="0.15" y="0.15" />
+                                <point x="0.5" y="0.015" />
+                                <point x="0.885" y="0.115" />
+                                <point x="0.85" y="0.5" />
+                                <point x="0.85" y="0.85" />
+                                <point x="0.5" y="0.985" />
+                                <point x="0.15" y="0.85" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
     </object-folder>
     <families />
     <layout-folder>

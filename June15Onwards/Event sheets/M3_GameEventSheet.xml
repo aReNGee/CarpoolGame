@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>M3_GameEventSheet</name>
     <events>
+        <variable constant="0" name="M3_OneFuel" sid="480186202354329" static="0" type="number">0</variable>
         <variable constant="0" name="M3_IterateAnimations" sid="271971656135328" static="0" type="number">0</variable>
         <variable constant="0" name="M3_Zero" sid="141277759159415" static="0" type="number">0</variable>
         <variable constant="0" name="M3_InTransit" sid="474033810907727" static="0" type="number">0</variable>
@@ -328,6 +329,10 @@
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">Targets.At(M3_MovingTowards,2)</param>
                                 </condition>
+                                <condition id="-6" name="Compare height" sid="596810701621909" type="M3_FuelLevel">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Height">0</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-10" name="Add to" sid="105948599075849" type="System">
@@ -351,6 +356,9 @@
                                 </action>
                                 <action id="0" name="Set text" sid="421957642146897" type="FuelConsumed">
                                     <param id="0" name="Text">M3_Fuel</param>
+                                </action>
+                                <action id="-6" name="Set height" sid="344992594121002" type="M3_FuelLevel">
+                                    <param id="0" name="Height">M3_FuelLevel.Height-M3_OneFuel</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="750533265397102" type="System">
                                     <param id="0" name="Variable">M3_PathList</param>
@@ -661,10 +669,6 @@
                                 <action id="0" name="Set text" sid="181543173608786" type="SpriteFont">
                                     <param id="0" name="Text">&quot;If each person took their own car, they would use &quot; &amp; Move.ReturnValue &amp; &quot; fuel.&quot;</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="343098123227070" type="System">
-                                    <param id="0" name="Variable">M3_InitialFuelCost</param>
-                                    <param id="1" name="Value">Move.ReturnValue</param>
-                                </action>
                                 <action id="3" name="Set at XY" sid="604371029757726" type="Targets">
                                     <param id="0" name="X">0</param>
                                     <param id="1" name="Y">0</param>
@@ -698,6 +702,58 @@
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="529059322266011">
+                                    <conditions>
+                                        <condition id="-3" name="Is on-screen" sid="497675290939621" type="M3_Hard" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="985004313171403" type="Move">
+                                            <param id="0" name="Name">&quot;CalcFuelHard&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="659927509140026">
+                                    <conditions>
+                                        <condition id="-3" name="Is on-screen" sid="688121045128224" type="MapMed" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="187763596988866" type="Move">
+                                            <param id="0" name="Name">&quot;CalcFuelMed&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="969320507550063">
+                                    <conditions>
+                                        <condition id="-3" name="Is on-screen" sid="828399472893333" type="M3_Easy" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="830909187569681" type="Move">
+                                            <param id="0" name="Name">&quot;CalcFuelEasy&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="847947204610878">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="343098123227070" type="System">
+                                            <param id="0" name="Variable">M3_InitialFuelCost</param>
+                                            <param id="1" name="Value">Move.ReturnValue</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="706857628624196" type="System">
+                                            <param id="0" name="Variable">M3_OneFuel</param>
+                                            <param id="1" name="Value">M3_FuelLevel.Height/Move.ReturnValue</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="245043269944252" type="System">
+                                            <param id="0" name="Variable">M3_Fuel</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -1209,8 +1265,11 @@
         </event-group>
         <event-group description="" sid="806768978617368" title="Timer">
             <sub-events>
-                <event-block sid="536579700372270">
+                <event-block sid="804999997985313">
                     <conditions>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="828159944857211" type="System">
+                            <param id="0" name="Layer">&quot;Endgame&quot;</param>
+                        </condition>
                         <condition id="-6" name="Every X seconds" sid="973524319542687" type="System">
                             <param id="0" name="Interval (seconds)">0.05</param>
                         </condition>
@@ -2655,6 +2714,24 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="606750871659945" title="Instantly Lose The Game">
+            <sub-events>
+                <event-block sid="881083260190215">
+                    <conditions>
+                        <condition id="-6" name="Compare height" sid="224452181877635" type="M3_FuelLevel">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="Height">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="160672454615276" type="Move">
+                            <param id="0" name="Name">&quot;GameEnds&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
