@@ -79,7 +79,7 @@
                             <param id="1" name="Value">choose(&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;)</param>
                         </action>
                         <action id="0" name="Call function" sid="250001326060644" type="Function">
-                            <param id="0" name="Name">&quot;GetRidofDupes&quot;</param>
+                            <param id="0" name="Name">&quot;M3_GetRidofDupes&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                         <action id="-10" name="Set value" sid="333564226362353" type="M3_Text2">
@@ -169,7 +169,7 @@
                         <event-block sid="796317634356985">
                             <conditions>
                                 <condition id="0" name="On function" sid="265855925689827" type="Function">
-                                    <param id="0" name="Name">&quot;GetRidofDupes&quot;</param>
+                                    <param id="0" name="Name">&quot;M3_GetRidofDupes&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -218,10 +218,6 @@
                                                         <action disabled="1" id="-10" name="Set value" sid="692330270423362" type="M3_Passenger">
                                                             <param id="0" name="Instance variable">IWantToGoTo</param>
                                                             <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;)</param>
-                                                        </action>
-                                                        <action disabled="1" id="0" name="Call function" sid="406561205121456" type="Function">
-                                                            <param id="0" name="Name">&quot;CreateDestination&quot;</param>
-                                                            <param id="1" name="Parameter {n}"></param>
                                                         </action>
                                                     </actions>
                                                     <sub-events>
@@ -288,7 +284,7 @@
                         <event-block sid="627199007160314">
                             <conditions>
                                 <condition id="0" name="On function" sid="498717384638032" type="Function">
-                                    <param id="0" name="Name">&quot;CreateDestination&quot;</param>
+                                    <param id="0" name="Name">&quot;M3_CreateDestination&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -324,7 +320,7 @@
                         <event-block sid="432602722115948">
                             <conditions>
                                 <condition id="0" name="On function" sid="336121354947096" type="Function">
-                                    <param id="0" name="Name">&quot;RandomizePassengers&quot;</param>
+                                    <param id="0" name="Name">&quot;M3_RandomizePassengers&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -1003,7 +999,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Call function" sid="469468735286487" type="Function">
-                                            <param id="0" name="Name">&quot;move&quot;</param>
+                                            <param id="0" name="Name">&quot;M3_move&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
                                     </actions>
@@ -1049,7 +1045,7 @@
                         <event-block sid="482862422776141">
                             <conditions>
                                 <condition id="0" name="On function" sid="795810539636734" type="Function">
-                                    <param id="0" name="Name">&quot;move&quot;</param>
+                                    <param id="0" name="Name">&quot;M3_move&quot;</param>
                                 </condition>
                                 <condition id="-11" name="For Each" sid="420413454216602" type="System">
                                     <param id="0" name="Object">M3_Passenger</param>
@@ -1195,9 +1191,6 @@
                                             <param id="0" name="Variable">M3_PathList</param>
                                             <param id="1" name="Value">&quot;&quot;</param>
                                         </action>
-                                        <action disabled="1" id="11" name="Set collisions enabled" sid="929793085006126" type="M3_Sprite3">
-                                            <param id="0" name="Collisions">1</param>
-                                        </action>
                                         <action id="-9" name="Set value" sid="480554318221486" type="System">
                                             <param id="0" name="Variable">M3_MovingTowards</param>
                                             <param id="1" name="Value">M3_ArrayPos+1</param>
@@ -1206,11 +1199,8 @@
                                             <param id="0" name="Variable">M3_URHere</param>
                                             <param id="1" name="Value">&quot;special&quot;</param>
                                         </action>
-                                        <action disabled="1" id="1" name="Append text" sid="152944377391990" type="M3_SpriteFont">
-                                            <param id="0" name="Text">&quot;GOT HERE&quot;</param>
-                                        </action>
                                         <action id="0" name="Call function" sid="612683039786481" type="Function">
-                                            <param id="0" name="Name">&quot;CheckForLoc&quot;</param>
+                                            <param id="0" name="Name">&quot;M3_CheckForLoc&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
                                         </action>
                                         <action id="-9" name="Destroy" sid="191686651015563" type="M3_PlayerPointer" />
@@ -1231,17 +1221,6 @@
                                             <param id="0" name="X">M3_ArrayPos</param>
                                             <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">M3_JustForAlignment.Y</param>
-                                        </action>
-                                        <action disabled="1" id="-22" name="Set angle toward position" sid="402800033689735" type="M3_Car">
-                                            <param id="0" name="X">M3_JustForAlignment.X</param>
-                                            <param id="1" name="Y">M3_JustForAlignment.Y</param>
-                                        </action>
-                                        <action behavior="CustomMovement" disabled="1" id="6" name="Set angle of motion" sid="830998374825127" type="M3_Car">
-                                            <param id="0" name="Angle">M3_Car.Angle</param>
-                                        </action>
-                                        <action behavior="CustomMovement" disabled="1" id="2" name="Set speed" sid="763302961011288" type="M3_Car">
-                                            <param id="0" name="Which">0</param>
-                                            <param id="1" name="Speed">640</param>
                                         </action>
                                         <action behavior="CustomMovement" id="0" name="Stop" sid="388229267887936" type="M3_Car" />
                                         <action id="-16" name="Wait" sid="837984603404257" type="System">
@@ -1524,7 +1503,7 @@
                         <event-block sid="516399570166056">
                             <conditions>
                                 <condition id="0" name="On function" sid="766085720838580" type="Function">
-                                    <param id="0" name="Name">&quot;PlusOne&quot;</param>
+                                    <param id="0" name="Name">&quot;M3_PlusOne&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
