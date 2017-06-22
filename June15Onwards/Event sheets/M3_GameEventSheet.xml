@@ -2057,9 +2057,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="636433806666580" title="TEMP_DEBUGGING_RESETS">
+        <event-group description="" disabled="1" sid="636433806666580" title="TEMP_DEBUGGING_RESETS">
             <sub-events>
-                <event-block sid="523722965675383">
+                <event-block disabled="1" sid="523722965675383">
                     <conditions>
                         <condition id="0" name="On click" sid="632458595604633" type="Mouse">
                             <param id="0" name="Mouse button">2</param>

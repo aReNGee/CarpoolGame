@@ -12,8 +12,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="1">M3_Tutorial_2</layout>
         <layout order="2">M3_Tutorial_3</layout>
-        <event-sheet active="1" order="3">M3_TutorialES</event-sheet>
-        <event-sheet order="0">M3_GameEventSheet</event-sheet>
+        <layout order="4">M3_Tutorial_1</layout>
+        <layout order="5">TEMPORARY_LEVEL_SELECT</layout>
+        <event-sheet order="3">M3_TutorialES</event-sheet>
+        <event-sheet active="1" order="0">M3_GameEventSheet</event-sheet>
+        <event-sheet order="6">TEMPORAY_LS_ES</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
