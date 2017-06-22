@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>CarpoolGame</name>
-    <description>Updating Difficulties</description>
+    <description>Updated Tutorial</description>
     <version>1.2.1</version>
     <author></author>
     <author-email></author-email>
@@ -730,10 +730,7 @@
         <layout>M3_Easy.xml</layout>
         <layout>M3_Tutorial_1.xml</layout>
         <layout>M3_Tutorial_2.xml</layout>
-        <layout>M3_Tutorial_1a.xml</layout>
-        <layout>M3_Tutorial_2b.xml</layout>
         <layout>M3_Tutorial_3.xml</layout>
-        <layout>M3_Tutorial_4.xml</layout>
         <layout>M3_Hard.xml</layout>
         <layout>TEMPORARY_LEVEL_SELECT.xml</layout>
     </layout-folder>

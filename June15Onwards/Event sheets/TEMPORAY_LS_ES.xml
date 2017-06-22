@@ -10,9 +10,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action disabled="1" id="-2" name="Go to layout" sid="323991492122168" type="System">
-                    <param id="0" name="Layout">M3_Tutorial_1a</param>
-                </action>
                 <action id="-2" name="Go to layout" sid="931492763939223" type="System">
                     <param id="0" name="Layout">TEMPORARY_LEVEL_SELECT</param>
                 </action>
