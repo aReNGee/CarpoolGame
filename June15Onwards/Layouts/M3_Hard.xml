@@ -80,7 +80,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="166">
+                <instance type="M3_Sprite3" uid="166">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -134,7 +134,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="168">
+                <instance type="M3_Sprite3" uid="168">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -188,7 +188,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="170">
+                <instance type="M3_Sprite3" uid="170">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -242,7 +242,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="172">
+                <instance type="M3_Sprite3" uid="172">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -296,7 +296,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="174">
+                <instance type="M3_Sprite3" uid="174">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -350,7 +350,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="176">
+                <instance type="M3_Sprite3" uid="176">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -404,7 +404,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="178">
+                <instance type="M3_Sprite3" uid="178">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -458,7 +458,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="180">
+                <instance type="M3_Sprite3" uid="180">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -512,7 +512,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="182">
+                <instance type="M3_Sprite3" uid="182">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -566,7 +566,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="184">
+                <instance type="M3_Sprite3" uid="184">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -620,7 +620,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="188">
+                <instance type="M3_Sprite3" uid="188">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -674,7 +674,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="190">
+                <instance type="M3_Sprite3" uid="190">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -728,7 +728,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="192">
+                <instance type="M3_Sprite3" uid="192">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -782,7 +782,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="194">
+                <instance type="M3_Sprite3" uid="194">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -836,7 +836,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="196">
+                <instance type="M3_Sprite3" uid="196">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -861,7 +861,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="JustForAlignment" uid="197">
+                <instance type="M3_JustForAlignment" uid="197">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -883,7 +883,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite4" uid="198">
+                <instance type="M3_TimerBar" uid="198">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -905,7 +905,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="OnePlus" uid="199">
+                <instance type="M3_OnePlus" uid="199">
                     <properties>
                         <text>-1</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -1109,7 +1109,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite8" uid="206">
+                <instance type="M3_Sprite8" uid="206">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1160,7 +1160,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="186">
+                <instance type="M3_Sprite3" uid="186">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1214,7 +1214,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="94">
+                <instance type="M3_Sprite3" uid="94">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1268,7 +1268,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="96">
+                <instance type="M3_Sprite3" uid="96">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1322,7 +1322,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="98">
+                <instance type="M3_Sprite3" uid="98">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1376,7 +1376,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="100">
+                <instance type="M3_Sprite3" uid="100">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1420,7 +1420,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="SpriteFont" uid="207">
+                <instance type="M3_SpriteFont" uid="207">
                     <properties>
                         <character-width>16</character-width>
                         <character-height>16</character-height>
@@ -1472,7 +1472,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="FuelConsumed" uid="209">
+                <instance type="M3_FuelConsumed" uid="209">
                     <properties>
                         <character-width>16</character-width>
                         <character-height>16</character-height>
@@ -1502,7 +1502,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DescriptiveText" uid="210">
+                <instance type="M3_DescriptiveText" uid="210">
                     <properties>
                         <text>Fuel Consumed: </text>
                         <initial-visibility>Visible</initial-visibility>
@@ -1529,7 +1529,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="211">
+                <instance type="M3_Sprite3" uid="211">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1554,7 +1554,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="212">
+                <instance type="M3_Sprite3" uid="212">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1579,7 +1579,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="213">
+                <instance type="M3_Sprite3" uid="213">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1604,7 +1604,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="214">
+                <instance type="M3_Sprite3" uid="214">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1629,7 +1629,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="215">
+                <instance type="M3_Sprite3" uid="215">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1654,7 +1654,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="216">
+                <instance type="M3_Sprite3" uid="216">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1951,7 +1951,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="225">
+                <instance type="M3_Text2" uid="225">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -1982,7 +1982,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="226">
+                <instance type="M3_Text2" uid="226">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -2013,7 +2013,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="227">
+                <instance type="M3_Text2" uid="227">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -2044,7 +2044,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="228">
+                <instance type="M3_Text2" uid="228">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -2075,7 +2075,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="229">
+                <instance type="M3_Text2" uid="229">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -2106,7 +2106,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="230">
+                <instance type="M3_Text2" uid="230">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -2137,7 +2137,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="231">
+                <instance type="M3_Text2" uid="231">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -2168,7 +2168,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="232">
+                <instance type="M3_Text2" uid="232">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -2311,7 +2311,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="237">
+                <instance type="M3_TimerIcon" uid="237">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
