@@ -6,7 +6,7 @@
         <variable constant="0" name="M3_Tutorial_Opacity_Mod" sid="507152622283433" static="0" type="number">2</variable>
         <variable constant="0" name="M3_TargetX" sid="533729758861396" static="0" type="number">0</variable>
         <variable constant="0" name="M3_TargetY" sid="892326992131101" static="0" type="number">0</variable>
-        <event-group description="" sid="443753965808239" title="Navigation">
+        <event-group description="" sid="443753965808239" title="M3_Navigation">
             <sub-events>
                 <event-block sid="540114683382461">
                     <conditions>
@@ -164,7 +164,7 @@
         </event-group>
         <event-group description="" sid="823874406080355" title="M3_Tutorial_Page_2">
             <sub-events>
-                <event-group description="" sid="334274242751215" title="TutorialDupeChecking">
+                <event-group description="" sid="334274242751215" title="M3_TutorialDupeChecking">
                     <sub-events>
                         <event-block sid="796317634356985">
                             <conditions>
@@ -319,7 +319,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="890513502793410" title="Randomizing The Passanger Images2">
+                <event-group description="" sid="890513502793410" title="M3_Randomizing The Passanger Images2">
                     <sub-events>
                         <event-block sid="432602722115948">
                             <conditions>
@@ -1043,7 +1043,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="Simulates Tutorial Motion" sid="680421725172537" title="Motion2">
+                <event-group description="Simulates Tutorial Motion" sid="680421725172537" title="M3_Motion2">
                     <sub-events>
                         <comment>Simulates Movement</comment>
                         <event-block sid="482862422776141">
@@ -1481,7 +1481,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="372533553999115" title="+1 display2">
+                <event-group description="" sid="372533553999115" title="M3_+1 display2">
                     <sub-events>
                         <event-block sid="888864675238266">
                             <conditions>
@@ -1531,7 +1531,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="243214946280268" title="Animating the Trail (sort of)2">
+                <event-group description="" sid="243214946280268" title="M3_Animating the Trail (sort of)2">
                     <sub-events>
                         <event-block sid="402071826320296">
                             <conditions>
