@@ -649,6 +649,10 @@
                                     <param id="3" name="Volume">0</param>
                                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
+                                <action id="0" name="Call function" sid="589299532633193" type="Function">
+                                    <param id="0" name="Name">&quot;GhostPeople&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="529059322266011">
@@ -820,7 +824,7 @@
                                     <param id="1" name="Value">1</param>
                                 </action>
                                 <action id="0" name="Call function" sid="690554597702227" type="Function">
-                                    <param id="0" name="Name">&quot;M3_GameEnds&quot;</param>
+                                    <param id="0" name="Name">&quot;M3_Endgame&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
@@ -1128,10 +1132,6 @@
                             <param id="0" name="Variable">M3_Fuel</param>
                             <param id="1" name="Value">Function.ReturnValue</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="391982471047871" type="System">
-                            <param id="0" name="Layer">&quot;Endgame&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
                         <action id="0" name="Call function" sid="602548774030076" type="Function">
                             <param id="0" name="Name">&quot;M3_Endgame&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -1297,6 +1297,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-4" name="Set layer visible" sid="391982471047871" type="System">
+                            <param id="0" name="Layer">&quot;Endgame&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
                         <action id="-9" name="Set value" sid="309521545593694" type="System">
                             <param id="0" name="Variable">Dif</param>
                             <param id="1" name="Value">(1 - (M3_Fuel/M3_InitialFuelCost))*100</param>
@@ -2155,6 +2159,47 @@
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="671347506055497" title="TEST_Ghost People">
+            <sub-events>
+                <event-block sid="304957295213344">
+                    <conditions>
+                        <condition id="0" name="On function" sid="415815836527829" type="Function">
+                            <param id="0" name="Name">&quot;GhostPeople&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="325421215710328">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="134826907444171" type="System">
+                                    <param id="0" name="Object">M3_Sprite3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="423568767971872">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="940660442450297" type="System">
+                                            <param id="0" name="First value">find(M3_DupeChecker,M3_Sprite3.Location)</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Second value">-1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="343652034751182" type="System">
+                                            <param id="0" name="Object to create">Sprite</param>
+                                            <param id="1" name="Layer">&quot;Layer 3&quot;</param>
+                                            <param id="2" name="X">M3_Sprite3.X</param>
+                                            <param id="3" name="Y">M3_Sprite3.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

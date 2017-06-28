@@ -479,6 +479,27 @@
                 </object-type>
             </object-folder>
             <object-folder name="MovingParts">
+                <object-folder name="GhostPeople">
+                    <object-type name="Sprite" sid="198933775045865">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="547156432480734" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\CarpoolGame\June15Onwards\Textures\Passengers\Passanger 1.png">
+                                    <collision-poly>
+                                        <point x="0.382813" y="0.382813" />
+                                        <point x="0.5" y="0.132813" />
+                                        <point x="0.617188" y="0.382813" />
+                                        <point x="0.648438" y="0.5" />
+                                        <point x="0.648438" y="0.648438" />
+                                        <point x="0.5" y="0.78125" />
+                                        <point x="0.351563" y="0.648438" />
+                                        <point x="0.351563" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
                 <object-type name="M3_Car" sid="548397735895161">
                     <plugin id="Sprite" />
                     <behaviors>

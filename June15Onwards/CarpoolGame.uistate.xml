@@ -10,15 +10,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="8">M3_Tutorial_2</layout>
-        <layout order="0">M3_Tutorial_3</layout>
-        <layout order="2">M3_Tutorial_1</layout>
-        <layout order="3">TEMPORARY_LEVEL_SELECT</layout>
-        <layout order="4">M3_Easy</layout>
-        <event-sheet order="5">M3_GameEventSheet</event-sheet>
-        <event-sheet order="1">M3_TutorialES</event-sheet>
-        <event-sheet order="7">TEMPORAY_LS_ES</event-sheet>
-        <event-sheet active="1" order="6">TEST_NewParadigm</event-sheet>
+        <layout order="1">M3_Tutorial_3</layout>
+        <layout order="3">M3_Tutorial_1</layout>
+        <layout order="4">TEMPORARY_LEVEL_SELECT</layout>
+        <layout order="5">M3_Easy</layout>
+        <layout order="9">M3_Tutorial_2</layout>
+        <layout order="10">M3_Hard</layout>
+        <event-sheet order="2">M3_TutorialES</event-sheet>
+        <event-sheet active="1" order="6">M3_GameEventSheet</event-sheet>
+        <event-sheet order="7">TEST_NewParadigm</event-sheet>
+        <event-sheet order="8">TEMPORAY_LS_ES</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -38,6 +39,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/M3_CarpoolGame_Objects/Global/" />
         <folder expanded="1" path="object-folder/M3_CarpoolGame_Objects/MapPieces/" />
         <folder expanded="1" path="object-folder/M3_CarpoolGame_Objects/MovingParts/" />
+        <folder expanded="1" path="object-folder/M3_CarpoolGame_Objects/MovingParts/GhostPeople/" />
         <folder expanded="1" path="object-folder/M3_CarpoolGame_Objects/Text/" />
         <folder expanded="1" path="object-folder/M3_CarpoolGame_Objects/Timer/" />
         <folder expanded="1" path="object-folder/M3_CarpoolGame_Objects/Tutorial/" />
@@ -69,6 +71,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/M3_Sprite9/" />
         <folder expanded="1" path="animation-folder/M3_Easy/" />
         <folder expanded="1" path="animation-folder/M3_Hard/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/M3_Car/" />
         <folder expanded="1" path="animation-folder/M3_Passenger/" />
         <folder expanded="1" path="animation-folder/M3_TimerBar/" />
