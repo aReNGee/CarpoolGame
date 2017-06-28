@@ -740,6 +740,7 @@
         <event-sheet>M3_GameEventSheet.xml</event-sheet>
         <event-sheet>M3_TutorialES.xml</event-sheet>
         <event-sheet>TEMPORAY_LS_ES.xml</event-sheet>
+        <event-sheet>TEST_NewParadigm.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="5" />
