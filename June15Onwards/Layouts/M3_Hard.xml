@@ -1688,6 +1688,8 @@
                     </properties>
                     <instance-variables>
                         <IWantToGoTo></IWantToGoTo>
+                        <Destination></Destination>
+                        <PickedUp>false</PickedUp>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">
@@ -1722,6 +1724,8 @@
                     </properties>
                     <instance-variables>
                         <IWantToGoTo></IWantToGoTo>
+                        <Destination></Destination>
+                        <PickedUp>false</PickedUp>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">
@@ -1756,6 +1760,8 @@
                     </properties>
                     <instance-variables>
                         <IWantToGoTo></IWantToGoTo>
+                        <Destination></Destination>
+                        <PickedUp>false</PickedUp>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">
@@ -1790,6 +1796,8 @@
                     </properties>
                     <instance-variables>
                         <IWantToGoTo></IWantToGoTo>
+                        <Destination></Destination>
+                        <PickedUp>false</PickedUp>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">
@@ -1824,6 +1832,8 @@
                     </properties>
                     <instance-variables>
                         <IWantToGoTo></IWantToGoTo>
+                        <Destination></Destination>
+                        <PickedUp>false</PickedUp>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">
@@ -1858,6 +1868,8 @@
                     </properties>
                     <instance-variables>
                         <IWantToGoTo></IWantToGoTo>
+                        <Destination></Destination>
+                        <PickedUp>false</PickedUp>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">
@@ -1892,6 +1904,8 @@
                     </properties>
                     <instance-variables>
                         <IWantToGoTo></IWantToGoTo>
+                        <Destination></Destination>
+                        <PickedUp>false</PickedUp>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">
@@ -1926,6 +1940,8 @@
                     </properties>
                     <instance-variables>
                         <IWantToGoTo></IWantToGoTo>
+                        <Destination></Destination>
+                        <PickedUp>false</PickedUp>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="CustomMovement">

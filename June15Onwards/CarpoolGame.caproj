@@ -528,6 +528,8 @@
                     <plugin id="Sprite" />
                     <instance-variables>
                         <instance-variable name="IWantToGoTo" sid="364436070382371" type="string" />
+                        <instance-variable name="Destination" sid="259061604483341" type="string" />
+                        <instance-variable name="PickedUp" sid="574259952797636" type="boolean" />
                     </instance-variables>
                     <behaviors>
                         <behavior-type name="CustomMovement" sid="307863472526922">
