@@ -112,7 +112,7 @@
                                     <param id="1" name="Value">M3_Passenger.Y-M3_Text2.Y</param>
                                 </action>
                                 <action id="1" name="Append text" sid="762716974215244" type="M3_Text2">
-                                    <param id="0" name="Text">M3_Passenger.IWantToGoTo</param>
+                                    <param id="0" name="Text">M3_Passenger.Destination</param>
                                 </action>
                                 <action id="3" name="Set at XY" sid="199719257734782" type="M3_Targets">
                                     <param id="0" name="X">M3_ArrayPos</param>
@@ -136,7 +136,7 @@
                                     <param id="0" name="Name">&quot;M3_RandomizePassengers&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
-                                <action id="-3" name="Set position" sid="192825988612431" type="M3_Car">
+                                <action disabled="1" id="-3" name="Set position" sid="192825988612431" type="M3_Car">
                                     <param id="0" name="X">M3_JustForAlignment.X</param>
                                     <param id="1" name="Y">M3_JustForAlignment.Y</param>
                                 </action>
@@ -234,7 +234,12 @@
                                     <param id="2" name="Order">0</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action disabled="1" id="-10" name="Set value" sid="976449361305017" type="M3_Passenger">
+                                    <param id="0" name="Instance variable">Destination</param>
+                                    <param id="1" name="Value">choose(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;)</param>
+                                </action>
+                            </actions>
                             <sub-events>
                                 <event-block sid="423012832346673">
                                     <conditions>
@@ -516,6 +521,46 @@
                                                 <action id="-17" name="Move forward" sid="254753633683374" type="M3_PlayerPointer">
                                                     <param id="0" name="Distance">135</param>
                                                 </action>
+                                                <action id="-22" name="Set angle toward position" sid="958953119074971" type="M3_Car">
+                                                    <param id="0" name="X">M3_Targets.At(M3_ArrayPos,0)</param>
+                                                    <param id="1" name="Y">M3_Targets.At(M3_ArrayPos,1)</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="708071242556238">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="928231906183740" type="M3_Sprite2">
+                                                            <param id="0" name="Instance variable">Location</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">&quot;special&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="500956476819191" type="System">
+                                                            <param id="0" name="Variable">M3_TimeToGo</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="864908342197710" type="System">
+                                                            <param id="0" name="Variable">M3_InTransit</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                        <action id="-10" name="Add to" sid="191154713377389" type="System">
+                                                            <param id="0" name="Variable">M3_MovingTowards</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="699217732271412">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="367754282217486" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Set position" sid="557664170902215" type="M3_Car">
+                                                    <param id="0" name="X">M3_Targets.At(M3_ArrayPos,0)</param>
+                                                    <param id="1" name="Y">M3_Targets.At(M3_ArrayPos,1)</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                         <event-block sid="441573296194787">
@@ -533,7 +578,8 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="258776217247471">
+                <comment>Old MoveCall</comment>
+                <event-block disabled="1" sid="258776217247471">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="389158611525024" type="System" />
                     </conditions>
@@ -544,7 +590,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="659264812010790">
+                        <event-block disabled="1" sid="659264812010790">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="787988767484604" type="System">
                                     <param id="0" name="Variable">M3_ArrayPos</param>
@@ -554,7 +600,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="929277222369576">
+                                <event-block disabled="1" sid="929277222369576">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="948697036535472" type="System">
                                             <param id="0" name="Variable">M3_ArrayPos</param>
@@ -575,7 +621,7 @@
                                     </actions>
                                 </event-block>
                                 <comment>Once we&apos;ve moved to the end of the route, stops the player and tosses everything back</comment>
-                                <event-block sid="721756209784061">
+                                <event-block disabled="1" sid="721756209784061">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="206030678346322" type="System">
                                             <param id="0" name="Variable">M3_ArrayPos</param>
@@ -609,7 +655,179 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-group description="" sid="982377835594575" title="M3_Motion3">
+                <event-block sid="591816263812891">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="483626544001394" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="801383291376976" type="M3_Text2">
+                            <param id="0" name="Object">M3_Passenger</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="916067964528956">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="138888093145227" type="System">
+                                    <param id="0" name="Variable">M3_TimeToGo</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="918241715011548" type="Function">
+                                    <param id="0" name="Name">&quot;M3_move&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="207934810743813">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="983307768261780" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="CustomMovement" id="2" name="Set speed" sid="704753595677209" type="M3_Passenger">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="Speed">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="365329675494110" type="System">
+                                    <param id="0" name="Variable">M3_TimeToGo</param>
+                                    <param id="1" name="Value">-1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="934073690299866" type="M3_Sprite2">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="238126070341911" type="System">
+                                    <param id="0" name="Variable">M3_PathList</param>
+                                    <param id="1" name="Value">&quot;&quot;</param>
+                                </action>
+                                <action id="11" name="Set collisions enabled" sid="254457611936632" type="M3_Sprite3">
+                                    <param id="0" name="Collisions">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Clicking the Button</comment>
+                <event-block sid="993240114115790">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="360570763207447" type="Touch">
+                            <param id="0" name="Object">M3_GoButton</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="959818266252153" type="System">
+                            <param id="0" name="Variable">M3_TimeToGo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-5" name="Compare width" sid="495507089608529" type="M3_TimerBar">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Width">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="462789695327694" type="System">
+                            <param id="0" name="Variable">M3_ArrayPos</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">M3_MovingTowards</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="258953039298587" type="System">
+                            <param id="0" name="Variable">M3_TimeToGo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="450642965398731" type="System">
+                            <param id="0" name="Variable">M3_InTransit</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="864252746577844" type="System">
+                            <param id="0" name="Variable">M3_MovingTowards</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>probably need to redo this</comment>
+                        <event-block disabled="1" sid="414617165999538">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="829227989292190" type="System">
+                                    <param id="0" name="Object">M3_Passenger</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="153662011268439" type="System">
+                                    <param id="0" name="Variable">M3_Zero</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">find(M3_PathList,M3_Passenger.IWantToGoTo)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="465569209116420" type="M3_Passenger">
+                                    <param id="0" name="Object">M3_JustForAlignment</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="872742680184447" type="System">
+                                    <param id="0" name="Variable">M3_InTransit</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="404008586889937">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="537223993900751" type="System">
+                                    <param id="0" name="Variable">M3_InTransit</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="971996859315803" type="System">
+                                    <param id="0" name="Variable">M3_TimeToGo</param>
+                                    <param id="1" name="Value">-1</param>
+                                </action>
+                                <action id="0" name="Play" sid="412213808862422" type="Audio">
+                                    <param id="0" name="Audio file">sfx_click_unclickable_obj01</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="520149286020451">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="518185860915175" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="617201607919096" type="Audio">
+                                    <param id="0" name="Audio file">sfx_bus_horn</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>stops the car when it hits the end</comment>
+                <event-block sid="473179259154114">
+                    <conditions>
+                        <condition id="-21" name="Is between values" sid="896848127673794" type="System">
+                            <param id="0" name="Value">M3_Car.X</param>
+                            <param id="1" name="Lower bound">M3_JustForAlignment.X - 10</param>
+                            <param id="2" name="Upper bound">M3_JustForAlignment.X + 10</param>
+                        </condition>
+                        <condition id="-21" name="Is between values" sid="250316179823831" type="System">
+                            <param id="0" name="Value">M3_Car.Y</param>
+                            <param id="1" name="Lower bound">M3_JustForAlignment.Y - 10</param>
+                            <param id="2" name="Upper bound">M3_JustForAlignment.Y + 10</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="949505694720614" type="System">
+                            <param id="0" name="Variable">M3_InTransit</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="CustomMovement" id="0" name="Stop" sid="396752853127773" type="M3_Car" />
+                    </actions>
+                </event-block>
+                <event-group description="Haven&apos;t touched this yet" sid="982377835594575" title="M3_Motion3">
                     <sub-events>
                         <comment>Simulates Movement</comment>
                         <event-block sid="879792318651426">
@@ -617,7 +835,7 @@
                                 <condition id="0" name="On function" sid="236618234981644" type="Function">
                                     <param id="0" name="Name">&quot;M3_move&quot;</param>
                                 </condition>
-                                <condition id="-11" name="For Each" sid="910619569443698" type="System">
+                                <condition disabled="1" id="-11" name="For Each" sid="910619569443698" type="System">
                                     <param id="0" name="Object">M3_Passenger</param>
                                 </condition>
                             </conditions>
@@ -635,9 +853,9 @@
                                 </action>
                             </actions>
                             <sub-events>
-                                <event-group description="" sid="843326672938741" title="M3_Making Only The Sprites We Want To Move, Move2">
+                                <event-group description="" disabled="1" sid="843326672938741" title="M3_Making Only The Sprites We Want To Move, Move2">
                                     <sub-events>
-                                        <event-block sid="991128090862630">
+                                        <event-block disabled="1" sid="991128090862630">
                                             <conditions>
                                                 <condition id="-14" name="Compare variable" sid="517748870261836" type="System">
                                                     <param id="0" name="Variable">M3_Zero</param>
@@ -662,7 +880,7 @@
                                                 </action>
                                             </actions>
                                         </event-block>
-                                        <event-block sid="221877478286601">
+                                        <event-block disabled="1" sid="221877478286601">
                                             <conditions>
                                                 <condition id="-22" name="Else" sid="894023309690121" type="System" />
                                             </conditions>
@@ -677,7 +895,7 @@
                                 </event-group>
                             </sub-events>
                         </event-block>
-                        <event-block sid="643357702334173">
+                        <event-block disabled="1" sid="643357702334173">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="698583471253616" type="M3_Sprite3">
                                     <param id="0" name="Object">M3_Passenger</param>
@@ -699,7 +917,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="561256014021317">
+                        <event-block disabled="1" sid="561256014021317">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="749991249221839" type="M3_Sprite3">
                                     <param id="0" name="Object">M3_Passenger</param>
@@ -751,7 +969,7 @@
                             <sub-events>
                                 <comment>Mostly startup stuff. Attaches the stick figures destination to the stick figure</comment>
                                 <comment>Checks that the sprite has the same location tag as the &quot;target&quot;</comment>
-                                <event-block sid="710143109707826">
+                                <event-block disabled="1" sid="710143109707826">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="428630181072445" type="System">
                                             <param id="0" name="Variable">M3_InTransit</param>
@@ -819,123 +1037,121 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <comment>Starts the players route</comment>
-                        <event-block sid="993240114115790">
+                        <event-block sid="844282314331836">
                             <conditions>
-                                <condition disabled="1" id="6" name="On object clicked" sid="655240478148062" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                    <param id="2" name="Object clicked">M3_GoButton</param>
+                                <condition id="0" name="On collision with another object" sid="594142956786866" type="M3_Sprite3">
+                                    <param id="0" name="Object">M3_Car</param>
                                 </condition>
-                                <condition id="4" name="Is touching object" sid="360570763207447" type="Touch">
-                                    <param id="0" name="Object">M3_GoButton</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="959818266252153" type="System">
-                                    <param id="0" name="Variable">M3_TimeToGo</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">-1</param>
-                                </condition>
-                                <condition id="-5" name="Compare width" sid="495507089608529" type="M3_TimerBar">
+                                <condition disabled="1" id="-6" name="Compare height" sid="552618397692777" type="M3_FuelLevel">
                                     <param id="0" name="Comparison">4</param>
-                                    <param id="1" name="Width">0</param>
+                                    <param id="1" name="Height">0</param>
                                 </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="258953039298587" type="System">
+                                <condition id="-14" name="Compare variable" sid="396585436690805" type="System">
                                     <param id="0" name="Variable">M3_TimeToGo</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="450642965398731" type="System">
-                                    <param id="0" name="Variable">M3_InTransit</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="-4" name="Set position to another object" sid="224752453638472" type="M3_Car">
-                                    <param id="0" name="Object">M3_JustForAlignment</param>
-                                    <param id="1" name="Image point (optional)">0</param>
-                                </action>
-                            </actions>
-                            <sub-events>
-                                <event-block sid="414617165999538">
-                                    <conditions>
-                                        <condition id="-11" name="For Each" sid="829227989292190" type="System">
-                                            <param id="0" name="Object">M3_Passenger</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="153662011268439" type="System">
-                                            <param id="0" name="Variable">M3_Zero</param>
-                                            <param id="1" name="Comparison">3</param>
-                                            <param id="2" name="Value">find(M3_PathList,M3_Passenger.IWantToGoTo)</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-4" name="Set position to another object" sid="465569209116420" type="M3_Passenger">
-                                            <param id="0" name="Object">M3_JustForAlignment</param>
-                                            <param id="1" name="Image point (optional)">0</param>
-                                        </action>
-                                        <action id="-10" name="Add to" sid="872742680184447" type="System">
-                                            <param id="0" name="Variable">M3_InTransit</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="404008586889937">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="537223993900751" type="System">
-                                            <param id="0" name="Variable">M3_InTransit</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="971996859315803" type="System">
-                                            <param id="0" name="Variable">M3_TimeToGo</param>
-                                            <param id="1" name="Value">-1</param>
-                                        </action>
-                                        <action id="0" name="Play" sid="412213808862422" type="Audio">
-                                            <param id="0" name="Audio file">sfx_click_unclickable_obj01</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="520149286020451">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="518185860915175" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Play" sid="617201607919096" type="Audio">
-                                            <param id="0" name="Audio file">sfx_bus_horn</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <comment>Stopping the car once it gets back to the centre</comment>
-                        <event-block sid="473179259154114">
-                            <conditions>
-                                <condition id="-21" name="Is between values" sid="896848127673794" type="System">
-                                    <param id="0" name="Value">M3_Car.X</param>
-                                    <param id="1" name="Lower bound">M3_JustForAlignment.X - 10</param>
-                                    <param id="2" name="Upper bound">M3_JustForAlignment.X + 10</param>
-                                </condition>
-                                <condition id="-21" name="Is between values" sid="250316179823831" type="System">
-                                    <param id="0" name="Value">M3_Car.Y</param>
-                                    <param id="1" name="Lower bound">M3_JustForAlignment.Y - 10</param>
-                                    <param id="2" name="Upper bound">M3_JustForAlignment.Y + 10</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="949505694720614" type="System">
-                                    <param id="0" name="Variable">M3_InTransit</param>
-                                    <param id="1" name="Comparison">0</param>
+                                    <param id="1" name="Comparison">4</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="CustomMovement" id="0" name="Stop" sid="396752853127773" type="M3_Car" />
+                                <action id="-10" name="Add to" sid="977262028570578" type="System">
+                                    <param id="0" name="Variable">M3_MovingTowards</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="345167422747791" type="System">
+                                    <param id="0" name="Variable">M3_LocationTracking</param>
+                                    <param id="1" name="Value">M3_Sprite3.Location</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="229067698418911" type="System">
+                                    <param id="0" name="Variable">M3_LocationTracking</param>
+                                    <param id="1" name="Value">&quot;hitsomething&quot;</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="329055430502067" type="System">
+                                    <param id="0" name="Variable">M3_Fuel</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="456693586903503" type="M3_FuelConsumed">
+                                    <param id="0" name="Text">M3_Fuel</param>
+                                </action>
+                                <action disabled="1" id="-6" name="Set height" sid="466565274299900" type="M3_FuelLevel">
+                                    <param id="0" name="Height">M3_FuelLevel.Height-M3_OneFuel</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="936807208758108" type="System">
+                                    <param id="0" name="Variable">M3_PathList</param>
+                                    <param id="1" name="Value">right(M3_PathList,len(M3_PathList)-1)</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="840763760689492" type="System">
+                                    <param id="0" name="Object to create">M3_OnePlus</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="X">M3_Sprite3.X</param>
+                                    <param id="3" name="Y">M3_Sprite3.Y - 80</param>
+                                </action>
                             </actions>
+                            <sub-events>
+                                <comment>Mostly startup stuff. Attaches the stick figures destination to the stick figure</comment>
+                                <comment>Checks that the sprite has the same location tag as the &quot;target&quot;</comment>
+                                <event-block sid="875039154115302">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="169031333427123" type="System">
+                                            <param id="0" name="Variable">M3_MovingTowards</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">M3_ArrayPos</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="CustomMovement" id="2" name="Set speed" sid="429433657073945" type="M3_Passenger">
+                                            <param id="0" name="Which">0</param>
+                                            <param id="1" name="Speed">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="852363175141104" type="System">
+                                            <param id="0" name="Variable">M3_TimeToGo</param>
+                                            <param id="1" name="Value">-1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="908572042079126" type="M3_Sprite2">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="327390815548263" type="System">
+                                            <param id="0" name="Variable">M3_PathList</param>
+                                            <param id="1" name="Value">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="156363045967742" type="System">
+                                            <param id="0" name="Variable">M3_MovingTowards</param>
+                                            <param id="1" name="Value">M3_ArrayPos+1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="237835722943033" type="System">
+                                            <param id="0" name="Variable">M3_URHere</param>
+                                            <param id="1" name="Value">&quot;&quot;</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="736222319293701" type="Function">
+                                            <param id="0" name="Name">&quot;M3_CheckForLoc&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="473288007673866" type="M3_PlayerPointer" />
+                                        <action id="-10" name="Add to" sid="782876918698617" type="System">
+                                            <param id="0" name="Variable">M3_ArrayPos</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="551861497619814" type="System">
+                                            <param id="0" name="Variable">M3_MovingTowards</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="912116110408665" type="M3_Targets">
+                                            <param id="0" name="X">M3_ArrayPos</param>
+                                            <param id="1" name="Y">0</param>
+                                            <param id="2" name="Value">M3_JustForAlignment.X</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="286369527843184" type="M3_Targets">
+                                            <param id="0" name="X">M3_ArrayPos</param>
+                                            <param id="1" name="Y">1</param>
+                                            <param id="2" name="Value">M3_JustForAlignment.Y</param>
+                                        </action>
+                                        <action behavior="CustomMovement" id="0" name="Stop" sid="321559830182351" type="M3_Car" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
+                        <comment>Starts the players route</comment>
+                        <comment>Stopping the car once it gets back to the centre</comment>
                     </sub-events>
                 </event-group>
             </sub-events>
@@ -950,14 +1166,18 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="764365461061972" type="M3_Passenger">
+                        <action disabled="1" id="-13" name="Set boolean" sid="764365461061972" type="M3_Passenger">
                             <param id="0" name="Instance variable">PickedUp</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action disabled="1" id="-16" name="Set opacity" sid="222628940406229" type="M3_Passenger">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="582634744568661" type="M3_Passenger" />
                     </actions>
                 </event-block>
                 <comment>drops off the passenger</comment>
-                <event-block sid="479632764075063">
+                <event-block disabled="1" sid="479632764075063">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="520410019273428" type="M3_Passenger">
                             <param id="0" name="Object">M3_Sprite3</param>
@@ -975,6 +1195,9 @@
                         <action id="-13" name="Set boolean" sid="751457015102018" type="M3_Passenger">
                             <param id="0" name="Instance variable">PickedUp</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="318923248095474" type="M3_Passenger">
+                            <param id="0" name="Opacity">100</param>
                         </action>
                     </actions>
                 </event-block>
@@ -998,6 +1221,60 @@
                                 <action id="-3" name="Set position" sid="660987693738954" type="M3_Passenger">
                                     <param id="0" name="X">M3_Car.X</param>
                                     <param id="1" name="Y">M3_Car.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="455184725158627" title="M3_Animating the Trail (sort of)3">
+            <sub-events>
+                <event-block sid="991757353486244">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="890699981598933" type="System" />
+                        <condition id="-14" name="Compare variable" sid="946782539630174" type="System">
+                            <param id="0" name="Variable">M3_IterateAnimations</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="620076669897464" type="System">
+                            <param id="0" name="Variable">M3_IterateAnimations</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="721740716207063">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="373050057676025" type="System">
+                                    <param id="0" name="Object">M3_Sprite2</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="562387087163424" type="M3_Sprite2">
+                                    <param id="0" name="Animation">&quot;Selected&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="592699911939828" type="M3_Sprite2">
+                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="406870869106364">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="761150598895398" type="System">
+                                    <param id="0" name="Object">M3_Sprite2</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="387337935703638" type="M3_Sprite2">
+                                    <param id="0" name="Animation">&quot;Placeholder&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="878304544800735" type="M3_Sprite2">
+                                    <param id="0" name="Animation">&quot;Selected&quot;</param>
+                                    <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>

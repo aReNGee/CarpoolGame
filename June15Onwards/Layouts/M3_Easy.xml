@@ -1562,8 +1562,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>670.75</x>
-                        <y>529.25</y>
+                        <x>835</x>
+                        <y>337</y>
                         <z>0</z>
                         <width>229</width>
                         <height>57</height>
@@ -1769,7 +1769,62 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="M3_Sprite2" uid="329">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Disabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>special</Location>
+                        <PrimaryConnection>J</PrimaryConnection>
+                        <SecondaryConnection>E</SecondaryConnection>
+                        <UMadmanThirdConnection>K</UMadmanThirdConnection>
+                        <OkayFineConnection4></OkayFineConnection4>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>919</x>
+                        <y>872</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="M3_Sprite3" uid="330">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>special</Location>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>917.5</x>
+                        <y>870.5</y>
+                        <z>0</z>
+                        <width>56.859474182</width>
+                        <height>56.859474182</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="Layer 3" sid="745787267819533">
@@ -1834,8 +1889,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>927</x>
-                        <y>840</y>
+                        <x>1087</x>
+                        <y>1361</y>
                         <z>0</z>
                         <width>148</width>
                         <height>88</height>
