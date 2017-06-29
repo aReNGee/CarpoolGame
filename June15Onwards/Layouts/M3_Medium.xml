@@ -2,7 +2,7 @@
 <c2layout>
     <name>M3_Medium</name>
     <sid>509945497871902</sid>
-    <event-sheet>M3_GameEventSheet</event-sheet>
+    <event-sheet>TEST_NewParadigm</event-sheet>
     <size>
         <width>1920</width>
         <height>1200</height>
@@ -1185,6 +1185,60 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="M3_Sprite2" uid="337">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Disabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>special</Location>
+                        <PrimaryConnection>I</PrimaryConnection>
+                        <SecondaryConnection>Q</SecondaryConnection>
+                        <UMadmanThirdConnection></UMadmanThirdConnection>
+                        <OkayFineConnection4></OkayFineConnection4>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>864</x>
+                        <y>598</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="M3_Sprite3" uid="338">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>special</Location>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>863</x>
+                        <y>597</y>
+                        <z>0</z>
+                        <width>56.859474182</width>
+                        <height>56.859474182</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -1236,7 +1290,7 @@
                 </instance>
                 <instance type="M3_GoButton" uid="32">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -2091,7 +2145,7 @@
                 </instance>
                 <instance type="M3_ClearButton" uid="251">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>

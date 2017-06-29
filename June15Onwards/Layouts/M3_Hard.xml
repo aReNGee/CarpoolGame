@@ -2,7 +2,7 @@
 <c2layout>
     <name>M3_Hard</name>
     <sid>710649858728014</sid>
-    <event-sheet>M3_GameEventSheet</event-sheet>
+    <event-sheet>TEST_NewParadigm</event-sheet>
     <size>
         <width>1920</width>
         <height>1200</height>
@@ -1401,6 +1401,60 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="M3_Sprite2" uid="335">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Disabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>special</Location>
+                        <PrimaryConnection>N</PrimaryConnection>
+                        <SecondaryConnection>K</SecondaryConnection>
+                        <UMadmanThirdConnection>L</UMadmanThirdConnection>
+                        <OkayFineConnection4></OkayFineConnection4>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>999.75</x>
+                        <y>658.75</y>
+                        <z>0</z>
+                        <width>100</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="M3_Sprite3" uid="336">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Location>special</Location>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>998.25</x>
+                        <y>657.25</y>
+                        <z>0</z>
+                        <width>56.859474182</width>
+                        <height>56.859474182</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -1452,7 +1506,7 @@
                 </instance>
                 <instance type="M3_GoButton" uid="208">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -2293,8 +2347,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>929</x>
-                        <y>570</y>
+                        <x>2147</x>
+                        <y>421</y>
                         <z>0</z>
                         <width>148</width>
                         <height>88</height>
@@ -2307,7 +2361,7 @@
                 </instance>
                 <instance type="M3_ClearButton" uid="236">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
