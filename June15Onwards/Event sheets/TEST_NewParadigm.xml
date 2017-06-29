@@ -710,7 +710,7 @@
                     </sub-events>
                 </event-block>
                 <comment>Clicking the Button</comment>
-                <event-block sid="993240114115790">
+                <event-block disabled="1" sid="993240114115790">
                     <conditions>
                         <condition id="4" name="Is touching object" sid="360570763207447" type="Touch">
                             <param id="0" name="Object">M3_GoButton</param>
@@ -805,7 +805,7 @@
                     </sub-events>
                 </event-block>
                 <comment>stops the car when it hits the end</comment>
-                <event-block sid="473179259154114">
+                <event-block disabled="1" sid="473179259154114">
                     <conditions>
                         <condition id="-21" name="Is between values" sid="896848127673794" type="System">
                             <param id="0" name="Value">M3_Car.X</param>
@@ -817,14 +817,13 @@
                             <param id="1" name="Lower bound">M3_JustForAlignment.Y - 10</param>
                             <param id="2" name="Upper bound">M3_JustForAlignment.Y + 10</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="949505694720614" type="System">
-                            <param id="0" name="Variable">M3_InTransit</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action behavior="CustomMovement" id="0" name="Stop" sid="396752853127773" type="M3_Car" />
+                        <action id="-3" name="Set position" sid="173938067749963" type="M3_Car">
+                            <param id="0" name="X">-300</param>
+                            <param id="1" name="Y">-300</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-group description="Haven&apos;t touched this yet" sid="982377835594575" title="M3_Motion3">
@@ -1146,6 +1145,13 @@
                                             <param id="2" name="Value">M3_JustForAlignment.Y</param>
                                         </action>
                                         <action behavior="CustomMovement" id="0" name="Stop" sid="321559830182351" type="M3_Car" />
+                                        <action id="-16" name="Wait" sid="266871440456407" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="637430426669448" type="M3_Car">
+                                            <param id="0" name="X">-300</param>
+                                            <param id="1" name="Y">-300</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
